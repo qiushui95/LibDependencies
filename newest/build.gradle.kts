@@ -115,6 +115,7 @@ dependencies {
     implementation("io.insert-koin:koin-android:+")
     implementation("io.insert-koin:koin-annotations:+")
     implementation("io.insert-koin:koin-ksp-compiler:+")
+    implementation("io.insert-koin:koin-androidx-compose:+")
     implementation("io.insert-koin:koin-core:+")
     implementation("io.insert-koin:koin-androidx-navigation:+")
     testImplementation("io.insert-koin:koin-test-junit5:+")
@@ -253,6 +254,7 @@ dependencies {
     implementation("com.kyleduo.switchbutton:library:+")
 
     implementation("com.github.angcyo.DslTablayout:TabLayout:+")
+    implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:+")
     implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:+")
     implementation("androidx.viewpager2:viewpager2:+")
 }

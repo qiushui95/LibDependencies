@@ -1,4 +1,4 @@
-# 三方依赖库版本管理[![](https://jitpack.io/v/qiushui95/LibDependency.svg)](https://jitpack.io/#qiushui95/LibDependency)
+# 三方依赖库版本管理[![](https://jitpack.io/v/qiushui95/LibDependencies.svg)](https://jitpack.io/#qiushui95/LibDependencies)
   
 <details>  
 <summary>Single</summary>  
@@ -37,7 +37,7 @@
 >>implementation("com.github.princekin-f:EasyFloat:2.0.4")  
   
 >[Exif](https://developer.android.com/jetpack/androidx/releases/exifinterface)(图片信息)  
->>implementation("androidx.exifinterface:exifinterface:1.3.4")  
+>>implementation("androidx.exifinterface:exifinterface:1.3.5")  
   
 >[FlowExt](https://github.com/hoc081098/FlowExt)(Flow扩展)  
 >>implementation("io.github.hoc081098:FlowExt-jvm:0.4.0")  
@@ -91,7 +91,7 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.9.3")  
+>>implementation("com.github.li-xiaojun:XPopup:2.9.7")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
 >>implementation("net.lingala.zip4j:zip4j:2.11.2")  
@@ -135,7 +135,7 @@
 >>implementation("com.airbnb.android:lottie:5.2.0")  
   
 >[Material](https://github.com/material-components/material-components-android)  
->>implementation("com.google.android.material:material:1.6.1")  
+>>implementation("com.google.android.material:material:1.7.0")  
   
 >[PdfViewer](https://github.com/barteksc/AndroidPdfViewer)(pdf查看)  
 >>implementation("com.github.mhiew:android-pdf-viewer:3.2.0-beta.3")  
@@ -171,8 +171,9 @@
 >>implementation("com.kyleduo.switchbutton:library:2.1.0")  
   
 >[TabLayout](https://github.com/angcyo/DslTabLayout)  
->>implementation("com.github.angcyo.DslTablayout:TabLayout:3.2.5")  
->>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.2.5")  
+>>implementation("com.github.angcyo.DslTablayout:TabLayout:3.3.0")  
+>>implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.3.0")  
+>>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.3.0")  
   
 >[ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2)  
 >>implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")  
@@ -197,18 +198,18 @@
 <summary>Compose</summary>  
   
 >[Accompanist](https://github.com/google/accompanist)  
->>implementation("com.google.accompanist:accompanist-appcompat-theme:0.25.1")  
->>implementation("com.google.accompanist:accompanist-drawablepainter:0.25.1")  
->>implementation("com.google.accompanist:accompanist-flowlayout:0.25.1")  
->>implementation("com.google.accompanist:accompanist-insets:0.25.1")  
->>implementation("com.google.accompanist:accompanist-navigation-animation:0.25.1")  
->>implementation("com.google.accompanist:accompanist-navigation-material:0.25.1")  
->>implementation("com.google.accompanist:accompanist-pager:0.25.1")  
->>implementation("com.google.accompanist:accompanist-permissions:0.25.1")  
->>implementation("com.google.accompanist:accompanist-placeholder:0.25.1")  
->>implementation("com.google.accompanist:accompanist-placeholder-material:0.25.1")  
->>implementation("com.google.accompanist:accompanist-swiperefresh:0.25.1")  
->>implementation("com.google.accompanist:accompanist-systemuicontroller:0.25.1")  
+>>implementation("com.google.accompanist:accompanist-appcompat-theme:0.27.0")  
+>>implementation("com.google.accompanist:accompanist-drawablepainter:0.27.0")  
+>>implementation("com.google.accompanist:accompanist-flowlayout:0.27.0")  
+>>implementation("com.google.accompanist:accompanist-insets:0.27.0")  
+>>implementation("com.google.accompanist:accompanist-navigation-animation:0.27.0")  
+>>implementation("com.google.accompanist:accompanist-navigation-material:0.27.0")  
+>>implementation("com.google.accompanist:accompanist-pager:0.27.0")  
+>>implementation("com.google.accompanist:accompanist-permissions:0.27.0")  
+>>implementation("com.google.accompanist:accompanist-placeholder:0.27.0")  
+>>implementation("com.google.accompanist:accompanist-placeholder-material:0.27.0")  
+>>implementation("com.google.accompanist:accompanist-swiperefresh:0.27.0")  
+>>implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.0")  
   
 >[ConstraintLayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)(Compose约束布局)  
 >>implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")  
@@ -217,17 +218,17 @@
 >>implementation("com.github.fornewid:material-motion-compose:0.8.1")  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation("androidx.compose.animation:animation:1.2.1")  
+>>implementation("androidx.compose.animation:animation:1.3.0")  
 >>implementation("androidx.compose.compiler:compiler:1.3.2")  
->>implementation("androidx.compose.foundation:foundation:1.2.1")  
->>implementation("androidx.compose.runtime:runtime-livedata:1.2.1")  
->>implementation("androidx.compose.material:material:1.2.1")  
->>implementation("androidx.compose.material:material-icons-core:1.2.1")  
->>implementation("androidx.compose.material:material-icons-extended:1.2.1")  
->>implementation("androidx.compose.ui:ui-tooling-preview:1.2.1")  
->>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.1")  
->>implementation("androidx.compose.ui:ui:1.2.1")  
->>implementation("androidx.compose.ui:ui-tooling:1.2.1")  
+>>implementation("androidx.compose.foundation:foundation:1.3.0")  
+>>implementation("androidx.compose.runtime:runtime-livedata:1.3.0")  
+>>implementation("androidx.compose.material:material:1.3.0")  
+>>implementation("androidx.compose.material:material-icons-core:1.3.0")  
+>>implementation("androidx.compose.material:material-icons-extended:1.3.0")  
+>>implementation("androidx.compose.ui:ui-tooling-preview:1.3.0")  
+>>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.3.0")  
+>>implementation("androidx.compose.ui:ui:1.3.0")  
+>>implementation("androidx.compose.ui:ui-tooling:1.3.0")  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")  
@@ -238,8 +239,8 @@
 <summary>Group</summary>  
   
 >[Activity](https://developer.android.com/jetpack/androidx/releases/activity)  
->>implementation("androidx.activity:activity-compose:1.6.0")  
->>implementation("androidx.activity:activity-ktx:1.6.0")  
+>>implementation("androidx.activity:activity-compose:1.6.1")  
+>>implementation("androidx.activity:activity-ktx:1.6.1")  
   
 >[Bugly](https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=1.0.0)  
 >>implementation("com.tencent.bugly:crashreport:4.1.9")  
@@ -298,8 +299,8 @@
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager2:1.2.0")  
   
 >[Fragment](https://developer.android.com/jetpack/androidx/releases/fragment)  
->>implementation("androidx.fragment:fragment-ktx:1.5.3")  
->>testImplementation("androidx.fragment:fragment-testing:1.5.3")  
+>>implementation("androidx.fragment:fragment-ktx:1.5.4")  
+>>testImplementation("androidx.fragment:fragment-testing:1.5.4")  
   
 >[Glide](https://github.com/bumptech/glide)(图片加载)  
 >>kapt("com.github.bumptech.glide:compiler:4.14.2")  
@@ -311,13 +312,14 @@
 >>implementation("com.geyifeng.immersionbar:immersionbar-ktx:3.2.2")  
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  
->>implementation("io.insert-koin:koin-android:3.2.2")  
+>>implementation("io.insert-koin:koin-android:3.3.0")  
 >>implementation("io.insert-koin:koin-annotations:1.0.3")  
 >>implementation("io.insert-koin:koin-ksp-compiler:1.0.3")  
+>>implementation("io.insert-koin:koin-androidx-compose:3.3.0")  
 >>implementation("io.insert-koin:koin-core:3.2.2")  
->>implementation("io.insert-koin:koin-androidx-navigation:3.2.2")  
+>>implementation("io.insert-koin:koin-androidx-navigation:3.3.0")  
 >>testImplementation("io.insert-koin:koin-test-junit5:3.2.2")  
->>implementation("io.insert-koin:koin-androidx-workmanager:3.2.2")  
+>>implementation("io.insert-koin:koin-androidx-workmanager:3.3.0")  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
 >>implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.20")  
@@ -342,10 +344,10 @@
 >>implementation("com.squareup.moshi:moshi:1.14.0")  
   
 >[Navigation](https://developer.android.com/jetpack/androidx/releases/navigation)(导航库)  
->>implementation("androidx.navigation:navigation-compose:2.5.2")  
->>implementation("androidx.navigation:navigation-fragment-ktx:2.5.2")  
->>testImplementation("androidx.navigation:navigation-testing:2.5.2")  
->>implementation("androidx.navigation:navigation-ui-ktx:2.5.2")  
+>>implementation("androidx.navigation:navigation-compose:2.5.3")  
+>>implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")  
+>>testImplementation("androidx.navigation:navigation-testing:2.5.3")  
+>>implementation("androidx.navigation:navigation-ui-ktx:2.5.3")  
   
 >[OkDownload](https://github.com/lingochamp/okdownload)  
 >>implementation("com.liulishuo.okdownload:okdownload:1.0.7")  
