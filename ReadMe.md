@@ -46,7 +46,7 @@
 >>implementation("com.ypx.yimagepicker:androidx:3.1.4")  
   
 >[JodaTime](https://github.com/JodaOrg/joda-time)(时间处理库)  
->>implementation("joda-time:joda-time:2.12.0")  
+>>implementation("joda-time:joda-time:2.12.1")  
   
 >[LeakCanary](https://square.github.io/leakcanary/getting_started/)(内存泄露监控)  
 >>implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")  
@@ -91,7 +91,7 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.9.7")  
+>>implementation("com.github.li-xiaojun:XPopup:2.9.9")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
 >>implementation("net.lingala.zip4j:zip4j:2.11.2")  
@@ -171,9 +171,9 @@
 >>implementation("com.kyleduo.switchbutton:library:2.1.0")  
   
 >[TabLayout](https://github.com/angcyo/DslTabLayout)  
->>implementation("com.github.angcyo.DslTablayout:TabLayout:3.3.0")  
->>implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.3.0")  
->>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.3.0")  
+>>implementation("com.github.angcyo.DslTablayout:TabLayout:3.3.1")  
+>>implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.3.1")  
+>>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.3.1")  
   
 >[ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2)  
 >>implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")  
@@ -274,10 +274,10 @@
 >>implementation("me.laoyuyu.aria:sftp:3.8.16")  
   
 >[Epoxy](https://github.com/airbnb/epoxy)  
->>kapt("com.airbnb.android:epoxy-processor:5.1.0")  
->>implementation("com.airbnb.android:epoxy-compose:5.1.0")  
->>implementation("com.airbnb.android:epoxy:5.1.0")  
->>implementation("com.airbnb.android:epoxy-glide-preloading:5.1.0")  
+>>kapt("com.airbnb.android:epoxy-processor:5.1.1")  
+>>implementation("com.airbnb.android:epoxy-compose:5.1.1")  
+>>implementation("com.airbnb.android:epoxy:5.1.1")  
+>>implementation("com.airbnb.android:epoxy-glide-preloading:5.1.1")  
   
 >[Fetch](https://github.com/tonyofrancis/Fetch)(下载框架)  
 >>implementation("androidx.tonyodev.fetch2:xfetch2:3.1.6")  
@@ -377,8 +377,8 @@
 >>testImplementation("androidx.room:room-testing:2.4.3")  
   
 >[S3](https://github.com/aws-amplify/aws-sdk-android)(亚马逊云存储)  
->>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.55.0")  
->>implementation("com.amazonaws:aws-android-sdk-s3:2.55.0")  
+>>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.56.0")  
+>>implementation("com.amazonaws:aws-android-sdk-s3:2.56.0")  
   
 >[Stetho](https://github.com/facebook/stetho)(调试工具)  
 >>implementation("com.facebook.stetho:stetho:1.6.0")  

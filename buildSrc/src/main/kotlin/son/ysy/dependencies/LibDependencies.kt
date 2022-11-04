@@ -112,7 +112,7 @@ sealed class LibDependencies(
      * 时间处理库
      * https://github.com/JodaOrg/joda-time
      */
-    object JodaTime : LibDependencies("joda-time", "joda-time", "2.12.0",
+    object JodaTime : LibDependencies("joda-time", "joda-time", "2.12.1",
         DependencyMethod.Implementation)
 
     /**
@@ -217,7 +217,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.7",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.9",
         DependencyMethod.Implementation)
 
     /**
@@ -396,14 +396,14 @@ sealed class LibDependencies(
      * https://github.com/angcyo/DslTabLayout
      */
     interface TabLayout {
-      object Core : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout", "3.3.0",
+      object Core : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout", "3.3.1",
           DependencyMethod.Implementation)
 
       object VP : LibDependencies("com.github.angcyo.DslTablayout", "ViewPager1Delegate",
-          "3.3.0", DependencyMethod.Implementation)
+          "3.3.1", DependencyMethod.Implementation)
 
       object VP2 : LibDependencies("com.github.angcyo.DslTablayout", "ViewPager2Delegate",
-          "3.3.0", DependencyMethod.Implementation)
+          "3.3.1", DependencyMethod.Implementation)
     }
 
     /**
@@ -645,16 +645,16 @@ sealed class LibDependencies(
      * https://github.com/airbnb/epoxy
      */
     interface Epoxy {
-      object Compiler : LibDependencies("com.airbnb.android", "epoxy-processor", "5.1.0",
+      object Compiler : LibDependencies("com.airbnb.android", "epoxy-processor", "5.1.1",
           DependencyMethod.Kapt)
 
-      object Compose : LibDependencies("com.airbnb.android", "epoxy-compose", "5.1.0",
+      object Compose : LibDependencies("com.airbnb.android", "epoxy-compose", "5.1.1",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.airbnb.android", "epoxy", "5.1.0",
+      object Core : LibDependencies("com.airbnb.android", "epoxy", "5.1.1",
           DependencyMethod.Implementation)
 
-      object Glide : LibDependencies("com.airbnb.android", "epoxy-glide-preloading", "5.1.0",
+      object Glide : LibDependencies("com.airbnb.android", "epoxy-glide-preloading", "5.1.1",
           DependencyMethod.Implementation)
     }
 
@@ -949,9 +949,9 @@ sealed class LibDependencies(
      */
     interface S3 {
       object Client : LibDependencies("com.amazonaws", "aws-android-sdk-mobile-client",
-          "2.55.0", DependencyMethod.Implementation)
+          "2.56.0", DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.55.0",
+      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.56.0",
           DependencyMethod.Implementation)
     }
 
