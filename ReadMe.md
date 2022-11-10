@@ -40,7 +40,7 @@
 >>implementation("androidx.exifinterface:exifinterface:1.3.5")  
   
 >[FlowExt](https://github.com/hoc081098/FlowExt)(Flow扩展)  
->>implementation("io.github.hoc081098:FlowExt-jvm:0.4.0")  
+>>implementation("io.github.hoc081098:FlowExt-jvm:0.5.0")  
   
 >[ImagePicker](https://github.com/yangpeixing/YImagePicker)(多媒体选择库)  
 >>implementation("com.ypx.yimagepicker:androidx:3.1.4")  
@@ -184,13 +184,13 @@
 <summary>Test</summary>  
   
 >[Espresso](https://mvnrepository.com/artifact/androidx.test.espresso/espresso-core)(UI自动化测试)  
->>androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")  
+>>androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")  
   
 >[Junit](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter)(单元测试)  
 >>testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")  
   
 >[JunitExt](https://mvnrepository.com/artifact/androidx.test.ext/junit-ktx)(单元测试扩展)  
->>testImplementation("androidx.test.ext:junit-ktx:1.1.3")  
+>>testImplementation("androidx.test.ext:junit-ktx:1.1.4")  
   
 </details>  
   
@@ -218,17 +218,17 @@
 >>implementation("com.github.fornewid:material-motion-compose:0.8.1")  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation("androidx.compose.animation:animation:1.3.0")  
+>>implementation("androidx.compose.animation:animation:1.3.1")  
 >>implementation("androidx.compose.compiler:compiler:1.3.2")  
->>implementation("androidx.compose.foundation:foundation:1.3.0")  
->>implementation("androidx.compose.runtime:runtime-livedata:1.3.0")  
->>implementation("androidx.compose.material:material:1.3.0")  
->>implementation("androidx.compose.material:material-icons-core:1.3.0")  
->>implementation("androidx.compose.material:material-icons-extended:1.3.0")  
->>implementation("androidx.compose.ui:ui-tooling-preview:1.3.0")  
->>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.3.0")  
->>implementation("androidx.compose.ui:ui:1.3.0")  
->>implementation("androidx.compose.ui:ui-tooling:1.3.0")  
+>>implementation("androidx.compose.foundation:foundation:1.3.1")  
+>>implementation("androidx.compose.runtime:runtime-livedata:1.3.1")  
+>>implementation("androidx.compose.material:material:1.3.1")  
+>>implementation("androidx.compose.material:material-icons-core:1.3.1")  
+>>implementation("androidx.compose.material:material-icons-extended:1.3.1")  
+>>implementation("androidx.compose.ui:ui-tooling-preview:1.3.1")  
+>>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.3.1")  
+>>implementation("androidx.compose.ui:ui:1.3.1")  
+>>implementation("androidx.compose.ui:ui-tooling:1.3.1")  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")  
@@ -322,8 +322,8 @@
 >>implementation("io.insert-koin:koin-androidx-workmanager:3.3.0")  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
->>implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.20")  
->>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.20")  
+>>implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.21")  
+>>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.21")  
   
 >[Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation("androidx.lifecycle:lifecycle-common:2.5.1")  
@@ -377,8 +377,8 @@
 >>testImplementation("androidx.room:room-testing:2.4.3")  
   
 >[S3](https://github.com/aws-amplify/aws-sdk-android)(亚马逊云存储)  
->>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.56.0")  
->>implementation("com.amazonaws:aws-android-sdk-s3:2.56.0")  
+>>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.57.0")  
+>>implementation("com.amazonaws:aws-android-sdk-s3:2.57.0")  
   
 >[Stetho](https://github.com/facebook/stetho)(调试工具)  
 >>implementation("com.facebook.stetho:stetho:1.6.0")  

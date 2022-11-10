@@ -37,17 +37,17 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation("com.github.fornewid:material-motion-compose:0.8.1")
 
-    implementation("androidx.compose.animation:animation:1.3.0")
+    implementation("androidx.compose.animation:animation:1.3.1")
     implementation("androidx.compose.compiler:compiler:1.3.2")
-    implementation("androidx.compose.foundation:foundation:1.3.0")
-    implementation("androidx.compose.runtime:runtime-livedata:1.3.0")
-    implementation("androidx.compose.material:material:1.3.0")
-    implementation("androidx.compose.material:material-icons-core:1.3.0")
-    implementation("androidx.compose.material:material-icons-extended:1.3.0")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.3.0")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.3.0")
-    implementation("androidx.compose.ui:ui:1.3.0")
-    implementation("androidx.compose.ui:ui-tooling:1.3.0")
+    implementation("androidx.compose.foundation:foundation:1.3.1")
+    implementation("androidx.compose.runtime:runtime-livedata:1.3.1")
+    implementation("androidx.compose.material:material:1.3.1")
+    implementation("androidx.compose.material:material-icons-core:1.3.1")
+    implementation("androidx.compose.material:material-icons-extended:1.3.1")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.3.1")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.3.1")
+    implementation("androidx.compose.ui:ui:1.3.1")
+    implementation("androidx.compose.ui:ui-tooling:1.3.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
 
 
@@ -121,8 +121,8 @@ dependencies {
     testImplementation("io.insert-koin:koin-test-junit5:3.2.2")
     implementation("io.insert-koin:koin-androidx-workmanager:3.3.0")
 
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.20")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.20")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.21")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.21")
 
     implementation("androidx.lifecycle:lifecycle-common:2.5.1")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
@@ -166,8 +166,8 @@ dependencies {
     implementation("androidx.room:room-ktx:2.4.3")
     testImplementation("androidx.room:room-testing:2.4.3")
 
-    implementation("com.amazonaws:aws-android-sdk-mobile-client:2.56.0")
-    implementation("com.amazonaws:aws-android-sdk-s3:2.56.0")
+    implementation("com.amazonaws:aws-android-sdk-mobile-client:2.57.0")
+    implementation("com.amazonaws:aws-android-sdk-s3:2.57.0")
 
     implementation("com.facebook.stetho:stetho:1.6.0")
     implementation("com.facebook.stetho:stetho-okhttp3:1.6.0")
@@ -198,7 +198,7 @@ dependencies {
     implementation("com.github.loperSeven:DateTimePicker:0.6.0")
     implementation("com.github.princekin-f:EasyFloat:2.0.4")
     implementation("androidx.exifinterface:exifinterface:1.3.5")
-    implementation("io.github.hoc081098:FlowExt-jvm:0.4.0")
+    implementation("io.github.hoc081098:FlowExt-jvm:0.5.0")
     implementation("com.ypx.yimagepicker:androidx:3.1.4")
     implementation("joda-time:joda-time:2.12.1")
     implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")
@@ -220,9 +220,9 @@ dependencies {
 
 
 
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")
-    testImplementation("androidx.test.ext:junit-ktx:1.1.3")
+    testImplementation("androidx.test.ext:junit-ktx:1.1.4")
 
 
 

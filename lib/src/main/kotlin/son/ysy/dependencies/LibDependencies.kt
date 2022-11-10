@@ -98,7 +98,7 @@ sealed class LibDependencies(
      * Flow扩展
      * https://github.com/hoc081098/FlowExt
      */
-    object FlowExt : LibDependencies("io.github.hoc081098", "FlowExt-jvm", "0.4.0",
+    object FlowExt : LibDependencies("io.github.hoc081098", "FlowExt-jvm", "0.5.0",
         DependencyMethod.Implementation)
 
     /**
@@ -418,7 +418,7 @@ sealed class LibDependencies(
      * UI自动化测试
      * https://mvnrepository.com/artifact/androidx.test.espresso/espresso-core
      */
-    object Espresso : LibDependencies("androidx.test.espresso", "espresso-core", "3.4.0",
+    object Espresso : LibDependencies("androidx.test.espresso", "espresso-core", "3.5.0",
         DependencyMethod.AndroidTest.Implementation)
 
     /**
@@ -432,7 +432,7 @@ sealed class LibDependencies(
      * 单元测试扩展
      * https://mvnrepository.com/artifact/androidx.test.ext/junit-ktx
      */
-    object JunitExt : LibDependencies("androidx.test.ext", "junit-ktx", "1.1.3",
+    object JunitExt : LibDependencies("androidx.test.ext", "junit-ktx", "1.1.4",
         DependencyMethod.Test.Implementation)
   }
 
@@ -497,37 +497,37 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/compose
      */
     interface Official {
-      object Animation : LibDependencies("androidx.compose.animation", "animation", "1.3.0",
+      object Animation : LibDependencies("androidx.compose.animation", "animation", "1.3.1",
           DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.3.2",
           DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.3.0", DependencyMethod.Implementation)
+          "1.3.1", DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.compose.runtime", "runtime-livedata",
-          "1.3.0", DependencyMethod.Implementation)
+          "1.3.1", DependencyMethod.Implementation)
 
-      object Material : LibDependencies("androidx.compose.material", "material", "1.3.0",
+      object Material : LibDependencies("androidx.compose.material", "material", "1.3.1",
           DependencyMethod.Implementation)
 
       object MaterialIcon : LibDependencies("androidx.compose.material",
-          "material-icons-core", "1.3.0", DependencyMethod.Implementation)
+          "material-icons-core", "1.3.1", DependencyMethod.Implementation)
 
       object MaterialIconExtended : LibDependencies("androidx.compose.material",
-          "material-icons-extended", "1.3.0", DependencyMethod.Implementation)
+          "material-icons-extended", "1.3.1", DependencyMethod.Implementation)
 
-      object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview", "1.3.0",
+      object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview", "1.3.1",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.3.0",
+      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.3.1",
           DependencyMethod.AndroidTest.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.3.0",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.3.1",
           DependencyMethod.Implementation)
 
-      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.3.0",
+      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.3.1",
           DependencyMethod.Implementation)
     }
 
@@ -787,10 +787,10 @@ sealed class LibDependencies(
      * https://github.com/JetBrains/kotlin
      */
     interface Kotlin {
-      object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.7.20",
+      object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.7.21",
           DependencyMethod.Implementation)
 
-      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.7.20",
+      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.7.21",
           DependencyMethod.Implementation)
     }
 
@@ -949,9 +949,9 @@ sealed class LibDependencies(
      */
     interface S3 {
       object Client : LibDependencies("com.amazonaws", "aws-android-sdk-mobile-client",
-          "2.56.0", DependencyMethod.Implementation)
+          "2.57.0", DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.56.0",
+      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.57.0",
           DependencyMethod.Implementation)
     }
 
