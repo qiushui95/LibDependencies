@@ -233,7 +233,7 @@ class Creator {
             }
         }
 
-        sb.append("    set(\"libDependency\", \"com.github.qiushui95:LibDependency:${libVersion}\")\n")
+        sb.append("    set(\"libDependencies\", \"com.github.qiushui95:LibDependencies:${libVersion}\")\n")
 
         sb.append("}")
 

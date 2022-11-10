@@ -11,5 +11,5 @@ repositories {
 apply(from = "plugins.gradle.kts")
 
 dependencies {
-//    implementation(rootProject.extra["libDependency"].toString())
+//    implementation(rootProject.extra["libDependencies"].toString())
 }
