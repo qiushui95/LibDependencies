@@ -164,7 +164,7 @@ sealed class DependencyConfig(
         object FlowExt : Single(
             group = "io.github.hoc081098",
             name = "FlowExt-jvm",
-            version = "0.4.0",
+            version = "0.5.0",
             remark = "Flow扩展",
             link = "https://github.com/hoc081098/FlowExt",
             dependencyMethod = DependencyMethod.Implementation,
@@ -685,7 +685,7 @@ sealed class DependencyConfig(
         object Espresso : Test(
             group = "androidx.test.espresso",
             name = "espresso-core",
-            version = "3.4.0",
+            version = "3.5.0",
             remark = "UI自动化测试",
             link = "https://mvnrepository.com/artifact/androidx.test.espresso/espresso-core",
             dependencyMethod = DependencyMethod.AndroidTest.Implementation,
@@ -707,7 +707,7 @@ sealed class DependencyConfig(
         object JunitExt : Test(
             group = "androidx.test.ext",
             name = "junit-ktx",
-            version = "1.1.3",
+            version = "1.1.4",
             remark = "单元测试扩展",
             link = "https://mvnrepository.com/artifact/androidx.test.ext/junit-ktx",
             dependencyMethod = DependencyMethod.Test.Implementation,
@@ -775,7 +775,7 @@ sealed class DependencyConfig(
         sealed class Official(
             group: String,
             name: String,
-            version: String = "1.3.0",
+            version: String = "1.3.1",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : Compose(
             group = group,
@@ -1132,7 +1132,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "org.jetbrains.kotlin",
             name = name,
-            version = "1.7.20",
+            version = "1.7.21",
             remark = "",
             link = "https://github.com/JetBrains/kotlin",
             dependencyMethod = dependencyMethod,
@@ -1332,7 +1332,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.amazonaws",
             name = name,
-            version = "2.56.0",
+            version = "2.57.0",
             remark = "亚马逊云存储",
             link = "https://github.com/aws-amplify/aws-sdk-android",
             dependencyMethod = dependencyMethod,
