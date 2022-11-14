@@ -208,7 +208,7 @@ sealed class DependencyConfig(
         object LeakCanary : Single(
             group = "com.squareup.leakcanary",
             name = "leakcanary-android",
-            version = "2.9.1",
+            version = "2.10",
             remark = "内存泄露监控",
             link = "https://square.github.io/leakcanary/getting_started/",
             dependencyMethod = DependencyMethod.Implementation,
@@ -252,7 +252,7 @@ sealed class DependencyConfig(
         object PanelSwitch : Single(
             group = "com.github.DSAppTeam",
             name = "PanelSwitchHelper",
-            version = "1.5.2",
+            version = "v1.5.2",
             remark = "聊天键盘优化",
             link = "https://github.com/DSAppTeam/PanelSwitchHelper",
             dependencyMethod = DependencyMethod.Implementation,
@@ -288,6 +288,17 @@ sealed class DependencyConfig(
             version = "4.0.5",
             remark = "多数据源",
             link = "https://github.com/dropbox/Store",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
+
+        //endregion
+        //region SoftEvent(软键盘事件)
+        object SoftEvent : Single(
+            group = "com.github.liangjingkanji",
+            name = "soft-input-event",
+            version = "1.0.9",
+            remark = "软键盘事件",
+            link = "https://github.com/liangjingkanji/soft-input-event",
             dependencyMethod = DependencyMethod.Implementation,
         )
 
@@ -577,7 +588,7 @@ sealed class DependencyConfig(
         object RecyclerViewDivider : View(
             group = "com.github.fondesa",
             name = "recycler-view-divider",
-            version = "3.5.0",
+            version = "3.6.0",
             remark = "RecyclerView分割线",
             link = "https://github.com/fondesa/recycler-view-divider",
             dependencyMethod = DependencyMethod.Implementation,
