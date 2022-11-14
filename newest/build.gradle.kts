@@ -210,6 +210,7 @@ dependencies {
     implementation("com.localebro:okhttpprofiler:+")
     implementation("com.github.jenly1314:zxing-lite:+")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:+")
+    implementation("com.github.liangjingkanji:soft-input-event:+")
     implementation("com.github.qiushui95:AndroidInitializer:+")
     implementation("com.dropbox.mobile.store:store4:+")
     implementation("com.tencent.vasdolly:helper:+")

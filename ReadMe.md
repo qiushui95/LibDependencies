@@ -49,7 +49,7 @@
 >>implementation("joda-time:joda-time:2.12.1")  
   
 >[LeakCanary](https://square.github.io/leakcanary/getting_started/)(内存泄露监控)  
->>implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")  
+>>implementation("com.squareup.leakcanary:leakcanary-android:2.10")  
   
 >[MavenPublish](https://github.com/vanniktech/gradle-maven-publish-plugin)(Maven上传)  
 >>implementation("com.vanniktech:gradle-maven-publish-plugin:0.22.0")  
@@ -61,7 +61,7 @@
 >>implementation("androidx.paging:paging-runtime-ktx:3.1.1")  
   
 >[PanelSwitch](https://github.com/DSAppTeam/PanelSwitchHelper)(聊天键盘优化)  
->>implementation("com.github.DSAppTeam:PanelSwitchHelper:1.5.2")  
+>>implementation("com.github.DSAppTeam:PanelSwitchHelper:v1.5.2")  
   
 >[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
 >>implementation("com.guolindev.permissionx:permissionx:1.7.1")  
@@ -74,6 +74,9 @@
   
 >[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
 >>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")  
+  
+>[SoftEvent](https://github.com/liangjingkanji/soft-input-event)(软键盘事件)  
+>>implementation("com.github.liangjingkanji:soft-input-event:1.0.9")  
   
 >[Startup](https://github.com/qiushui95/AndroidInitializer)(app启动初始化)  
 >>implementation("com.github.qiushui95:AndroidInitializer:1.0.9")  
@@ -150,7 +153,7 @@
 >>implementation("androidx.recyclerview:recyclerview:1.3.0-rc01")  
   
 >[RecyclerViewDivider](https://github.com/fondesa/recycler-view-divider)(RecyclerView分割线)  
->>implementation("com.github.fondesa:recycler-view-divider:3.5.0")  
+>>implementation("com.github.fondesa:recycler-view-divider:3.6.0")  
   
 >[RecyclerViewSnap](https://github.com/rubensousa/GravitySnapHelper)(RecyclerView分割线)  
 >>implementation("com.github.rubensousa:gravitysnaphelper:2.2.2")  

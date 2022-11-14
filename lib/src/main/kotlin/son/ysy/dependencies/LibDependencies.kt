@@ -120,7 +120,7 @@ sealed class LibDependencies(
      * https://square.github.io/leakcanary/getting_started/
      */
     object LeakCanary : LibDependencies("com.squareup.leakcanary", "leakcanary-android",
-        "2.9.1", DependencyMethod.Implementation)
+        "2.10", DependencyMethod.Implementation)
 
     /**
      * Maven上传
@@ -148,7 +148,7 @@ sealed class LibDependencies(
      * https://github.com/DSAppTeam/PanelSwitchHelper
      */
     object PanelSwitch : LibDependencies("com.github.DSAppTeam", "PanelSwitchHelper",
-        "1.5.2", DependencyMethod.Implementation)
+        "v1.5.2", DependencyMethod.Implementation)
 
     /**
      * 权限请求
@@ -177,6 +177,13 @@ sealed class LibDependencies(
      */
     object Serialization : LibDependencies("org.jetbrains.kotlinx",
         "kotlinx-serialization-json", "1.4.1", DependencyMethod.Implementation)
+
+    /**
+     * 软键盘事件
+     * https://github.com/liangjingkanji/soft-input-event
+     */
+    object SoftEvent : LibDependencies("com.github.liangjingkanji", "soft-input-event",
+        "1.0.9", DependencyMethod.Implementation)
 
     /**
      * app启动初始化
@@ -344,7 +351,7 @@ sealed class LibDependencies(
      * https://github.com/fondesa/recycler-view-divider
      */
     object RecyclerViewDivider : LibDependencies("com.github.fondesa",
-        "recycler-view-divider", "3.5.0", DependencyMethod.Implementation)
+        "recycler-view-divider", "3.6.0", DependencyMethod.Implementation)
 
     /**
      * RecyclerView分割线
