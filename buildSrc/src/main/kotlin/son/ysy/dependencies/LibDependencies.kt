@@ -109,6 +109,13 @@ sealed class LibDependencies(
         DependencyMethod.Implementation)
 
     /**
+     * IP帮助类
+     * https://github.com/seancfoley/IPAddress
+     */
+    object IpUtils : LibDependencies("com.github.seancfoley", "ipaddress", "5.3.4",
+        DependencyMethod.Implementation)
+
+    /**
      * 时间处理库
      * https://github.com/JodaOrg/joda-time
      */
@@ -449,40 +456,40 @@ sealed class LibDependencies(
      */
     interface Accompanist {
       object AppcompatTheme : LibDependencies("com.google.accompanist",
-          "accompanist-appcompat-theme", "0.27.0", DependencyMethod.Implementation)
+          "accompanist-appcompat-theme", "0.27.1", DependencyMethod.Implementation)
 
       object DrawablePainter : LibDependencies("com.google.accompanist",
-          "accompanist-drawablepainter", "0.27.0", DependencyMethod.Implementation)
+          "accompanist-drawablepainter", "0.27.1", DependencyMethod.Implementation)
 
       object FlowLayout : LibDependencies("com.google.accompanist", "accompanist-flowlayout",
-          "0.27.0", DependencyMethod.Implementation)
+          "0.27.1", DependencyMethod.Implementation)
 
       object Insets : LibDependencies("com.google.accompanist", "accompanist-insets",
-          "0.27.0", DependencyMethod.Implementation)
+          "0.27.1", DependencyMethod.Implementation)
 
       object NavigationAnimation : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-animation", "0.27.0", DependencyMethod.Implementation)
+          "accompanist-navigation-animation", "0.27.1", DependencyMethod.Implementation)
 
       object NavigationMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-material", "0.27.0", DependencyMethod.Implementation)
+          "accompanist-navigation-material", "0.27.1", DependencyMethod.Implementation)
 
-      object Pager : LibDependencies("com.google.accompanist", "accompanist-pager", "0.27.0",
+      object Pager : LibDependencies("com.google.accompanist", "accompanist-pager", "0.27.1",
           DependencyMethod.Implementation)
 
       object Permissions : LibDependencies("com.google.accompanist",
-          "accompanist-permissions", "0.27.0", DependencyMethod.Implementation)
+          "accompanist-permissions", "0.27.1", DependencyMethod.Implementation)
 
       object PlaceHolder : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder", "0.27.0", DependencyMethod.Implementation)
+          "accompanist-placeholder", "0.27.1", DependencyMethod.Implementation)
 
       object PlaceHolderMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder-material", "0.27.0", DependencyMethod.Implementation)
+          "accompanist-placeholder-material", "0.27.1", DependencyMethod.Implementation)
 
       object SwipeRefresh : LibDependencies("com.google.accompanist",
-          "accompanist-swiperefresh", "0.27.0", DependencyMethod.Implementation)
+          "accompanist-swiperefresh", "0.27.1", DependencyMethod.Implementation)
 
       object SystemUiController : LibDependencies("com.google.accompanist",
-          "accompanist-systemuicontroller", "0.27.0", DependencyMethod.Implementation)
+          "accompanist-systemuicontroller", "0.27.1", DependencyMethod.Implementation)
     }
 
     /**
@@ -956,9 +963,9 @@ sealed class LibDependencies(
      */
     interface S3 {
       object Client : LibDependencies("com.amazonaws", "aws-android-sdk-mobile-client",
-          "2.57.0", DependencyMethod.Implementation)
+          "2.58.0", DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.57.0",
+      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.58.0",
           DependencyMethod.Implementation)
     }
 
@@ -1003,7 +1010,7 @@ sealed class LibDependencies(
       object Asms : LibDependencies("com.umeng.umsdk", "asms", "1.6.3",
           DependencyMethod.Implementation)
 
-      object Common : LibDependencies("com.umeng.umsdk", "common", "9.5.2",
+      object Common : LibDependencies("com.umeng.umsdk", "common", "9.5.3",
           DependencyMethod.Implementation)
     }
 

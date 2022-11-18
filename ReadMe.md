@@ -45,6 +45,9 @@
 >[ImagePicker](https://github.com/yangpeixing/YImagePicker)(多媒体选择库)  
 >>implementation("com.ypx.yimagepicker:androidx:3.1.4")  
   
+>[IpUtils](https://github.com/seancfoley/IPAddress)(IP帮助类)  
+>>implementation("com.github.seancfoley:ipaddress:5.3.4")  
+  
 >[JodaTime](https://github.com/JodaOrg/joda-time)(时间处理库)  
 >>implementation("joda-time:joda-time:2.12.1")  
   
@@ -201,18 +204,18 @@
 <summary>Compose</summary>  
   
 >[Accompanist](https://github.com/google/accompanist)  
->>implementation("com.google.accompanist:accompanist-appcompat-theme:0.27.0")  
->>implementation("com.google.accompanist:accompanist-drawablepainter:0.27.0")  
->>implementation("com.google.accompanist:accompanist-flowlayout:0.27.0")  
->>implementation("com.google.accompanist:accompanist-insets:0.27.0")  
->>implementation("com.google.accompanist:accompanist-navigation-animation:0.27.0")  
->>implementation("com.google.accompanist:accompanist-navigation-material:0.27.0")  
->>implementation("com.google.accompanist:accompanist-pager:0.27.0")  
->>implementation("com.google.accompanist:accompanist-permissions:0.27.0")  
->>implementation("com.google.accompanist:accompanist-placeholder:0.27.0")  
->>implementation("com.google.accompanist:accompanist-placeholder-material:0.27.0")  
->>implementation("com.google.accompanist:accompanist-swiperefresh:0.27.0")  
->>implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.0")  
+>>implementation("com.google.accompanist:accompanist-appcompat-theme:0.27.1")  
+>>implementation("com.google.accompanist:accompanist-drawablepainter:0.27.1")  
+>>implementation("com.google.accompanist:accompanist-flowlayout:0.27.1")  
+>>implementation("com.google.accompanist:accompanist-insets:0.27.1")  
+>>implementation("com.google.accompanist:accompanist-navigation-animation:0.27.1")  
+>>implementation("com.google.accompanist:accompanist-navigation-material:0.27.1")  
+>>implementation("com.google.accompanist:accompanist-pager:0.27.1")  
+>>implementation("com.google.accompanist:accompanist-permissions:0.27.1")  
+>>implementation("com.google.accompanist:accompanist-placeholder:0.27.1")  
+>>implementation("com.google.accompanist:accompanist-placeholder-material:0.27.1")  
+>>implementation("com.google.accompanist:accompanist-swiperefresh:0.27.1")  
+>>implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.1")  
   
 >[ConstraintLayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)(Compose约束布局)  
 >>implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")  
@@ -380,8 +383,8 @@
 >>testImplementation("androidx.room:room-testing:2.4.3")  
   
 >[S3](https://github.com/aws-amplify/aws-sdk-android)(亚马逊云存储)  
->>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.57.0")  
->>implementation("com.amazonaws:aws-android-sdk-s3:2.57.0")  
+>>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.58.0")  
+>>implementation("com.amazonaws:aws-android-sdk-s3:2.58.0")  
   
 >[Stetho](https://github.com/facebook/stetho)(调试工具)  
 >>implementation("com.facebook.stetho:stetho:1.6.0")  
@@ -396,7 +399,7 @@
   
 >[UMeng](https://developer.umeng.com/docs/119267/detail/118584)(友盟)  
 >>implementation("com.umeng.umsdk:asms:1.6.3")  
->>implementation("com.umeng.umsdk:common:9.5.2")  
+>>implementation("com.umeng.umsdk:common:9.5.3")  
   
 >[WorkManager](https://developer.android.com/jetpack/androidx/releases/work)(任务管理器)  
 >>implementation("androidx.work:work-runtime-ktx:2.7.1")  

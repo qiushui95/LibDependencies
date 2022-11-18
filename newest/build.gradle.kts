@@ -200,6 +200,7 @@ dependencies {
     implementation("androidx.exifinterface:exifinterface:+")
     implementation("io.github.hoc081098:FlowExt-jvm:+")
     implementation("com.ypx.yimagepicker:androidx:+")
+    implementation("com.github.seancfoley:ipaddress:+")
     implementation("joda-time:joda-time:+")
     implementation("com.squareup.leakcanary:leakcanary-android:+")
     implementation("com.vanniktech:gradle-maven-publish-plugin:+")

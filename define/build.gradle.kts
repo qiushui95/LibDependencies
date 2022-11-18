@@ -22,18 +22,18 @@ android {
 }
 
 dependencies {
-    implementation("com.google.accompanist:accompanist-appcompat-theme:0.27.0")
-    implementation("com.google.accompanist:accompanist-drawablepainter:0.27.0")
-    implementation("com.google.accompanist:accompanist-flowlayout:0.27.0")
-    implementation("com.google.accompanist:accompanist-insets:0.27.0")
-    implementation("com.google.accompanist:accompanist-navigation-animation:0.27.0")
-    implementation("com.google.accompanist:accompanist-navigation-material:0.27.0")
-    implementation("com.google.accompanist:accompanist-pager:0.27.0")
-    implementation("com.google.accompanist:accompanist-permissions:0.27.0")
-    implementation("com.google.accompanist:accompanist-placeholder:0.27.0")
-    implementation("com.google.accompanist:accompanist-placeholder-material:0.27.0")
-    implementation("com.google.accompanist:accompanist-swiperefresh:0.27.0")
-    implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.0")
+    implementation("com.google.accompanist:accompanist-appcompat-theme:0.27.1")
+    implementation("com.google.accompanist:accompanist-drawablepainter:0.27.1")
+    implementation("com.google.accompanist:accompanist-flowlayout:0.27.1")
+    implementation("com.google.accompanist:accompanist-insets:0.27.1")
+    implementation("com.google.accompanist:accompanist-navigation-animation:0.27.1")
+    implementation("com.google.accompanist:accompanist-navigation-material:0.27.1")
+    implementation("com.google.accompanist:accompanist-pager:0.27.1")
+    implementation("com.google.accompanist:accompanist-permissions:0.27.1")
+    implementation("com.google.accompanist:accompanist-placeholder:0.27.1")
+    implementation("com.google.accompanist:accompanist-placeholder-material:0.27.1")
+    implementation("com.google.accompanist:accompanist-swiperefresh:0.27.1")
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.1")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation("com.github.fornewid:material-motion-compose:0.8.1")
 
@@ -166,8 +166,8 @@ dependencies {
     implementation("androidx.room:room-ktx:2.4.3")
     testImplementation("androidx.room:room-testing:2.4.3")
 
-    implementation("com.amazonaws:aws-android-sdk-mobile-client:2.57.0")
-    implementation("com.amazonaws:aws-android-sdk-s3:2.57.0")
+    implementation("com.amazonaws:aws-android-sdk-mobile-client:2.58.0")
+    implementation("com.amazonaws:aws-android-sdk-s3:2.58.0")
 
     implementation("com.facebook.stetho:stetho:1.6.0")
     implementation("com.facebook.stetho:stetho-okhttp3:1.6.0")
@@ -179,7 +179,7 @@ dependencies {
     implementation("jp.wasabeef.transformers:glide-gpu:1.0.6")
 
     implementation("com.umeng.umsdk:asms:1.6.3")
-    implementation("com.umeng.umsdk:common:9.5.2")
+    implementation("com.umeng.umsdk:common:9.5.3")
 
     implementation("androidx.work:work-runtime-ktx:2.7.1")
     testImplementation("androidx.work:work-testing:2.7.1")
@@ -200,6 +200,7 @@ dependencies {
     implementation("androidx.exifinterface:exifinterface:1.3.5")
     implementation("io.github.hoc081098:FlowExt-jvm:0.5.0")
     implementation("com.ypx.yimagepicker:androidx:3.1.4")
+    implementation("com.github.seancfoley:ipaddress:5.3.4")
     implementation("joda-time:joda-time:2.12.1")
     implementation("com.squareup.leakcanary:leakcanary-android:2.10")
     implementation("com.vanniktech:gradle-maven-publish-plugin:0.22.0")
