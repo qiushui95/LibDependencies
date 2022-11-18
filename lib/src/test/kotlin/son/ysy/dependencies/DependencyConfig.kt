@@ -180,6 +180,15 @@ sealed class DependencyConfig(
             link = "https://github.com/yangpeixing/YImagePicker",
             dependencyMethod = DependencyMethod.Implementation,
         )
+        //region ImagePicker(多媒体选择库)
+        object IpUtils : Single(
+            group = "com.github.seancfoley",
+            name = "ipaddress",
+            version = "5.3.4",
+            remark = "IP帮助类",
+            link = "https://github.com/seancfoley/IPAddress",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
 
         //endregion
 /*        //region ImageWatcher(图片预览框架)
@@ -740,7 +749,7 @@ sealed class DependencyConfig(
         sealed class Accompanist(name: String) : Compose(
             group = "com.google.accompanist",
             name = name,
-            version = "0.27.0",
+            version = "0.27.1",
             remark = "",
             link = "https://github.com/google/accompanist",
             dependencyMethod = DependencyMethod.Implementation,
@@ -1343,7 +1352,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.amazonaws",
             name = name,
-            version = "2.57.0",
+            version = "2.58.0",
             remark = "亚马逊云存储",
             link = "https://github.com/aws-amplify/aws-sdk-android",
             dependencyMethod = dependencyMethod,
@@ -1387,7 +1396,7 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             object Asms : UMeng("asms", "1.6.3")
-            object Common : UMeng("common", "9.5.2")
+            object Common : UMeng("common", "9.5.3")
         }
 
         //endregion
