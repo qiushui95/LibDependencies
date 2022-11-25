@@ -43,7 +43,7 @@ sealed class DependencyConfig(
         object AliPush : Single(
             group = "com.aliyun.ams",
             name = "alicloud-android-push",
-            version = "3.7.4",
+            version = "3.8.0",
             remark = "阿里推送",
             link = "https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG",
             dependencyMethod = DependencyMethod.Implementation,
@@ -171,16 +171,7 @@ sealed class DependencyConfig(
         )
 
         //endregion
-        //region ImagePicker(多媒体选择库)
-        object ImagePicker : Single(
-            group = "com.ypx.yimagepicker",
-            name = "androidx",
-            version = "3.1.4",
-            remark = "多媒体选择库",
-            link = "https://github.com/yangpeixing/YImagePicker",
-            dependencyMethod = DependencyMethod.Implementation,
-        )
-        //region ImagePicker(多媒体选择库)
+        //region IpUtils(IP帮助类)
         object IpUtils : Single(
             group = "com.github.seancfoley",
             name = "ipaddress",
@@ -338,7 +329,7 @@ sealed class DependencyConfig(
         object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.9.9",
+            version = "2.9.15",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -679,7 +670,7 @@ sealed class DependencyConfig(
         sealed class TabLayout(name: String) : View(
             group = "com.github.angcyo.DslTablayout",
             name = name,
-            version = "3.3.1",
+            version = "3.4.2",
             remark = "",
             link = "https://github.com/angcyo/DslTabLayout",
             dependencyMethod = DependencyMethod.Implementation,
@@ -1111,6 +1102,25 @@ sealed class DependencyConfig(
         }
 
         //endregion
+        //region ImagePicker(图片选择库)
+        sealed class ImagePicker(
+            name: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : Group(
+            group = "io.github.lucksiege",
+            name = name,
+            version = "v3.10.7",
+            remark = "图片选择库",
+            link = "https://github.com/LuckSiege/PictureSelector",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Core : ImagePicker("pictureselector")
+            object Compress  : ImagePicker("compress")
+            object Crop  : ImagePicker("ucrop")
+            object CameraX  : ImagePicker("camerax")
+        }
+
+        //endregion
         //region Koin(依赖注入库)
         sealed class Koin(
             name: String,
@@ -1352,7 +1362,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.amazonaws",
             name = name,
-            version = "2.58.0",
+            version = "2.59.0",
             remark = "亚马逊云存储",
             link = "https://github.com/aws-amplify/aws-sdk-android",
             dependencyMethod = dependencyMethod,
