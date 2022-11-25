@@ -19,7 +19,8 @@ jobs:
           git checkout master
           git checkout -
           git rebase master
-          git merge master
+          git checkout -
+          git merge rel
       - name: 配置git
         run: |
           git config user.name "YCX-Github"
@@ -29,18 +30,28 @@ jobs:
         with:
           distribution: adopt
           java-version: 11
+      - name: 设置版本环境变量
+        run: |
+          LIB_VERSION=$(cat lib/version.properties | grep -Po 'VERSION_NAME=\K\d+')
+          echo "LIB_VERSION=${LIB_VERSION}" >> $GITHUB_ENV
       - name: 生成最新代码
         run: |
           echo "rootProject.name = \"LibDependencies\"" > settings.gradle
           echo "include ':lib'" >> settings.gradle
           bash ./gradlew lib:test --tests "son.ysy.dependencies.Creator.testCreateAll"
-      - name: 设置版本环境变量
-        run: |
-          LIB_VERSION=$(cat lib/version.properties | grep -Po 'VERSION_NAME=\K\d+')
-          echo "LIB_VERSION=${LIB_VERSION}" >> $GITHUB_ENV
-      - name: 提交生成代码
-        run: |
           git add .
           git commit -m "生成${{env.LIB_VERSION}}"
-          git push origin rel:release
+          git tag "v${{env.LIB_VERSION}}"
+      - name: 更新打包版本
+        run: |
+          LIB_VERSION=${{env.LIB_VERSION}}
+          let LIB_VERSION++
+          echo "VERSION_NAME=$LIB_VERSION" > lib/version.properties
+          let LIB_NEXT_VERSION=LIB_VERSION+1
+          git add lib/version.properties
+          git commit -m "更新发布版本$LIB_VERSION>>$LIB_NEXT_VERSION"
+      - name: 提交代码
+        run: |
+          git push origin master
+          git push origin "v${{env.LIB_VERSION}}"
           git push origin -d rel
