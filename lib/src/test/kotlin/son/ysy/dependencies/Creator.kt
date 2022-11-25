@@ -290,14 +290,12 @@ class Creator {
             .sealedSubclasses
             .filter { it.simpleName == title && it.isSealed }
             .flatMap { it.sealedSubclasses }
-            .reversed()
             .mapNotNull { clz ->
                 if (clz.isFinal) {
                     clz.objectInstance?.buildObjectTypeSpec()
                 } else {
 
                     val children = clz.sealedSubclasses.mapNotNull { it.objectInstance }
-                        .reversed()
 
                     if (children.isEmpty()) {
                         throw RuntimeException("children is empty,${clz.simpleName}")

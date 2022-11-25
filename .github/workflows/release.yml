@@ -3,43 +3,20 @@ name: Create Code And Update Next Version
 # 触发器
 on:
   push:
-    branches:
-      - rel
+    tags:
+      - v*
 
 jobs:
-  create_code:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: 切换到master分支
-        run: |
-          git checkout master
-          git checkout -
-          git rebase master
-          git checkout -
-          git merge rel
-      - name: 配置git
-        run: |
-          git config user.name "YCX-Github"
-          git config user.email "ycx974577817@gmail.com"
-      - name: 安装JDK 11
-        uses: actions/setup-java@v2
-        with:
-          distribution: adopt
-          java-version: 11
-      - name: 生成最新代码
-        run: bash ./gradlew lib:test --tests "son.ysy.dependencies.Creator.testCreateAll"
       - name: 设置版本环境变量
         run: |
           LIB_VERSION=$(cat lib/version.properties | grep -Po 'VERSION_NAME=\K\d+')
           echo "LIB_VERSION=${LIB_VERSION}" >> $GITHUB_ENV
-      - name: 提交生成代码
-        run: |
-          git add .
-          git commit -m "生成${{env.LIB_VERSION}}"
-          git push origin master
       - name: Create Release
         uses: actions/create-release@v1
         env:
@@ -49,16 +26,6 @@ jobs:
           release_name: Release ${{env.LIB_VERSION}}
           draft: false
           prerelease: false
-      - name: 更新打包版本
+      - name: 删除旧tag
         run: |
-          LIB_VERSION=${{env.LIB_VERSION}}
-          let LIB_VERSION++
-          echo "VERSION_NAME=$LIB_VERSION" > lib/version.properties
-      - name: 提交版本更新代码
-        run: |
-          LIB_VERSION=${{env.LIB_VERSION}}
-          let LIB_NEXT_VERSION=LIB_VERSION+1
-          git add lib/version.properties
-          git commit -m "更新发布版本$LIB_VERSION>>$LIB_NEXT_VERSION"
-          git push origin master
-          git push origin -d rel
+          git push origin -d ${{github.ref}}
