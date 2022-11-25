@@ -7,7 +7,7 @@ on:
       - release
 
 jobs:
-  create_code:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
