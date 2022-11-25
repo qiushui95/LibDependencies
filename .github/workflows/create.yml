@@ -12,6 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          token: ${{secrets.PUSH_ACTION_TOKEN}}
           fetch-depth: 0
       - name: 切换到master分支
         run: |
