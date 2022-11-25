@@ -39,6 +39,7 @@ jobs:
         run: |
           git add .
           git commit -m "生成${{env.LIB_VERSION}}"
+          git push origin master
       - name: Create Release
         uses: actions/create-release@v1
         env:
