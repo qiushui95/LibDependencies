@@ -7,7 +7,7 @@
 >>implementation("com.aliyun.dpa:oss-android-sdk:2.9.13")  
   
 >[AliPush](https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG)(阿里推送)  
->>implementation("com.aliyun.ams:alicloud-android-push:3.7.4")  
+>>implementation("com.aliyun.ams:alicloud-android-push:3.8.0")  
   
 >[AndroidUtil](https://github.com/Blankj/AndroidUtilCode)(多功能工具包)  
 >>implementation("com.blankj:utilcodex:1.31.1")  
@@ -41,9 +41,6 @@
   
 >[FlowExt](https://github.com/hoc081098/FlowExt)(Flow扩展)  
 >>implementation("io.github.hoc081098:FlowExt-jvm:0.5.0")  
-  
->[ImagePicker](https://github.com/yangpeixing/YImagePicker)(多媒体选择库)  
->>implementation("com.ypx.yimagepicker:androidx:3.1.4")  
   
 >[IpUtils](https://github.com/seancfoley/IPAddress)(IP帮助类)  
 >>implementation("com.github.seancfoley:ipaddress:5.3.4")  
@@ -97,7 +94,7 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.9.9")  
+>>implementation("com.github.li-xiaojun:XPopup:2.9.15")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
 >>implementation("net.lingala.zip4j:zip4j:2.11.2")  
@@ -177,9 +174,9 @@
 >>implementation("com.kyleduo.switchbutton:library:2.1.0")  
   
 >[TabLayout](https://github.com/angcyo/DslTabLayout)  
->>implementation("com.github.angcyo.DslTablayout:TabLayout:3.3.1")  
->>implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.3.1")  
->>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.3.1")  
+>>implementation("com.github.angcyo.DslTablayout:TabLayout:3.4.2")  
+>>implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.4.2")  
+>>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.4.2")  
   
 >[ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2)  
 >>implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")  
@@ -313,6 +310,12 @@
 >>implementation("com.github.bumptech.glide:glide:4.14.2")  
 >>implementation("com.github.bumptech.glide:okhttp3-integration:4.14.2")  
   
+>[ImagePicker](https://github.com/LuckSiege/PictureSelector)(图片选择库)  
+>>implementation("io.github.lucksiege:camerax:v3.10.7")  
+>>implementation("io.github.lucksiege:compress:v3.10.7")  
+>>implementation("io.github.lucksiege:pictureselector:v3.10.7")  
+>>implementation("io.github.lucksiege:ucrop:v3.10.7")  
+  
 >[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)(状态栏)  
 >>implementation("com.geyifeng.immersionbar:immersionbar:3.2.2")  
 >>implementation("com.geyifeng.immersionbar:immersionbar-ktx:3.2.2")  
@@ -383,8 +386,8 @@
 >>testImplementation("androidx.room:room-testing:2.4.3")  
   
 >[S3](https://github.com/aws-amplify/aws-sdk-android)(亚马逊云存储)  
->>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.58.0")  
->>implementation("com.amazonaws:aws-android-sdk-s3:2.58.0")  
+>>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.59.0")  
+>>implementation("com.amazonaws:aws-android-sdk-s3:2.59.0")  
   
 >[Stetho](https://github.com/facebook/stetho)(调试工具)  
 >>implementation("com.facebook.stetho:stetho:1.6.0")  

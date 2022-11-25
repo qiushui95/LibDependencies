@@ -109,6 +109,11 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:+")
     implementation("com.github.bumptech.glide:okhttp3-integration:+")
 
+    implementation("io.github.lucksiege:camerax:+")
+    implementation("io.github.lucksiege:compress:+")
+    implementation("io.github.lucksiege:pictureselector:+")
+    implementation("io.github.lucksiege:ucrop:+")
+
     implementation("com.geyifeng.immersionbar:immersionbar:+")
     implementation("com.geyifeng.immersionbar:immersionbar-ktx:+")
 
@@ -199,7 +204,6 @@ dependencies {
     implementation("com.github.princekin-f:EasyFloat:+")
     implementation("androidx.exifinterface:exifinterface:+")
     implementation("io.github.hoc081098:FlowExt-jvm:+")
-    implementation("com.ypx.yimagepicker:androidx:+")
     implementation("com.github.seancfoley:ipaddress:+")
     implementation("joda-time:joda-time:+")
     implementation("com.squareup.leakcanary:leakcanary-android:+")

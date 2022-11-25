@@ -109,6 +109,11 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.14.2")
     implementation("com.github.bumptech.glide:okhttp3-integration:4.14.2")
 
+    implementation("io.github.lucksiege:camerax:v3.10.7")
+    implementation("io.github.lucksiege:compress:v3.10.7")
+    implementation("io.github.lucksiege:pictureselector:v3.10.7")
+    implementation("io.github.lucksiege:ucrop:v3.10.7")
+
     implementation("com.geyifeng.immersionbar:immersionbar:3.2.2")
     implementation("com.geyifeng.immersionbar:immersionbar-ktx:3.2.2")
 
@@ -166,8 +171,8 @@ dependencies {
     implementation("androidx.room:room-ktx:2.4.3")
     testImplementation("androidx.room:room-testing:2.4.3")
 
-    implementation("com.amazonaws:aws-android-sdk-mobile-client:2.58.0")
-    implementation("com.amazonaws:aws-android-sdk-s3:2.58.0")
+    implementation("com.amazonaws:aws-android-sdk-mobile-client:2.59.0")
+    implementation("com.amazonaws:aws-android-sdk-s3:2.59.0")
 
     implementation("com.facebook.stetho:stetho:1.6.0")
     implementation("com.facebook.stetho:stetho-okhttp3:1.6.0")
@@ -187,7 +192,7 @@ dependencies {
 
 
     implementation("com.aliyun.dpa:oss-android-sdk:2.9.13")
-    implementation("com.aliyun.ams:alicloud-android-push:3.7.4")
+    implementation("com.aliyun.ams:alicloud-android-push:3.8.0")
     implementation("com.blankj:utilcodex:1.31.1")
     implementation("androidx.annotation:annotation:1.5.0")
     implementation("androidx.appcompat:appcompat:1.5.1")
@@ -199,7 +204,6 @@ dependencies {
     implementation("com.github.princekin-f:EasyFloat:2.0.4")
     implementation("androidx.exifinterface:exifinterface:1.3.5")
     implementation("io.github.hoc081098:FlowExt-jvm:0.5.0")
-    implementation("com.ypx.yimagepicker:androidx:3.1.4")
     implementation("com.github.seancfoley:ipaddress:5.3.4")
     implementation("joda-time:joda-time:2.12.1")
     implementation("com.squareup.leakcanary:leakcanary-android:2.10")
@@ -217,7 +221,7 @@ dependencies {
     implementation("com.tencent.vasdolly:helper:3.0.4")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
-    implementation("com.github.li-xiaojun:XPopup:2.9.9")
+    implementation("com.github.li-xiaojun:XPopup:2.9.15")
     implementation("net.lingala.zip4j:zip4j:2.11.2")
 
 
@@ -255,8 +259,8 @@ dependencies {
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
     implementation("com.kyleduo.switchbutton:library:2.1.0")
 
-    implementation("com.github.angcyo.DslTablayout:TabLayout:3.3.1")
-    implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.3.1")
-    implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.3.1")
+    implementation("com.github.angcyo.DslTablayout:TabLayout:3.4.2")
+    implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.4.2")
+    implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.4.2")
     implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")
 }

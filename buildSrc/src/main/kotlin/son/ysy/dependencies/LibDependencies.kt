@@ -22,7 +22,7 @@ sealed class LibDependencies(
      * 阿里推送
      * https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG
      */
-    object AliPush : LibDependencies("com.aliyun.ams", "alicloud-android-push", "3.7.4",
+    object AliPush : LibDependencies("com.aliyun.ams", "alicloud-android-push", "3.8.0",
         DependencyMethod.Implementation)
 
     /**
@@ -99,13 +99,6 @@ sealed class LibDependencies(
      * https://github.com/hoc081098/FlowExt
      */
     object FlowExt : LibDependencies("io.github.hoc081098", "FlowExt-jvm", "0.5.0",
-        DependencyMethod.Implementation)
-
-    /**
-     * 多媒体选择库
-     * https://github.com/yangpeixing/YImagePicker
-     */
-    object ImagePicker : LibDependencies("com.ypx.yimagepicker", "androidx", "3.1.4",
         DependencyMethod.Implementation)
 
     /**
@@ -231,7 +224,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.9",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.15",
         DependencyMethod.Implementation)
 
     /**
@@ -410,14 +403,14 @@ sealed class LibDependencies(
      * https://github.com/angcyo/DslTabLayout
      */
     interface TabLayout {
-      object Core : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout", "3.3.1",
+      object Core : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout", "3.4.2",
           DependencyMethod.Implementation)
 
       object VP : LibDependencies("com.github.angcyo.DslTablayout", "ViewPager1Delegate",
-          "3.3.1", DependencyMethod.Implementation)
+          "3.4.2", DependencyMethod.Implementation)
 
       object VP2 : LibDependencies("com.github.angcyo.DslTablayout", "ViewPager2Delegate",
-          "3.3.1", DependencyMethod.Implementation)
+          "3.4.2", DependencyMethod.Implementation)
     }
 
     /**
@@ -756,6 +749,24 @@ sealed class LibDependencies(
     }
 
     /**
+     * 图片选择库
+     * https://github.com/LuckSiege/PictureSelector
+     */
+    interface ImagePicker {
+      object CameraX : LibDependencies("io.github.lucksiege", "camerax", "v3.10.7",
+          DependencyMethod.Implementation)
+
+      object Compress : LibDependencies("io.github.lucksiege", "compress", "v3.10.7",
+          DependencyMethod.Implementation)
+
+      object Core : LibDependencies("io.github.lucksiege", "pictureselector", "v3.10.7",
+          DependencyMethod.Implementation)
+
+      object Crop : LibDependencies("io.github.lucksiege", "ucrop", "v3.10.7",
+          DependencyMethod.Implementation)
+    }
+
+    /**
      * 状态栏
      * https://github.com/gyf-dev/ImmersionBar
      */
@@ -963,9 +974,9 @@ sealed class LibDependencies(
      */
     interface S3 {
       object Client : LibDependencies("com.amazonaws", "aws-android-sdk-mobile-client",
-          "2.58.0", DependencyMethod.Implementation)
+          "2.59.0", DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.58.0",
+      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.59.0",
           DependencyMethod.Implementation)
     }
 
