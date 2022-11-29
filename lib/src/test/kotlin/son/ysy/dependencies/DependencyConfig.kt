@@ -740,23 +740,27 @@ sealed class DependencyConfig(
         sealed class Accompanist(name: String) : Compose(
             group = "com.google.accompanist",
             name = name,
-            version = "0.27.1",
+            version = "0.28.0",
             remark = "",
             link = "https://github.com/google/accompanist",
             dependencyMethod = DependencyMethod.Implementation,
         ) {
-            object AppcompatTheme : Accompanist("accompanist-appcompat-theme")
-            object DrawablePainter : Accompanist("accompanist-drawablepainter")
-            object FlowLayout : Accompanist("accompanist-flowlayout")
-            object Insets : Accompanist("accompanist-insets")
-            object NavigationAnimation : Accompanist("accompanist-navigation-animation")
-            object NavigationMaterial : Accompanist("accompanist-navigation-material")
+            object SystemUiController : Accompanist("accompanist-systemuicontroller")
+            object AppcompatTheme : Accompanist("accompanist-themeadapter-appcompat")
+            object MaterialTheme : Accompanist("accompanist-themeadapter-material")
+            object Material3Theme : Accompanist("accompanist-themeadapter-material3")
             object Pager : Accompanist("accompanist-pager")
+            object PagerIndicators : Accompanist("accompanist-pager-indicators")
             object Permissions : Accompanist("accompanist-permissions")
             object PlaceHolder : Accompanist("accompanist-placeholder")
             object PlaceHolderMaterial : Accompanist("accompanist-placeholder-material")
-            object SwipeRefresh : Accompanist("accompanist-swiperefresh")
-            object SystemUiController : Accompanist("accompanist-systemuicontroller")
+            object FlowLayout : Accompanist("accompanist-flowlayout")
+            object NavigationAnimation : Accompanist("accompanist-navigation-animation")
+            object NavigationMaterial : Accompanist("accompanist-navigation-material")
+            object DrawablePainter : Accompanist("accompanist-drawablepainter")
+            object Web : Accompanist("accompanist-webview")
+            object Adaptive : Accompanist("accompanist-adaptive")
+            object TestHarness : Accompanist("accompanist-testharness")
         }
 
         //endregion
@@ -1115,9 +1119,9 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             object Core : ImagePicker("pictureselector")
-            object Compress  : ImagePicker("compress")
-            object Crop  : ImagePicker("ucrop")
-            object CameraX  : ImagePicker("camerax")
+            object Compress : ImagePicker("compress")
+            object Crop : ImagePicker("ucrop")
+            object CameraX : ImagePicker("camerax")
         }
 
         //endregion
@@ -1369,6 +1373,23 @@ sealed class DependencyConfig(
         ) {
             object Core : S3("aws-android-sdk-s3")
             object Client : S3("aws-android-sdk-mobile-client")
+        }
+
+        //endregion
+        //region Sqlite
+        sealed class Sqlite(
+            name: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : Group(
+            group = "androidx.sqlite",
+            name = name,
+            version = "2.2.0",
+            remark = "Sqlite",
+            link = "https://developer.android.com/jetpack/androidx/releases/sqlite",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Core : Sqlite("sqlite-ktx")
+            object Android : Sqlite("sqlite-framework")
         }
 
         //endregion

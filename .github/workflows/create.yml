@@ -36,8 +36,6 @@ jobs:
           echo "LIB_VERSION=${LIB_VERSION}" >> $GITHUB_ENV
       - name: 生成最新代码
         run: |
-          echo "rootProject.name = \"LibDependencies\"" > settings.gradle
-          echo "include ':lib'" >> settings.gradle
           bash ./gradlew lib:test --tests "son.ysy.dependencies.Creator.testCreateAll"
           git add .
           git commit -m "生成${{env.LIB_VERSION}}"

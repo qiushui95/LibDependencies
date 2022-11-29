@@ -1,2 +1,4 @@
 rootProject.name = "LibDependencies"
 include ':lib'
+include ':define'
+include ':newest'

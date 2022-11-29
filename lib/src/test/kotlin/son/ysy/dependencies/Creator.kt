@@ -488,7 +488,7 @@ dependencies {
 
             list.mapNotNull { it.objectInstance }
                 .forEach { config ->
-                    newestFile.appendText(getDependency(config, "+"))
+                    newestFile.appendText(getDependency(config, "latest.release"))
                     defineFile.appendText(getDependency(config))
                 }
         }
