@@ -45,7 +45,6 @@ jobs:
       - name: 更新打包版本
         run: |
           LIB_VERSION=${{env.LIB_VERSION}}
-          let LIB_VERSION++
           echo "VERSION_NAME=$LIB_VERSION" > lib/version.properties
           let LIB_NEXT_VERSION=LIB_VERSION+1
           git add lib/version.properties
