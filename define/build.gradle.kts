@@ -22,18 +22,22 @@ android {
 }
 
 dependencies {
-    implementation("com.google.accompanist:accompanist-appcompat-theme:0.27.1")
-    implementation("com.google.accompanist:accompanist-drawablepainter:0.27.1")
-    implementation("com.google.accompanist:accompanist-flowlayout:0.27.1")
-    implementation("com.google.accompanist:accompanist-insets:0.27.1")
-    implementation("com.google.accompanist:accompanist-navigation-animation:0.27.1")
-    implementation("com.google.accompanist:accompanist-navigation-material:0.27.1")
-    implementation("com.google.accompanist:accompanist-pager:0.27.1")
-    implementation("com.google.accompanist:accompanist-permissions:0.27.1")
-    implementation("com.google.accompanist:accompanist-placeholder:0.27.1")
-    implementation("com.google.accompanist:accompanist-placeholder-material:0.27.1")
-    implementation("com.google.accompanist:accompanist-swiperefresh:0.27.1")
-    implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.1")
+    implementation("com.google.accompanist:accompanist-adaptive:0.28.0")
+    implementation("com.google.accompanist:accompanist-themeadapter-appcompat:0.28.0")
+    implementation("com.google.accompanist:accompanist-drawablepainter:0.28.0")
+    implementation("com.google.accompanist:accompanist-flowlayout:0.28.0")
+    implementation("com.google.accompanist:accompanist-themeadapter-material3:0.28.0")
+    implementation("com.google.accompanist:accompanist-themeadapter-material:0.28.0")
+    implementation("com.google.accompanist:accompanist-navigation-animation:0.28.0")
+    implementation("com.google.accompanist:accompanist-navigation-material:0.28.0")
+    implementation("com.google.accompanist:accompanist-pager:0.28.0")
+    implementation("com.google.accompanist:accompanist-pager-indicators:0.28.0")
+    implementation("com.google.accompanist:accompanist-permissions:0.28.0")
+    implementation("com.google.accompanist:accompanist-placeholder:0.28.0")
+    implementation("com.google.accompanist:accompanist-placeholder-material:0.28.0")
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.28.0")
+    implementation("com.google.accompanist:accompanist-testharness:0.28.0")
+    implementation("com.google.accompanist:accompanist-webview:0.28.0")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation("com.github.fornewid:material-motion-compose:0.8.1")
 
@@ -173,6 +177,9 @@ dependencies {
 
     implementation("com.amazonaws:aws-android-sdk-mobile-client:2.59.0")
     implementation("com.amazonaws:aws-android-sdk-s3:2.59.0")
+
+    implementation("androidx.sqlite:sqlite-framework:2.2.0")
+    implementation("androidx.sqlite:sqlite-ktx:2.2.0")
 
     implementation("com.facebook.stetho:stetho:1.6.0")
     implementation("com.facebook.stetho:stetho-okhttp3:1.6.0")

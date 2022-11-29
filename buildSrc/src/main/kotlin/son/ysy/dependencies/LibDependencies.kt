@@ -448,41 +448,53 @@ sealed class LibDependencies(
      * https://github.com/google/accompanist
      */
     interface Accompanist {
+      object Adaptive : LibDependencies("com.google.accompanist", "accompanist-adaptive",
+          "0.28.0", DependencyMethod.Implementation)
+
       object AppcompatTheme : LibDependencies("com.google.accompanist",
-          "accompanist-appcompat-theme", "0.27.1", DependencyMethod.Implementation)
+          "accompanist-themeadapter-appcompat", "0.28.0", DependencyMethod.Implementation)
 
       object DrawablePainter : LibDependencies("com.google.accompanist",
-          "accompanist-drawablepainter", "0.27.1", DependencyMethod.Implementation)
+          "accompanist-drawablepainter", "0.28.0", DependencyMethod.Implementation)
 
       object FlowLayout : LibDependencies("com.google.accompanist", "accompanist-flowlayout",
-          "0.27.1", DependencyMethod.Implementation)
+          "0.28.0", DependencyMethod.Implementation)
 
-      object Insets : LibDependencies("com.google.accompanist", "accompanist-insets",
-          "0.27.1", DependencyMethod.Implementation)
+      object Material3Theme : LibDependencies("com.google.accompanist",
+          "accompanist-themeadapter-material3", "0.28.0", DependencyMethod.Implementation)
+
+      object MaterialTheme : LibDependencies("com.google.accompanist",
+          "accompanist-themeadapter-material", "0.28.0", DependencyMethod.Implementation)
 
       object NavigationAnimation : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-animation", "0.27.1", DependencyMethod.Implementation)
+          "accompanist-navigation-animation", "0.28.0", DependencyMethod.Implementation)
 
       object NavigationMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-material", "0.27.1", DependencyMethod.Implementation)
+          "accompanist-navigation-material", "0.28.0", DependencyMethod.Implementation)
 
-      object Pager : LibDependencies("com.google.accompanist", "accompanist-pager", "0.27.1",
+      object Pager : LibDependencies("com.google.accompanist", "accompanist-pager", "0.28.0",
           DependencyMethod.Implementation)
 
+      object PagerIndicators : LibDependencies("com.google.accompanist",
+          "accompanist-pager-indicators", "0.28.0", DependencyMethod.Implementation)
+
       object Permissions : LibDependencies("com.google.accompanist",
-          "accompanist-permissions", "0.27.1", DependencyMethod.Implementation)
+          "accompanist-permissions", "0.28.0", DependencyMethod.Implementation)
 
       object PlaceHolder : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder", "0.27.1", DependencyMethod.Implementation)
+          "accompanist-placeholder", "0.28.0", DependencyMethod.Implementation)
 
       object PlaceHolderMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder-material", "0.27.1", DependencyMethod.Implementation)
-
-      object SwipeRefresh : LibDependencies("com.google.accompanist",
-          "accompanist-swiperefresh", "0.27.1", DependencyMethod.Implementation)
+          "accompanist-placeholder-material", "0.28.0", DependencyMethod.Implementation)
 
       object SystemUiController : LibDependencies("com.google.accompanist",
-          "accompanist-systemuicontroller", "0.27.1", DependencyMethod.Implementation)
+          "accompanist-systemuicontroller", "0.28.0", DependencyMethod.Implementation)
+
+      object TestHarness : LibDependencies("com.google.accompanist",
+          "accompanist-testharness", "0.28.0", DependencyMethod.Implementation)
+
+      object Web : LibDependencies("com.google.accompanist", "accompanist-webview", "0.28.0",
+          DependencyMethod.Implementation)
     }
 
     /**
@@ -977,6 +989,18 @@ sealed class LibDependencies(
           "2.59.0", DependencyMethod.Implementation)
 
       object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.59.0",
+          DependencyMethod.Implementation)
+    }
+
+    /**
+     * Sqlite
+     * https://developer.android.com/jetpack/androidx/releases/sqlite
+     */
+    interface Sqlite {
+      object Android : LibDependencies("androidx.sqlite", "sqlite-framework", "2.2.0",
+          DependencyMethod.Implementation)
+
+      object Core : LibDependencies("androidx.sqlite", "sqlite-ktx", "2.2.0",
           DependencyMethod.Implementation)
     }
 
