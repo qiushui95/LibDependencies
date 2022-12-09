@@ -41,17 +41,17 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation("com.github.fornewid:material-motion-compose:0.8.1")
 
-    implementation("androidx.compose.animation:animation:1.3.1")
+    implementation("androidx.compose.animation:animation:1.3.2")
     implementation("androidx.compose.compiler:compiler:1.3.2")
-    implementation("androidx.compose.foundation:foundation:1.3.1")
-    implementation("androidx.compose.runtime:runtime-livedata:1.3.1")
-    implementation("androidx.compose.material:material:1.3.1")
-    implementation("androidx.compose.material:material-icons-core:1.3.1")
-    implementation("androidx.compose.material:material-icons-extended:1.3.1")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.3.1")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.3.1")
-    implementation("androidx.compose.ui:ui:1.3.1")
-    implementation("androidx.compose.ui:ui-tooling:1.3.1")
+    implementation("androidx.compose.foundation:foundation:1.3.2")
+    implementation("androidx.compose.runtime:runtime-livedata:1.3.2")
+    implementation("androidx.compose.material:material:1.3.2")
+    implementation("androidx.compose.material:material-icons-core:1.3.2")
+    implementation("androidx.compose.material:material-icons-extended:1.3.2")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.3.2")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.3.2")
+    implementation("androidx.compose.ui:ui:1.3.2")
+    implementation("androidx.compose.ui:ui-tooling:1.3.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
 
 
@@ -62,12 +62,12 @@ dependencies {
     implementation("com.tencent.bugly:crashreport:4.1.9")
     implementation("com.tencent.bugly:crashreport_upgrade:1.6.1")
 
-    implementation("androidx.camera:camera-camera2:1.1.0")
-    implementation("androidx.camera:camera-core:1.1.0")
-    implementation("androidx.camera:camera-extensions:1.1.0")
-    implementation("androidx.camera:camera-lifecycle:1.1.0")
-    implementation("androidx.camera:camera-video:1.1.0")
-    implementation("androidx.camera:camera-view:1.1.0")
+    implementation("androidx.camera:camera-camera2:1.2.0")
+    implementation("androidx.camera:camera-core:1.2.0")
+    implementation("androidx.camera:camera-extensions:1.2.0")
+    implementation("androidx.camera:camera-lifecycle:1.2.0")
+    implementation("androidx.camera:camera-video:1.2.0")
+    implementation("androidx.camera:camera-view:1.2.0")
 
     debugImplementation("com.github.chuckerteam.chucker:library:3.5.2")
     releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2")
@@ -77,6 +77,9 @@ dependencies {
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
+
+    implementation("com.github.yalantis:ucrop:2.2.6")
+    implementation("com.github.yalantis:ucrop:2.2.6-native")
 
     kapt("me.laoyuyu.aria:compiler:3.8.16")
     implementation("me.laoyuyu.aria:core:3.8.16")
@@ -106,8 +109,8 @@ dependencies {
     implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager:1.2.0")
     implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager2:1.2.0")
 
-    implementation("androidx.fragment:fragment-ktx:1.5.4")
-    testImplementation("androidx.fragment:fragment-testing:1.5.4")
+    implementation("androidx.fragment:fragment-ktx:1.5.5")
+    testImplementation("androidx.fragment:fragment-testing:1.5.5")
 
     kapt("com.github.bumptech.glide:compiler:4.14.2")
     implementation("com.github.bumptech.glide:glide:4.14.2")
@@ -175,8 +178,8 @@ dependencies {
     implementation("androidx.room:room-ktx:2.4.3")
     testImplementation("androidx.room:room-testing:2.4.3")
 
-    implementation("com.amazonaws:aws-android-sdk-mobile-client:2.59.0")
-    implementation("com.amazonaws:aws-android-sdk-s3:2.59.0")
+    implementation("com.amazonaws:aws-android-sdk-mobile-client:2.59.1")
+    implementation("com.amazonaws:aws-android-sdk-s3:2.59.1")
 
     implementation("androidx.sqlite:sqlite-framework:2.2.0")
     implementation("androidx.sqlite:sqlite-ktx:2.2.0")
@@ -189,9 +192,6 @@ dependencies {
     implementation("jp.wasabeef.transformers:core:1.0.6")
     implementation("jp.wasabeef.transformers:glide:1.0.6")
     implementation("jp.wasabeef.transformers:glide-gpu:1.0.6")
-
-    implementation("com.umeng.umsdk:asms:1.6.3")
-    implementation("com.umeng.umsdk:common:9.5.3")
 
     implementation("androidx.work:work-runtime-ktx:2.7.1")
     testImplementation("androidx.work:work-testing:2.7.1")
@@ -212,7 +212,7 @@ dependencies {
     implementation("androidx.exifinterface:exifinterface:1.3.5")
     implementation("io.github.hoc081098:FlowExt-jvm:0.5.0")
     implementation("com.github.seancfoley:ipaddress:5.3.4")
-    implementation("joda-time:joda-time:2.12.1")
+    implementation("joda-time:joda-time:2.12.2")
     implementation("com.squareup.leakcanary:leakcanary-android:2.10")
     implementation("com.vanniktech:gradle-maven-publish-plugin:0.22.0")
     implementation("com.tencent:mmkv-static:1.2.14")
@@ -228,7 +228,7 @@ dependencies {
     implementation("com.tencent.vasdolly:helper:3.0.4")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
-    implementation("com.github.li-xiaojun:XPopup:2.9.15")
+    implementation("com.github.li-xiaojun:XPopup:2.9.16")
     implementation("net.lingala.zip4j:zip4j:2.11.2")
 
 
@@ -266,8 +266,8 @@ dependencies {
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
     implementation("com.kyleduo.switchbutton:library:2.1.0")
 
-    implementation("com.github.angcyo.DslTablayout:TabLayout:3.4.2")
-    implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.4.2")
-    implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.4.2")
+    implementation("com.github.angcyo.DslTablayout:TabLayout:3.5.1")
+    implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.5.1")
+    implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.5.1")
     implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")
 }

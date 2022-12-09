@@ -112,7 +112,7 @@ sealed class LibDependencies(
      * 时间处理库
      * https://github.com/JodaOrg/joda-time
      */
-    object JodaTime : LibDependencies("joda-time", "joda-time", "2.12.1",
+    object JodaTime : LibDependencies("joda-time", "joda-time", "2.12.2",
         DependencyMethod.Implementation)
 
     /**
@@ -224,7 +224,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.15",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.16",
         DependencyMethod.Implementation)
 
     /**
@@ -403,14 +403,14 @@ sealed class LibDependencies(
      * https://github.com/angcyo/DslTabLayout
      */
     interface TabLayout {
-      object Core : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout", "3.4.2",
+      object Core : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout", "3.5.1",
           DependencyMethod.Implementation)
 
       object VP : LibDependencies("com.github.angcyo.DslTablayout", "ViewPager1Delegate",
-          "3.4.2", DependencyMethod.Implementation)
+          "3.5.1", DependencyMethod.Implementation)
 
       object VP2 : LibDependencies("com.github.angcyo.DslTablayout", "ViewPager2Delegate",
-          "3.4.2", DependencyMethod.Implementation)
+          "3.5.1", DependencyMethod.Implementation)
     }
 
     /**
@@ -516,37 +516,37 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/compose
      */
     interface Official {
-      object Animation : LibDependencies("androidx.compose.animation", "animation", "1.3.1",
+      object Animation : LibDependencies("androidx.compose.animation", "animation", "1.3.2",
           DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.3.2",
           DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.3.1", DependencyMethod.Implementation)
+          "1.3.2", DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.compose.runtime", "runtime-livedata",
-          "1.3.1", DependencyMethod.Implementation)
+          "1.3.2", DependencyMethod.Implementation)
 
-      object Material : LibDependencies("androidx.compose.material", "material", "1.3.1",
+      object Material : LibDependencies("androidx.compose.material", "material", "1.3.2",
           DependencyMethod.Implementation)
 
       object MaterialIcon : LibDependencies("androidx.compose.material",
-          "material-icons-core", "1.3.1", DependencyMethod.Implementation)
+          "material-icons-core", "1.3.2", DependencyMethod.Implementation)
 
       object MaterialIconExtended : LibDependencies("androidx.compose.material",
-          "material-icons-extended", "1.3.1", DependencyMethod.Implementation)
+          "material-icons-extended", "1.3.2", DependencyMethod.Implementation)
 
-      object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview", "1.3.1",
+      object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview", "1.3.2",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.3.1",
+      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.3.2",
           DependencyMethod.AndroidTest.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.3.1",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.3.2",
           DependencyMethod.Implementation)
 
-      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.3.1",
+      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.3.2",
           DependencyMethod.Implementation)
     }
 
@@ -585,22 +585,22 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/camera
      */
     interface CameraX {
-      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.1.0",
+      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.2.0",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("androidx.camera", "camera-core", "1.1.0",
+      object Core : LibDependencies("androidx.camera", "camera-core", "1.2.0",
           DependencyMethod.Implementation)
 
-      object Extensions : LibDependencies("androidx.camera", "camera-extensions", "1.1.0",
+      object Extensions : LibDependencies("androidx.camera", "camera-extensions", "1.2.0",
           DependencyMethod.Implementation)
 
-      object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle", "1.1.0",
+      object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle", "1.2.0",
           DependencyMethod.Implementation)
 
-      object Video : LibDependencies("androidx.camera", "camera-video", "1.1.0",
+      object Video : LibDependencies("androidx.camera", "camera-video", "1.2.0",
           DependencyMethod.Implementation)
 
-      object View : LibDependencies("androidx.camera", "camera-view", "1.1.0",
+      object View : LibDependencies("androidx.camera", "camera-view", "1.2.0",
           DependencyMethod.Implementation)
     }
 
@@ -637,6 +637,18 @@ sealed class LibDependencies(
 
       object Test : LibDependencies("org.jetbrains.kotlinx", "kotlinx-coroutines-test",
           "1.6.4", DependencyMethod.Test.Implementation)
+    }
+
+    /**
+     * 图片裁剪
+     * https://github.com/Yalantis/uCrop
+     */
+    interface Crop {
+      object Core : LibDependencies("com.github.yalantis", "ucrop", "2.2.6",
+          DependencyMethod.Implementation)
+
+      object Native : LibDependencies("com.github.yalantis", "ucrop", "2.2.6-native",
+          DependencyMethod.Implementation)
     }
 
     /**
@@ -738,10 +750,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/fragment
      */
     interface Fragment {
-      object Core : LibDependencies("androidx.fragment", "fragment-ktx", "1.5.4",
+      object Core : LibDependencies("androidx.fragment", "fragment-ktx", "1.5.5",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.fragment", "fragment-testing", "1.5.4",
+      object Test : LibDependencies("androidx.fragment", "fragment-testing", "1.5.5",
           DependencyMethod.Test.Implementation)
     }
 
@@ -986,9 +998,9 @@ sealed class LibDependencies(
      */
     interface S3 {
       object Client : LibDependencies("com.amazonaws", "aws-android-sdk-mobile-client",
-          "2.59.0", DependencyMethod.Implementation)
+          "2.59.1", DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.59.0",
+      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.59.1",
           DependencyMethod.Implementation)
     }
 
@@ -1034,18 +1046,6 @@ sealed class LibDependencies(
           DependencyMethod.Implementation)
 
       object GlideGpu : LibDependencies("jp.wasabeef.transformers", "glide-gpu", "1.0.6",
-          DependencyMethod.Implementation)
-    }
-
-    /**
-     * 友盟
-     * https://developer.umeng.com/docs/119267/detail/118584
-     */
-    interface UMeng {
-      object Asms : LibDependencies("com.umeng.umsdk", "asms", "1.6.3",
-          DependencyMethod.Implementation)
-
-      object Common : LibDependencies("com.umeng.umsdk", "common", "9.5.3",
           DependencyMethod.Implementation)
     }
 

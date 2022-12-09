@@ -46,7 +46,7 @@
 >>implementation("com.github.seancfoley:ipaddress:5.3.4")  
   
 >[JodaTime](https://github.com/JodaOrg/joda-time)(时间处理库)  
->>implementation("joda-time:joda-time:2.12.1")  
+>>implementation("joda-time:joda-time:2.12.2")  
   
 >[LeakCanary](https://square.github.io/leakcanary/getting_started/)(内存泄露监控)  
 >>implementation("com.squareup.leakcanary:leakcanary-android:2.10")  
@@ -94,7 +94,7 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.9.15")  
+>>implementation("com.github.li-xiaojun:XPopup:2.9.16")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
 >>implementation("net.lingala.zip4j:zip4j:2.11.2")  
@@ -174,9 +174,9 @@
 >>implementation("com.kyleduo.switchbutton:library:2.1.0")  
   
 >[TabLayout](https://github.com/angcyo/DslTabLayout)  
->>implementation("com.github.angcyo.DslTablayout:TabLayout:3.4.2")  
->>implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.4.2")  
->>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.4.2")  
+>>implementation("com.github.angcyo.DslTablayout:TabLayout:3.5.1")  
+>>implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.5.1")  
+>>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.5.1")  
   
 >[ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2)  
 >>implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")  
@@ -225,17 +225,17 @@
 >>implementation("com.github.fornewid:material-motion-compose:0.8.1")  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation("androidx.compose.animation:animation:1.3.1")  
+>>implementation("androidx.compose.animation:animation:1.3.2")  
 >>implementation("androidx.compose.compiler:compiler:1.3.2")  
->>implementation("androidx.compose.foundation:foundation:1.3.1")  
->>implementation("androidx.compose.runtime:runtime-livedata:1.3.1")  
->>implementation("androidx.compose.material:material:1.3.1")  
->>implementation("androidx.compose.material:material-icons-core:1.3.1")  
->>implementation("androidx.compose.material:material-icons-extended:1.3.1")  
->>implementation("androidx.compose.ui:ui-tooling-preview:1.3.1")  
->>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.3.1")  
->>implementation("androidx.compose.ui:ui:1.3.1")  
->>implementation("androidx.compose.ui:ui-tooling:1.3.1")  
+>>implementation("androidx.compose.foundation:foundation:1.3.2")  
+>>implementation("androidx.compose.runtime:runtime-livedata:1.3.2")  
+>>implementation("androidx.compose.material:material:1.3.2")  
+>>implementation("androidx.compose.material:material-icons-core:1.3.2")  
+>>implementation("androidx.compose.material:material-icons-extended:1.3.2")  
+>>implementation("androidx.compose.ui:ui-tooling-preview:1.3.2")  
+>>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.3.2")  
+>>implementation("androidx.compose.ui:ui:1.3.2")  
+>>implementation("androidx.compose.ui:ui-tooling:1.3.2")  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")  
@@ -254,12 +254,12 @@
 >>implementation("com.tencent.bugly:crashreport_upgrade:1.6.1")  
   
 >[CameraX](https://developer.android.com/jetpack/androidx/releases/camera)(相机相关)  
->>implementation("androidx.camera:camera-camera2:1.1.0")  
->>implementation("androidx.camera:camera-core:1.1.0")  
->>implementation("androidx.camera:camera-extensions:1.1.0")  
->>implementation("androidx.camera:camera-lifecycle:1.1.0")  
->>implementation("androidx.camera:camera-video:1.1.0")  
->>implementation("androidx.camera:camera-view:1.1.0")  
+>>implementation("androidx.camera:camera-camera2:1.2.0")  
+>>implementation("androidx.camera:camera-core:1.2.0")  
+>>implementation("androidx.camera:camera-extensions:1.2.0")  
+>>implementation("androidx.camera:camera-lifecycle:1.2.0")  
+>>implementation("androidx.camera:camera-video:1.2.0")  
+>>implementation("androidx.camera:camera-view:1.2.0")  
   
 >[Chucker](https://github.com/ChuckerTeam/chucker)(网络请求监控)  
 >>debugImplementation("com.github.chuckerteam.chucker:library:3.5.2")  
@@ -272,6 +272,10 @@
 >[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(协程)  
 >>implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")  
 >>testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")  
+  
+>[Crop](https://github.com/Yalantis/uCrop)(图片裁剪)  
+>>implementation("com.github.yalantis:ucrop:2.2.6")  
+>>implementation("com.github.yalantis:ucrop:2.2.6-native")  
   
 >[Download](https://github.com/AriaLyy/Aria)(下载)  
 >>kapt("me.laoyuyu.aria:compiler:3.8.16")  
@@ -306,8 +310,8 @@
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager2:1.2.0")  
   
 >[Fragment](https://developer.android.com/jetpack/androidx/releases/fragment)  
->>implementation("androidx.fragment:fragment-ktx:1.5.4")  
->>testImplementation("androidx.fragment:fragment-testing:1.5.4")  
+>>implementation("androidx.fragment:fragment-ktx:1.5.5")  
+>>testImplementation("androidx.fragment:fragment-testing:1.5.5")  
   
 >[Glide](https://github.com/bumptech/glide)(图片加载)  
 >>kapt("com.github.bumptech.glide:compiler:4.14.2")  
@@ -390,8 +394,8 @@
 >>testImplementation("androidx.room:room-testing:2.4.3")  
   
 >[S3](https://github.com/aws-amplify/aws-sdk-android)(亚马逊云存储)  
->>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.59.0")  
->>implementation("com.amazonaws:aws-android-sdk-s3:2.59.0")  
+>>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.59.1")  
+>>implementation("com.amazonaws:aws-android-sdk-s3:2.59.1")  
   
 >[Sqlite](https://developer.android.com/jetpack/androidx/releases/sqlite)(Sqlite)  
 >>implementation("androidx.sqlite:sqlite-framework:2.2.0")  
@@ -407,10 +411,6 @@
 >>implementation("jp.wasabeef.transformers:core:1.0.6")  
 >>implementation("jp.wasabeef.transformers:glide:1.0.6")  
 >>implementation("jp.wasabeef.transformers:glide-gpu:1.0.6")  
-  
->[UMeng](https://developer.umeng.com/docs/119267/detail/118584)(友盟)  
->>implementation("com.umeng.umsdk:asms:1.6.3")  
->>implementation("com.umeng.umsdk:common:9.5.3")  
   
 >[WorkManager](https://developer.android.com/jetpack/androidx/releases/work)(任务管理器)  
 >>implementation("androidx.work:work-runtime-ktx:2.7.1")  

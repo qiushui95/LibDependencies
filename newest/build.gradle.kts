@@ -78,6 +78,9 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:latest.release")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:latest.release")
 
+    implementation("com.github.yalantis:ucrop:latest.release")
+    implementation("com.github.yalantis:ucrop:latest.release")
+
     kapt("me.laoyuyu.aria:compiler:latest.release")
     implementation("me.laoyuyu.aria:core:latest.release")
     implementation("me.laoyuyu.aria:ftp:latest.release")
@@ -189,9 +192,6 @@ dependencies {
     implementation("jp.wasabeef.transformers:core:latest.release")
     implementation("jp.wasabeef.transformers:glide:latest.release")
     implementation("jp.wasabeef.transformers:glide-gpu:latest.release")
-
-    implementation("com.umeng.umsdk:asms:latest.release")
-    implementation("com.umeng.umsdk:common:latest.release")
 
     implementation("androidx.work:work-runtime-ktx:latest.release")
     testImplementation("androidx.work:work-testing:latest.release")
