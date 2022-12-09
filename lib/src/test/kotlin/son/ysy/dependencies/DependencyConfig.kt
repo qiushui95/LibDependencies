@@ -197,7 +197,7 @@ sealed class DependencyConfig(
         object JodaTime : Single(
             group = "joda-time",
             name = "joda-time",
-            version = "2.12.1",
+            version = "2.12.2",
             remark = "时间处理库",
             link = "https://github.com/JodaOrg/joda-time",
             dependencyMethod = DependencyMethod.Implementation,
@@ -329,7 +329,7 @@ sealed class DependencyConfig(
         object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.9.15",
+            version = "2.9.16",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -670,7 +670,7 @@ sealed class DependencyConfig(
         sealed class TabLayout(name: String) : View(
             group = "com.github.angcyo.DslTablayout",
             name = name,
-            version = "3.4.2",
+            version = "3.5.1",
             remark = "",
             link = "https://github.com/angcyo/DslTabLayout",
             dependencyMethod = DependencyMethod.Implementation,
@@ -790,7 +790,7 @@ sealed class DependencyConfig(
         sealed class Official(
             group: String,
             name: String,
-            version: String = "1.3.1",
+            version: String = "1.3.2",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : Compose(
             group = group,
@@ -911,7 +911,7 @@ sealed class DependencyConfig(
         sealed class CameraX(name: String) : Group(
             group = "androidx.camera",
             name = name,
-            version = "1.1.0",
+            version = "1.2.0",
             remark = "相机相关",
             link = "https://developer.android.com/jetpack/androidx/releases/camera",
             dependencyMethod = DependencyMethod.Implementation,
@@ -966,6 +966,20 @@ sealed class DependencyConfig(
             object Core : Coroutines("kotlinx-coroutines-android", DependencyMethod.Implementation)
             object Test :
                 Coroutines("kotlinx-coroutines-test", DependencyMethod.Test.Implementation)
+        }
+
+        //endregion
+        //region uCrop(图片裁剪)
+        sealed class Crop(version: String) : Group(
+            group = "com.github.yalantis",
+            name = "ucrop",
+            version = version,
+            remark = "图片裁剪",
+            link = "https://github.com/Yalantis/uCrop",
+            dependencyMethod = DependencyMethod.Implementation,
+        ) {
+            object Core : Crop("2.2.6")
+            object Native : Crop("2.2.6-native")
         }
 
         //endregion
@@ -1043,7 +1057,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.fragment",
             name = name,
-            version = "1.5.4",
+            version = "1.5.5",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/fragment",
             dependencyMethod = dependencyMethod,
@@ -1366,7 +1380,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.amazonaws",
             name = name,
-            version = "2.59.0",
+            version = "2.59.1",
             remark = "亚马逊云存储",
             link = "https://github.com/aws-amplify/aws-sdk-android",
             dependencyMethod = dependencyMethod,
@@ -1410,24 +1424,6 @@ sealed class DependencyConfig(
             object CoilGpu : Transformer("coil-gpu")
             object Glide : Transformer("glide")
             object GlideGpu : Transformer("glide-gpu")
-        }
-
-        //endregion
-        //region 友盟
-        sealed class UMeng(
-            name: String,
-            version: String,
-            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : Group(
-            group = "com.umeng.umsdk",
-            name = name,
-            version = version,
-            remark = "友盟",
-            link = "https://developer.umeng.com/docs/119267/detail/118584",
-            dependencyMethod = dependencyMethod,
-        ) {
-            object Asms : UMeng("asms", "1.6.3")
-            object Common : UMeng("common", "9.5.3")
         }
 
         //endregion
