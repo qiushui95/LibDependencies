@@ -810,22 +810,22 @@ sealed class LibDependencies(
       object Android : LibDependencies("io.insert-koin", "koin-android", "3.3.1",
           DependencyMethod.Implementation)
 
-      object Annotations : LibDependencies("io.insert-koin", "koin-annotations", "1.0.3",
+      object Annotations : LibDependencies("io.insert-koin", "koin-annotations", "1.1.0",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler", "1.0.3",
+      object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler", "1.1.0",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose", "3.3.1",
+      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose", "3.4.0",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("io.insert-koin", "koin-core", "3.2.2",
+      object Core : LibDependencies("io.insert-koin", "koin-core", "3.3.0",
           DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("io.insert-koin", "koin-androidx-navigation",
           "3.3.1", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.2.2",
+      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.3.0",
           DependencyMethod.Test.Implementation)
 
       object WorkManager : LibDependencies("io.insert-koin", "koin-androidx-workmanager",
