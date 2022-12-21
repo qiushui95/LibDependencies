@@ -175,7 +175,7 @@ sealed class DependencyConfig(
         object IpUtils : Single(
             group = "com.github.seancfoley",
             name = "ipaddress",
-            version = "5.3.4",
+            version = "5.4.0",
             remark = "IP帮助类",
             link = "https://github.com/seancfoley/IPAddress",
             dependencyMethod = DependencyMethod.Implementation,
@@ -263,7 +263,7 @@ sealed class DependencyConfig(
         object QrScanner : Single(
             group = "com.github.jenly1314",
             name = "zxing-lite",
-            version = "2.2.1",
+            version = "2.3.0",
             remark = "二维码扫描",
             link = "https://github.com/jenly1314/ZXingLite",
             dependencyMethod = DependencyMethod.Implementation,
@@ -329,7 +329,7 @@ sealed class DependencyConfig(
         object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.9.16",
+            version = "2.9.17",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -670,7 +670,7 @@ sealed class DependencyConfig(
         sealed class TabLayout(name: String) : View(
             group = "com.github.angcyo.DslTablayout",
             name = name,
-            version = "3.5.1",
+            version = "3.5.2",
             remark = "",
             link = "https://github.com/angcyo/DslTabLayout",
             dependencyMethod = DependencyMethod.Implementation,
@@ -978,8 +978,8 @@ sealed class DependencyConfig(
             link = "https://github.com/Yalantis/uCrop",
             dependencyMethod = DependencyMethod.Implementation,
         ) {
-            object Core : Crop("2.2.6")
-            object Native : Crop("2.2.6-native")
+            object Core : Crop("2.2.8")
+            object Native : Crop("2.2.8-native")
         }
 
         //endregion
@@ -1155,7 +1155,7 @@ sealed class DependencyConfig(
             sealed class Version(val value: String) {
                 object Version1 : Version("1.0.3")
                 object Version2 : Version("3.2.2")
-                object Version3 : Version("3.3.0")
+                object Version3 : Version("3.3.1")
             }
 
             object Android : Koin("koin-android", Version.Version3)
