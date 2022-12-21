@@ -1153,23 +1153,24 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             sealed class Version(val value: String) {
-                object Version1 : Version("1.0.3")
-                object Version2 : Version("3.2.2")
-                object Version3 : Version("3.3.1")
+                object Core : Version("3.3.0")
+                object Annotation : Version("1.1.0")
+                object Android : Version("3.3.1")
+                object Compose : Version("3.4.0")
             }
 
-            object Android : Koin("koin-android", Version.Version3)
-            object Core : Koin("koin-core", Version.Version2)
-            object Compose : Koin("koin-androidx-compose", Version.Version3)
-            object WorkManager : Koin("koin-androidx-workmanager", Version.Version3)
-            object Navigation : Koin("koin-androidx-navigation", Version.Version3)
+            object Android : Koin("koin-android", Version.Android)
+            object Core : Koin("koin-core", Version.Core)
+            object Compose : Koin("koin-androidx-compose", Version.Compose)
+            object WorkManager : Koin("koin-androidx-workmanager", Version.Android)
+            object Navigation : Koin("koin-androidx-navigation", Version.Android)
             object Test : Koin(
                 "koin-test-junit5",
-                Version.Version2, DependencyMethod.Test.Implementation
+                Version.Core, DependencyMethod.Test.Implementation
             )
 
-            object Annotations : Koin("koin-annotations", Version.Version1)
-            object Compiler : Koin("koin-ksp-compiler", Version.Version1)
+            object Annotations : Koin("koin-annotations", Version.Annotation)
+            object Compiler : Koin("koin-ksp-compiler", Version.Annotation)
         }
 
         //endregion
