@@ -105,7 +105,7 @@ sealed class LibDependencies(
      * IP帮助类
      * https://github.com/seancfoley/IPAddress
      */
-    object IpUtils : LibDependencies("com.github.seancfoley", "ipaddress", "5.3.4",
+    object IpUtils : LibDependencies("com.github.seancfoley", "ipaddress", "5.4.0",
         DependencyMethod.Implementation)
 
     /**
@@ -168,7 +168,7 @@ sealed class LibDependencies(
      * 二维码扫描
      * https://github.com/jenly1314/ZXingLite
      */
-    object QrScanner : LibDependencies("com.github.jenly1314", "zxing-lite", "2.2.1",
+    object QrScanner : LibDependencies("com.github.jenly1314", "zxing-lite", "2.3.0",
         DependencyMethod.Implementation)
 
     /**
@@ -224,7 +224,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.16",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.17",
         DependencyMethod.Implementation)
 
     /**
@@ -403,14 +403,14 @@ sealed class LibDependencies(
      * https://github.com/angcyo/DslTabLayout
      */
     interface TabLayout {
-      object Core : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout", "3.5.1",
+      object Core : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout", "3.5.2",
           DependencyMethod.Implementation)
 
       object VP : LibDependencies("com.github.angcyo.DslTablayout", "ViewPager1Delegate",
-          "3.5.1", DependencyMethod.Implementation)
+          "3.5.2", DependencyMethod.Implementation)
 
       object VP2 : LibDependencies("com.github.angcyo.DslTablayout", "ViewPager2Delegate",
-          "3.5.1", DependencyMethod.Implementation)
+          "3.5.2", DependencyMethod.Implementation)
     }
 
     /**
@@ -644,10 +644,10 @@ sealed class LibDependencies(
      * https://github.com/Yalantis/uCrop
      */
     interface Crop {
-      object Core : LibDependencies("com.github.yalantis", "ucrop", "2.2.6",
+      object Core : LibDependencies("com.github.yalantis", "ucrop", "2.2.8",
           DependencyMethod.Implementation)
 
-      object Native : LibDependencies("com.github.yalantis", "ucrop", "2.2.6-native",
+      object Native : LibDependencies("com.github.yalantis", "ucrop", "2.2.8-native",
           DependencyMethod.Implementation)
     }
 
@@ -807,7 +807,7 @@ sealed class LibDependencies(
      * https://github.com/InsertKoinIO/koin
      */
     interface Koin {
-      object Android : LibDependencies("io.insert-koin", "koin-android", "3.3.0",
+      object Android : LibDependencies("io.insert-koin", "koin-android", "3.3.1",
           DependencyMethod.Implementation)
 
       object Annotations : LibDependencies("io.insert-koin", "koin-annotations", "1.0.3",
@@ -816,20 +816,20 @@ sealed class LibDependencies(
       object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler", "1.0.3",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose", "3.3.0",
+      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose", "3.3.1",
           DependencyMethod.Implementation)
 
       object Core : LibDependencies("io.insert-koin", "koin-core", "3.2.2",
           DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("io.insert-koin", "koin-androidx-navigation",
-          "3.3.0", DependencyMethod.Implementation)
+          "3.3.1", DependencyMethod.Implementation)
 
       object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.2.2",
           DependencyMethod.Test.Implementation)
 
       object WorkManager : LibDependencies("io.insert-koin", "koin-androidx-workmanager",
-          "3.3.0", DependencyMethod.Implementation)
+          "3.3.1", DependencyMethod.Implementation)
     }
 
     /**

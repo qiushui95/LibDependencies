@@ -43,7 +43,7 @@
 >>implementation("io.github.hoc081098:FlowExt-jvm:0.5.0")  
   
 >[IpUtils](https://github.com/seancfoley/IPAddress)(IP帮助类)  
->>implementation("com.github.seancfoley:ipaddress:5.3.4")  
+>>implementation("com.github.seancfoley:ipaddress:5.4.0")  
   
 >[JodaTime](https://github.com/JodaOrg/joda-time)(时间处理库)  
 >>implementation("joda-time:joda-time:2.12.2")  
@@ -70,7 +70,7 @@
 >>implementation("com.localebro:okhttpprofiler:1.0.8")  
   
 >[QrScanner](https://github.com/jenly1314/ZXingLite)(二维码扫描)  
->>implementation("com.github.jenly1314:zxing-lite:2.2.1")  
+>>implementation("com.github.jenly1314:zxing-lite:2.3.0")  
   
 >[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
 >>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")  
@@ -94,7 +94,7 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.9.16")  
+>>implementation("com.github.li-xiaojun:XPopup:2.9.17")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
 >>implementation("net.lingala.zip4j:zip4j:2.11.2")  
@@ -174,9 +174,9 @@
 >>implementation("com.kyleduo.switchbutton:library:2.1.0")  
   
 >[TabLayout](https://github.com/angcyo/DslTabLayout)  
->>implementation("com.github.angcyo.DslTablayout:TabLayout:3.5.1")  
->>implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.5.1")  
->>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.5.1")  
+>>implementation("com.github.angcyo.DslTablayout:TabLayout:3.5.2")  
+>>implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.5.2")  
+>>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.5.2")  
   
 >[ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2)  
 >>implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")  
@@ -274,8 +274,8 @@
 >>testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")  
   
 >[Crop](https://github.com/Yalantis/uCrop)(图片裁剪)  
->>implementation("com.github.yalantis:ucrop:2.2.6")  
->>implementation("com.github.yalantis:ucrop:2.2.6-native")  
+>>implementation("com.github.yalantis:ucrop:2.2.8")  
+>>implementation("com.github.yalantis:ucrop:2.2.8-native")  
   
 >[Download](https://github.com/AriaLyy/Aria)(下载)  
 >>kapt("me.laoyuyu.aria:compiler:3.8.16")  
@@ -329,14 +329,14 @@
 >>implementation("com.geyifeng.immersionbar:immersionbar-ktx:3.2.2")  
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  
->>implementation("io.insert-koin:koin-android:3.3.0")  
+>>implementation("io.insert-koin:koin-android:3.3.1")  
 >>implementation("io.insert-koin:koin-annotations:1.0.3")  
 >>implementation("io.insert-koin:koin-ksp-compiler:1.0.3")  
->>implementation("io.insert-koin:koin-androidx-compose:3.3.0")  
+>>implementation("io.insert-koin:koin-androidx-compose:3.3.1")  
 >>implementation("io.insert-koin:koin-core:3.2.2")  
->>implementation("io.insert-koin:koin-androidx-navigation:3.3.0")  
+>>implementation("io.insert-koin:koin-androidx-navigation:3.3.1")  
 >>testImplementation("io.insert-koin:koin-test-junit5:3.2.2")  
->>implementation("io.insert-koin:koin-androidx-workmanager:3.3.0")  
+>>implementation("io.insert-koin:koin-androidx-workmanager:3.3.1")  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
 >>implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.21")  
