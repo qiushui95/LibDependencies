@@ -790,7 +790,7 @@ sealed class DependencyConfig(
         sealed class Official(
             group: String,
             name: String,
-            version: String = "1.3.2",
+            version: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : Compose(
             group = group,
@@ -800,59 +800,53 @@ sealed class DependencyConfig(
             link = "https://developer.android.com/jetpack/androidx/releases/compose",
             dependencyMethod = dependencyMethod,
         ) {
+
+
             //region Animation
-            object Animation : Official(group = "androidx.compose.animation", name = "animation")
+            object Animation : Official(
+                group = "androidx.compose.animation",
+                name = "animation",
+                version = "1.3.2",
+            )
             //endregion
 
             //region Compiler
             object Compiler : Official(
                 group = "androidx.compose.compiler",
                 name = "compiler",
-                version = "1.3.2"
+                version = "1.3.2",
             )
             //endregion
 
             //region Foundation
-            object Foundation : Official(group = "androidx.compose.foundation", name = "foundation")
-            //endregion
-
-            //region LiveData
-            object LiveData :
-                Official(group = "androidx.compose.runtime", name = "runtime-livedata")
+            object Foundation : Official(
+                group = "androidx.compose.foundation",
+                name = "foundation",
+                version = "1.3.1",
+            )
             //endregion
 
             //region Material
-            object Material : Official(group = "androidx.compose.material", name = "material")
+            object Material :
+                Official(group = "androidx.compose.material", name = "material", version = "1.3.1")
             //endregion
 
-            //region MaterialIcon
-            object MaterialIcon :
-                Official(group = "androidx.compose.material", name = "material-icons-core")
-            //endregion
+            //region Material
+            object Material3 : Official(
+                group = "androidx.compose.material3",
+                name = "material3",
+                version = "1.0.1"
+            )
 
-            //region MaterialIconExtended
-            object MaterialIconExtended :
-                Official(group = "androidx.compose.material", name = "material-icons-extended")
-            //endregion
-
-            //region Preview
-            object Preview : Official(group = "androidx.compose.ui", name = "ui-tooling-preview")
-            //endregion
-
-            //region Test
-            object Test : Official(
-                group = "androidx.compose.ui",
-                name = "ui-test-junit4",
-                dependencyMethod = DependencyMethod.AndroidTest.Implementation
+            object Material3Ext : Official(
+                group = "androidx.compose.material3",
+                name = "material3-window-size-class",
+                version = "1.0.1"
             )
             //endregion
 
             //region Ui
-            object Ui : Official(group = "androidx.compose.ui", name = "ui")
-            //endregion
-
-            //region UiTooling
-            object UiTooling : Official(group = "androidx.compose.ui", name = "ui-tooling")
+            object Ui : Official(group = "androidx.compose.ui", name = "ui", version = "1.3.2")
             //endregion
         }
 
