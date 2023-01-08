@@ -19,7 +19,7 @@ sealed class LibPlugins(
     object Reflect : LibPluginId("kotlin-reflect")
   }
 
-  object Maven : LibPlugins("com.vanniktech", "gradle-maven-publish-plugin", "0.22.0") {
+  object Maven : LibPlugins("com.vanniktech", "gradle-maven-publish-plugin", "0.23.1") {
     object Plugin : LibPluginId("com.vanniktech.maven.publish")
   }
 

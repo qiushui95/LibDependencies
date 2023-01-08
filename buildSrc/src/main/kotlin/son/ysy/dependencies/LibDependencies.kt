@@ -56,7 +56,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/razerdp/BasePopup
      */
-    object BasePopup : LibDependencies("io.github.razerdp", "BasePopup", "3.2.0",
+    object BasePopup : LibDependencies("io.github.razerdp", "BasePopup", "3.2.1",
         DependencyMethod.Implementation)
 
     /**
@@ -78,7 +78,7 @@ sealed class LibDependencies(
      * https://github.com/loperSeven/DateTimePicker
      */
     object DateTimePicker : LibDependencies("com.github.loperSeven", "DateTimePicker",
-        "0.6.0", DependencyMethod.Implementation)
+        "0.6.1", DependencyMethod.Implementation)
 
     /**
      * 悬浮窗
@@ -127,7 +127,7 @@ sealed class LibDependencies(
      * https://github.com/vanniktech/gradle-maven-publish-plugin
      */
     object MavenPublish : LibDependencies("com.vanniktech", "gradle-maven-publish-plugin",
-        "0.22.0", DependencyMethod.Implementation)
+        "0.23.1", DependencyMethod.Implementation)
 
     /**
      * 持久KV数据存储
@@ -149,13 +149,6 @@ sealed class LibDependencies(
      */
     object PanelSwitch : LibDependencies("com.github.DSAppTeam", "PanelSwitchHelper",
         "v1.5.2", DependencyMethod.Implementation)
-
-    /**
-     * 权限请求
-     * https://github.com/guolindev/PermissionX
-     */
-    object PermissionX : LibDependencies("com.guolindev.permissionx", "permissionx", "1.7.1",
-        DependencyMethod.Implementation)
 
     /**
      * AS OkHttp 拦截器
@@ -224,7 +217,14 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.17",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.18",
+        DependencyMethod.Implementation)
+
+    /**
+     * 权限请求
+     * https://github.com/getActivity/XXPermissions
+     */
+    object XXPermissions : LibDependencies("com.github.getActivity", "XXPermissions", "16.6",
         DependencyMethod.Implementation)
 
     /**
@@ -403,14 +403,14 @@ sealed class LibDependencies(
      * https://github.com/angcyo/DslTabLayout
      */
     interface TabLayout {
-      object Core : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout", "3.5.2",
+      object Core : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout", "3.5.3",
           DependencyMethod.Implementation)
 
       object VP : LibDependencies("com.github.angcyo.DslTablayout", "ViewPager1Delegate",
-          "3.5.2", DependencyMethod.Implementation)
+          "3.5.3", DependencyMethod.Implementation)
 
       object VP2 : LibDependencies("com.github.angcyo.DslTablayout", "ViewPager2Delegate",
-          "3.5.2", DependencyMethod.Implementation)
+          "3.5.3", DependencyMethod.Implementation)
     }
 
     /**
@@ -425,7 +425,7 @@ sealed class LibDependencies(
      * UI自动化测试
      * https://mvnrepository.com/artifact/androidx.test.espresso/espresso-core
      */
-    object Espresso : LibDependencies("androidx.test.espresso", "espresso-core", "3.5.0",
+    object Espresso : LibDependencies("androidx.test.espresso", "espresso-core", "3.5.1",
         DependencyMethod.AndroidTest.Implementation)
 
     /**
@@ -439,7 +439,7 @@ sealed class LibDependencies(
      * 单元测试扩展
      * https://mvnrepository.com/artifact/androidx.test.ext/junit-ktx
      */
-    object JunitExt : LibDependencies("androidx.test.ext", "junit-ktx", "1.1.4",
+    object JunitExt : LibDependencies("androidx.test.ext", "junit-ktx", "1.1.5",
         DependencyMethod.Test.Implementation)
   }
 
@@ -523,30 +523,18 @@ sealed class LibDependencies(
           DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.3.2", DependencyMethod.Implementation)
+          "1.3.1", DependencyMethod.Implementation)
 
-      object LiveData : LibDependencies("androidx.compose.runtime", "runtime-livedata",
-          "1.3.2", DependencyMethod.Implementation)
-
-      object Material : LibDependencies("androidx.compose.material", "material", "1.3.2",
+      object Material : LibDependencies("androidx.compose.material", "material", "1.3.1",
           DependencyMethod.Implementation)
 
-      object MaterialIcon : LibDependencies("androidx.compose.material",
-          "material-icons-core", "1.3.2", DependencyMethod.Implementation)
-
-      object MaterialIconExtended : LibDependencies("androidx.compose.material",
-          "material-icons-extended", "1.3.2", DependencyMethod.Implementation)
-
-      object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview", "1.3.2",
+      object Material3 : LibDependencies("androidx.compose.material3", "material3", "1.0.1",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.3.2",
-          DependencyMethod.AndroidTest.Implementation)
+      object Material3Ext : LibDependencies("androidx.compose.material3",
+          "material3-window-size-class", "1.0.1", DependencyMethod.Implementation)
 
       object Ui : LibDependencies("androidx.compose.ui", "ui", "1.3.2",
-          DependencyMethod.Implementation)
-
-      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.3.2",
           DependencyMethod.Implementation)
     }
 
@@ -807,7 +795,7 @@ sealed class LibDependencies(
      * https://github.com/InsertKoinIO/koin
      */
     interface Koin {
-      object Android : LibDependencies("io.insert-koin", "koin-android", "3.3.1",
+      object Android : LibDependencies("io.insert-koin", "koin-android", "3.3.2",
           DependencyMethod.Implementation)
 
       object Annotations : LibDependencies("io.insert-koin", "koin-annotations", "1.1.0",
@@ -816,20 +804,20 @@ sealed class LibDependencies(
       object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler", "1.1.0",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose", "3.4.0",
+      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose", "3.4.1",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("io.insert-koin", "koin-core", "3.3.0",
+      object Core : LibDependencies("io.insert-koin", "koin-core", "3.3.2",
           DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("io.insert-koin", "koin-androidx-navigation",
-          "3.3.1", DependencyMethod.Implementation)
+          "3.3.2", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.3.0",
+      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.3.2",
           DependencyMethod.Test.Implementation)
 
       object WorkManager : LibDependencies("io.insert-koin", "koin-androidx-workmanager",
-          "3.3.1", DependencyMethod.Implementation)
+          "3.3.2", DependencyMethod.Implementation)
     }
 
     /**

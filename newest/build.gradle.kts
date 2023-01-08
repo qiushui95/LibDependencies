@@ -44,14 +44,10 @@ dependencies {
     implementation("androidx.compose.animation:animation:latest.release")
     implementation("androidx.compose.compiler:compiler:latest.release")
     implementation("androidx.compose.foundation:foundation:latest.release")
-    implementation("androidx.compose.runtime:runtime-livedata:latest.release")
     implementation("androidx.compose.material:material:latest.release")
-    implementation("androidx.compose.material:material-icons-core:latest.release")
-    implementation("androidx.compose.material:material-icons-extended:latest.release")
-    implementation("androidx.compose.ui:ui-tooling-preview:latest.release")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:latest.release")
+    implementation("androidx.compose.material3:material3:latest.release")
+    implementation("androidx.compose.material3:material3-window-size-class:latest.release")
     implementation("androidx.compose.ui:ui:latest.release")
-    implementation("androidx.compose.ui:ui-tooling:latest.release")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:latest.release")
 
 
@@ -218,7 +214,6 @@ dependencies {
     implementation("com.tencent:mmkv-static:latest.release")
     implementation("androidx.paging:paging-runtime-ktx:latest.release")
     implementation("com.github.DSAppTeam:PanelSwitchHelper:latest.release")
-    implementation("com.guolindev.permissionx:permissionx:latest.release")
     implementation("com.localebro:okhttpprofiler:latest.release")
     implementation("com.github.jenly1314:zxing-lite:latest.release")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:latest.release")
@@ -229,6 +224,7 @@ dependencies {
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:latest.release")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:latest.release")
     implementation("com.github.li-xiaojun:XPopup:latest.release")
+    implementation("com.github.getActivity:XXPermissions:latest.release")
     implementation("net.lingala.zip4j:zip4j:latest.release")
 
 

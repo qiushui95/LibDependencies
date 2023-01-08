@@ -22,7 +22,7 @@
 >>implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.5")  
   
 >[BasePopup](https://github.com/razerdp/BasePopup)(弹窗)  
->>implementation("io.github.razerdp:BasePopup:3.2.0")  
+>>implementation("io.github.razerdp:BasePopup:3.2.1")  
   
 >[ColorKtx](https://github.com/JorgeCastilloPrz/AndroidColorX)(颜色帮助库)  
 >>implementation("me.jorgecastillo:androidcolorx:0.2.0")  
@@ -31,7 +31,7 @@
 >>implementation("id.zelory:compressor:3.0.1")  
   
 >[DateTimePicker](https://github.com/loperSeven/DateTimePicker)(时间选择器)  
->>implementation("com.github.loperSeven:DateTimePicker:0.6.0")  
+>>implementation("com.github.loperSeven:DateTimePicker:0.6.1")  
   
 >[EasyFloat](https://github.com/princekin-f/EasyFloat)(悬浮窗)  
 >>implementation("com.github.princekin-f:EasyFloat:2.0.4")  
@@ -52,7 +52,7 @@
 >>implementation("com.squareup.leakcanary:leakcanary-android:2.10")  
   
 >[MavenPublish](https://github.com/vanniktech/gradle-maven-publish-plugin)(Maven上传)  
->>implementation("com.vanniktech:gradle-maven-publish-plugin:0.22.0")  
+>>implementation("com.vanniktech:gradle-maven-publish-plugin:0.23.1")  
   
 >[Mmkv](https://github.com/Tencent/MMKV/blob/master/README_CN.md)(持久KV数据存储)  
 >>implementation("com.tencent:mmkv-static:1.2.14")  
@@ -62,9 +62,6 @@
   
 >[PanelSwitch](https://github.com/DSAppTeam/PanelSwitchHelper)(聊天键盘优化)  
 >>implementation("com.github.DSAppTeam:PanelSwitchHelper:v1.5.2")  
-  
->[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
->>implementation("com.guolindev.permissionx:permissionx:1.7.1")  
   
 >[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
 >>implementation("com.localebro:okhttpprofiler:1.0.8")  
@@ -94,7 +91,10 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.9.17")  
+>>implementation("com.github.li-xiaojun:XPopup:2.9.18")  
+  
+>[XXPermissions](https://github.com/getActivity/XXPermissions)(权限请求)  
+>>implementation("com.github.getActivity:XXPermissions:16.6")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
 >>implementation("net.lingala.zip4j:zip4j:2.11.2")  
@@ -174,9 +174,9 @@
 >>implementation("com.kyleduo.switchbutton:library:2.1.0")  
   
 >[TabLayout](https://github.com/angcyo/DslTabLayout)  
->>implementation("com.github.angcyo.DslTablayout:TabLayout:3.5.2")  
->>implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.5.2")  
->>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.5.2")  
+>>implementation("com.github.angcyo.DslTablayout:TabLayout:3.5.3")  
+>>implementation("com.github.angcyo.DslTablayout:ViewPager1Delegate:3.5.3")  
+>>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.5.3")  
   
 >[ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2)  
 >>implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")  
@@ -187,13 +187,13 @@
 <summary>Test</summary>  
   
 >[Espresso](https://mvnrepository.com/artifact/androidx.test.espresso/espresso-core)(UI自动化测试)  
->>androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")  
+>>androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")  
   
 >[Junit](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter)(单元测试)  
 >>testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")  
   
 >[JunitExt](https://mvnrepository.com/artifact/androidx.test.ext/junit-ktx)(单元测试扩展)  
->>testImplementation("androidx.test.ext:junit-ktx:1.1.4")  
+>>testImplementation("androidx.test.ext:junit-ktx:1.1.5")  
   
 </details>  
   
@@ -227,15 +227,11 @@
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
 >>implementation("androidx.compose.animation:animation:1.3.2")  
 >>implementation("androidx.compose.compiler:compiler:1.3.2")  
->>implementation("androidx.compose.foundation:foundation:1.3.2")  
->>implementation("androidx.compose.runtime:runtime-livedata:1.3.2")  
->>implementation("androidx.compose.material:material:1.3.2")  
->>implementation("androidx.compose.material:material-icons-core:1.3.2")  
->>implementation("androidx.compose.material:material-icons-extended:1.3.2")  
->>implementation("androidx.compose.ui:ui-tooling-preview:1.3.2")  
->>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.3.2")  
+>>implementation("androidx.compose.foundation:foundation:1.3.1")  
+>>implementation("androidx.compose.material:material:1.3.1")  
+>>implementation("androidx.compose.material3:material3:1.0.1")  
+>>implementation("androidx.compose.material3:material3-window-size-class:1.0.1")  
 >>implementation("androidx.compose.ui:ui:1.3.2")  
->>implementation("androidx.compose.ui:ui-tooling:1.3.2")  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")  
@@ -329,14 +325,14 @@
 >>implementation("com.geyifeng.immersionbar:immersionbar-ktx:3.2.2")  
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  
->>implementation("io.insert-koin:koin-android:3.3.1")  
+>>implementation("io.insert-koin:koin-android:3.3.2")  
 >>implementation("io.insert-koin:koin-annotations:1.1.0")  
 >>implementation("io.insert-koin:koin-ksp-compiler:1.1.0")  
->>implementation("io.insert-koin:koin-androidx-compose:3.4.0")  
->>implementation("io.insert-koin:koin-core:3.3.0")  
->>implementation("io.insert-koin:koin-androidx-navigation:3.3.1")  
->>testImplementation("io.insert-koin:koin-test-junit5:3.3.0")  
->>implementation("io.insert-koin:koin-androidx-workmanager:3.3.1")  
+>>implementation("io.insert-koin:koin-androidx-compose:3.4.1")  
+>>implementation("io.insert-koin:koin-core:3.3.2")  
+>>implementation("io.insert-koin:koin-androidx-navigation:3.3.2")  
+>>testImplementation("io.insert-koin:koin-test-junit5:3.3.2")  
+>>implementation("io.insert-koin:koin-androidx-workmanager:3.3.2")  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
 >>implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.21")  
