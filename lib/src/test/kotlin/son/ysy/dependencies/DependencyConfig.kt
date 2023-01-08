@@ -98,7 +98,7 @@ sealed class DependencyConfig(
         object BasePopup : Single(
             group = "io.github.razerdp",
             name = "BasePopup",
-            version = "3.2.0",
+            version = "3.2.1",
             remark = "弹窗",
             link = "https://github.com/razerdp/BasePopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -131,7 +131,7 @@ sealed class DependencyConfig(
         object DateTimePicker : Single(
             group = "com.github.loperSeven",
             name = "DateTimePicker",
-            version = "0.6.0",
+            version = "0.6.1",
             remark = "时间选择器",
             link = "https://github.com/loperSeven/DateTimePicker",
             dependencyMethod = DependencyMethod.Implementation,
@@ -226,13 +226,13 @@ sealed class DependencyConfig(
         )
 
         //endregion
-        //region PermissionX(权限请求)
-        object PermissionX : Single(
-            group = "com.guolindev.permissionx",
-            name = "permissionx",
-            version = "1.7.1",
+        //region XXPermissions(权限请求)
+        object XXPermissions : Single(
+            group = "com.github.getActivity",
+            name = "XXPermissions",
+            version = "16.6",
             remark = "权限请求",
-            link = "https://github.com/guolindev/PermissionX",
+            link = "https://github.com/getActivity/XXPermissions",
             dependencyMethod = DependencyMethod.Implementation,
         )
 
@@ -329,7 +329,7 @@ sealed class DependencyConfig(
         object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.9.17",
+            version = "2.9.18",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -351,7 +351,7 @@ sealed class DependencyConfig(
         object MavenPublish : Single(
             group = "com.vanniktech",
             name = "gradle-maven-publish-plugin",
-            version = "0.22.0",
+            version = "0.23.1",
             remark = "Maven上传",
             link = "https://github.com/vanniktech/gradle-maven-publish-plugin",
             dependencyMethod = DependencyMethod.Implementation,
@@ -670,7 +670,7 @@ sealed class DependencyConfig(
         sealed class TabLayout(name: String) : View(
             group = "com.github.angcyo.DslTablayout",
             name = name,
-            version = "3.5.2",
+            version = "3.5.3",
             remark = "",
             link = "https://github.com/angcyo/DslTabLayout",
             dependencyMethod = DependencyMethod.Implementation,
@@ -696,7 +696,7 @@ sealed class DependencyConfig(
         object Espresso : Test(
             group = "androidx.test.espresso",
             name = "espresso-core",
-            version = "3.5.0",
+            version = "3.5.1",
             remark = "UI自动化测试",
             link = "https://mvnrepository.com/artifact/androidx.test.espresso/espresso-core",
             dependencyMethod = DependencyMethod.AndroidTest.Implementation,
@@ -718,7 +718,7 @@ sealed class DependencyConfig(
         object JunitExt : Test(
             group = "androidx.test.ext",
             name = "junit-ktx",
-            version = "1.1.4",
+            version = "1.1.5",
             remark = "单元测试扩展",
             link = "https://mvnrepository.com/artifact/androidx.test.ext/junit-ktx",
             dependencyMethod = DependencyMethod.Test.Implementation,
@@ -1147,10 +1147,10 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             sealed class Version(val value: String) {
-                object Core : Version("3.3.0")
+                object Core : Version("3.3.2")
                 object Annotation : Version("1.1.0")
-                object Android : Version("3.3.1")
-                object Compose : Version("3.4.0")
+                object Android : Version("3.3.2")
+                object Compose : Version("3.4.1")
             }
 
             object Android : Koin("koin-android", Version.Android)
