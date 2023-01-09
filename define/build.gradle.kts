@@ -223,7 +223,7 @@ dependencies {
     implementation("com.tencent.vasdolly:helper:3.0.4")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
-    implementation("com.github.li-xiaojun:XPopup:2.9.18")
+    implementation("com.github.li-xiaojun:XPopup:2.9.19")
     implementation("com.github.getActivity:XXPermissions:16.6")
     implementation("net.lingala.zip4j:zip4j:2.11.2")
 

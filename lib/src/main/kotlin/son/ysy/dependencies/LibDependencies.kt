@@ -217,7 +217,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.18",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.19",
         DependencyMethod.Implementation)
 
     /**

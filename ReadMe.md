@@ -91,7 +91,7 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.9.18")  
+>>implementation("com.github.li-xiaojun:XPopup:2.9.19")  
   
 >[XXPermissions](https://github.com/getActivity/XXPermissions)(权限请求)  
 >>implementation("com.github.getActivity:XXPermissions:16.6")  
