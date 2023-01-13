@@ -189,6 +189,10 @@ dependencies {
     implementation("jp.wasabeef.transformers:glide:latest.release")
     implementation("jp.wasabeef.transformers:glide-gpu:latest.release")
 
+    implementation("net.gotev:uploadservice:latest.release")
+    implementation("net.gotev:uploadservice-ftp:latest.release")
+    implementation("net.gotev:uploadservice-okhttp:latest.release")
+
     implementation("androidx.work:work-runtime-ktx:latest.release")
     testImplementation("androidx.work:work-testing:latest.release")
 

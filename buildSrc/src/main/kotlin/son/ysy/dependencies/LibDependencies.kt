@@ -1038,6 +1038,21 @@ sealed class LibDependencies(
     }
 
     /**
+     * 上传服务
+     * https://github.com/gotev/android-upload-service
+     */
+    interface UploadService {
+      object Core : LibDependencies("net.gotev", "uploadservice", "4.7.0",
+          DependencyMethod.Implementation)
+
+      object Ftp : LibDependencies("net.gotev", "uploadservice-ftp", "4.7.0",
+          DependencyMethod.Implementation)
+
+      object OkHttp : LibDependencies("net.gotev", "uploadservice-okhttp", "4.7.0",
+          DependencyMethod.Implementation)
+    }
+
+    /**
      * 任务管理器
      * https://developer.android.com/jetpack/androidx/releases/work
      */
