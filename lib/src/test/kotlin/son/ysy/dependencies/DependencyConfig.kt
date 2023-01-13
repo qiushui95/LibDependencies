@@ -1422,6 +1422,24 @@ sealed class DependencyConfig(
         }
 
         //endregion
+        //region Upload Service(上传服务)
+        sealed class UploadService(
+            name: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : Group(
+            group = "net.gotev",
+            name = name,
+            version = "4.7.0",
+            remark = "上传服务",
+            link = "https://github.com/gotev/android-upload-service",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Core : UploadService("uploadservice")
+            object OkHttp : UploadService("uploadservice-okhttp")
+            object Ftp : UploadService("uploadservice-ftp")
+        }
+
+        //endregion
         //region WorkManager(任务管理器)
         sealed class WorkManager(
             name: String,
