@@ -16,7 +16,7 @@
 >>implementation("androidx.annotation:annotation:1.5.0")  
   
 >[Appcompat](https://developer.android.com/jetpack/androidx/releases/appcompat)  
->>implementation("androidx.appcompat:appcompat:1.5.1")  
+>>implementation("androidx.appcompat:appcompat:1.6.0")  
   
 >[Background](https://github.com/JavaNoober/BackgroundLibrary)(背景生成工具库)  
 >>implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.5")  
@@ -52,10 +52,10 @@
 >>implementation("com.squareup.leakcanary:leakcanary-android:2.10")  
   
 >[MavenPublish](https://github.com/vanniktech/gradle-maven-publish-plugin)(Maven上传)  
->>implementation("com.vanniktech:gradle-maven-publish-plugin:0.23.1")  
+>>implementation("com.vanniktech:gradle-maven-publish-plugin:0.24.0")  
   
 >[Mmkv](https://github.com/Tencent/MMKV/blob/master/README_CN.md)(持久KV数据存储)  
->>implementation("com.tencent:mmkv-static:1.2.14")  
+>>implementation("com.tencent:mmkv-static:1.2.15")  
   
 >[Paging](https://developer.android.com/jetpack/androidx/releases/paging)(分页请求)  
 >>implementation("androidx.paging:paging-runtime-ktx:3.1.1")  
@@ -82,7 +82,7 @@
 >>implementation("com.dropbox.mobile.store:store4:4.0.5")  
   
 >[VasDolly](https://github.com/Tencent/VasDolly)(多渠道打包)  
->>implementation("com.tencent.vasdolly:helper:3.0.4")  
+>>implementation("com.tencent.vasdolly:helper:3.0.5")  
   
 >[WeChat](https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Resource_Center_Homepage.html)(微信开发Sdk)  
 >>implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")  
@@ -97,7 +97,7 @@
 >>implementation("com.github.getActivity:XXPermissions:16.6")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
->>implementation("net.lingala.zip4j:zip4j:2.11.2")  
+>>implementation("net.lingala.zip4j:zip4j:2.11.3")  
   
 </details>  
   
@@ -111,7 +111,7 @@
 >>implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.8")  
   
 >[BlurView](https://github.com/Dimezis/BlurView)(高斯模糊)  
->>implementation("com.github.Dimezis:BlurView:version-2.0.0")  
+>>implementation("com.github.Dimezis:BlurView:version-2.0.3")  
   
 >[BottomNavigation](https://github.com/Ashok-Varma/BottomNavigation)(底部导航)  
 >>implementation("com.ashokvarma.android:bottom-navigation-bar:2.2.0")  
@@ -138,7 +138,7 @@
 >>implementation("com.airbnb.android:lottie:5.2.0")  
   
 >[Material](https://github.com/material-components/material-components-android)  
->>implementation("com.google.android.material:material:1.7.0")  
+>>implementation("com.google.android.material:material:1.8.0")  
   
 >[PdfViewer](https://github.com/barteksc/AndroidPdfViewer)(pdf查看)  
 >>implementation("com.github.mhiew:android-pdf-viewer:3.2.0-beta.3")  
@@ -190,7 +190,7 @@
 >>androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")  
   
 >[Junit](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter)(单元测试)  
->>testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")  
+>>testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")  
   
 >[JunitExt](https://mvnrepository.com/artifact/androidx.test.ext/junit-ktx)(单元测试扩展)  
 >>testImplementation("androidx.test.ext:junit-ktx:1.1.5")  
@@ -225,13 +225,13 @@
 >>implementation("com.github.fornewid:material-motion-compose:0.8.1")  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation("androidx.compose.animation:animation:1.3.2")  
->>implementation("androidx.compose.compiler:compiler:1.3.2")  
+>>implementation("androidx.compose.animation:animation:1.3.3")  
+>>implementation("androidx.compose.compiler:compiler:1.4.0")  
 >>implementation("androidx.compose.foundation:foundation:1.3.1")  
 >>implementation("androidx.compose.material:material:1.3.1")  
 >>implementation("androidx.compose.material3:material3:1.0.1")  
 >>implementation("androidx.compose.material3:material3-window-size-class:1.0.1")  
->>implementation("androidx.compose.ui:ui:1.3.2")  
+>>implementation("androidx.compose.ui:ui:1.3.3")  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")  
@@ -250,12 +250,12 @@
 >>implementation("com.tencent.bugly:crashreport_upgrade:1.6.1")  
   
 >[CameraX](https://developer.android.com/jetpack/androidx/releases/camera)(相机相关)  
->>implementation("androidx.camera:camera-camera2:1.2.0")  
->>implementation("androidx.camera:camera-core:1.2.0")  
->>implementation("androidx.camera:camera-extensions:1.2.0")  
->>implementation("androidx.camera:camera-lifecycle:1.2.0")  
->>implementation("androidx.camera:camera-video:1.2.0")  
->>implementation("androidx.camera:camera-view:1.2.0")  
+>>implementation("androidx.camera:camera-camera2:1.2.1")  
+>>implementation("androidx.camera:camera-core:1.2.1")  
+>>implementation("androidx.camera:camera-extensions:1.2.1")  
+>>implementation("androidx.camera:camera-lifecycle:1.2.1")  
+>>implementation("androidx.camera:camera-video:1.2.1")  
+>>implementation("androidx.camera:camera-view:1.2.1")  
   
 >[Chucker](https://github.com/ChuckerTeam/chucker)(网络请求监控)  
 >>debugImplementation("com.github.chuckerteam.chucker:library:3.5.2")  
@@ -384,18 +384,14 @@
 >>implementation("com.squareup.retrofit2:converter-scalars:2.9.0")  
   
 >[Room](https://developer.android.com/jetpack/androidx/releases/room)(Sqlite数据库)  
->>kapt("androidx.room:room-compiler:2.4.3")  
->>implementation("androidx.room:room-runtime:2.4.3")  
->>implementation("androidx.room:room-ktx:2.4.3")  
->>testImplementation("androidx.room:room-testing:2.4.3")  
-  
->[S3](https://github.com/aws-amplify/aws-sdk-android)(亚马逊云存储)  
->>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.59.1")  
->>implementation("com.amazonaws:aws-android-sdk-s3:2.59.1")  
+>>kapt("androidx.room:room-compiler:2.5.0")  
+>>implementation("androidx.room:room-runtime:2.5.0")  
+>>implementation("androidx.room:room-ktx:2.5.0")  
+>>testImplementation("androidx.room:room-testing:2.5.0")  
   
 >[Sqlite](https://developer.android.com/jetpack/androidx/releases/sqlite)(Sqlite)  
->>implementation("androidx.sqlite:sqlite-framework:2.2.0")  
->>implementation("androidx.sqlite:sqlite-ktx:2.2.0")  
+>>implementation("androidx.sqlite:sqlite-framework:2.3.0")  
+>>implementation("androidx.sqlite:sqlite-ktx:2.3.0")  
   
 >[Stetho](https://github.com/facebook/stetho)(调试工具)  
 >>implementation("com.facebook.stetho:stetho:1.6.0")  

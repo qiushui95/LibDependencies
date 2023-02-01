@@ -42,7 +42,7 @@ sealed class LibDependencies(
     /**
      * https://developer.android.com/jetpack/androidx/releases/appcompat
      */
-    object Appcompat : LibDependencies("androidx.appcompat", "appcompat", "1.5.1",
+    object Appcompat : LibDependencies("androidx.appcompat", "appcompat", "1.6.0",
         DependencyMethod.Implementation)
 
     /**
@@ -127,13 +127,13 @@ sealed class LibDependencies(
      * https://github.com/vanniktech/gradle-maven-publish-plugin
      */
     object MavenPublish : LibDependencies("com.vanniktech", "gradle-maven-publish-plugin",
-        "0.23.1", DependencyMethod.Implementation)
+        "0.24.0", DependencyMethod.Implementation)
 
     /**
      * 持久KV数据存储
      * https://github.com/Tencent/MMKV/blob/master/README_CN.md
      */
-    object Mmkv : LibDependencies("com.tencent", "mmkv-static", "1.2.14",
+    object Mmkv : LibDependencies("com.tencent", "mmkv-static", "1.2.15",
         DependencyMethod.Implementation)
 
     /**
@@ -196,7 +196,7 @@ sealed class LibDependencies(
      * 多渠道打包
      * https://github.com/Tencent/VasDolly
      */
-    object VasDolly : LibDependencies("com.tencent.vasdolly", "helper", "3.0.4",
+    object VasDolly : LibDependencies("com.tencent.vasdolly", "helper", "3.0.5",
         DependencyMethod.Implementation)
 
     /**
@@ -231,7 +231,7 @@ sealed class LibDependencies(
      * zip压缩相关
      * https://github.com/srikanth-lingala/zip4j
      */
-    object Zip4J : LibDependencies("net.lingala.zip4j", "zip4j", "2.11.2",
+    object Zip4J : LibDependencies("net.lingala.zip4j", "zip4j", "2.11.3",
         DependencyMethod.Implementation)
   }
 
@@ -254,7 +254,7 @@ sealed class LibDependencies(
      * 高斯模糊
      * https://github.com/Dimezis/BlurView
      */
-    object BlurView : LibDependencies("com.github.Dimezis", "BlurView", "version-2.0.0",
+    object BlurView : LibDependencies("com.github.Dimezis", "BlurView", "version-2.0.3",
         DependencyMethod.Implementation)
 
     /**
@@ -316,7 +316,7 @@ sealed class LibDependencies(
     /**
      * https://github.com/material-components/material-components-android
      */
-    object Material : LibDependencies("com.google.android.material", "material", "1.7.0",
+    object Material : LibDependencies("com.google.android.material", "material", "1.8.0",
         DependencyMethod.Implementation)
 
     /**
@@ -432,7 +432,7 @@ sealed class LibDependencies(
      * 单元测试
      * https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
      */
-    object Junit : LibDependencies("org.junit.jupiter", "junit-jupiter", "5.9.1",
+    object Junit : LibDependencies("org.junit.jupiter", "junit-jupiter", "5.9.2",
         DependencyMethod.Test.Implementation)
 
     /**
@@ -516,10 +516,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/compose
      */
     interface Official {
-      object Animation : LibDependencies("androidx.compose.animation", "animation", "1.3.2",
+      object Animation : LibDependencies("androidx.compose.animation", "animation", "1.3.3",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.3.2",
+      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.4.0",
           DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
@@ -534,7 +534,7 @@ sealed class LibDependencies(
       object Material3Ext : LibDependencies("androidx.compose.material3",
           "material3-window-size-class", "1.0.1", DependencyMethod.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.3.2",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.3.3",
           DependencyMethod.Implementation)
     }
 
@@ -573,22 +573,22 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/camera
      */
     interface CameraX {
-      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.2.0",
+      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.2.1",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("androidx.camera", "camera-core", "1.2.0",
+      object Core : LibDependencies("androidx.camera", "camera-core", "1.2.1",
           DependencyMethod.Implementation)
 
-      object Extensions : LibDependencies("androidx.camera", "camera-extensions", "1.2.0",
+      object Extensions : LibDependencies("androidx.camera", "camera-extensions", "1.2.1",
           DependencyMethod.Implementation)
 
-      object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle", "1.2.0",
+      object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle", "1.2.1",
           DependencyMethod.Implementation)
 
-      object Video : LibDependencies("androidx.camera", "camera-video", "1.2.0",
+      object Video : LibDependencies("androidx.camera", "camera-video", "1.2.1",
           DependencyMethod.Implementation)
 
-      object View : LibDependencies("androidx.camera", "camera-view", "1.2.0",
+      object View : LibDependencies("androidx.camera", "camera-view", "1.2.1",
           DependencyMethod.Implementation)
     }
 
@@ -967,29 +967,17 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/room
      */
     interface Room {
-      object Compiler : LibDependencies("androidx.room", "room-compiler", "2.4.3",
+      object Compiler : LibDependencies("androidx.room", "room-compiler", "2.5.0",
           DependencyMethod.Kapt)
 
-      object Core : LibDependencies("androidx.room", "room-runtime", "2.4.3",
+      object Core : LibDependencies("androidx.room", "room-runtime", "2.5.0",
           DependencyMethod.Implementation)
 
-      object Ktx : LibDependencies("androidx.room", "room-ktx", "2.4.3",
+      object Ktx : LibDependencies("androidx.room", "room-ktx", "2.5.0",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.room", "room-testing", "2.4.3",
+      object Test : LibDependencies("androidx.room", "room-testing", "2.5.0",
           DependencyMethod.Test.Implementation)
-    }
-
-    /**
-     * 亚马逊云存储
-     * https://github.com/aws-amplify/aws-sdk-android
-     */
-    interface S3 {
-      object Client : LibDependencies("com.amazonaws", "aws-android-sdk-mobile-client",
-          "2.59.1", DependencyMethod.Implementation)
-
-      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.59.1",
-          DependencyMethod.Implementation)
     }
 
     /**
@@ -997,10 +985,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/sqlite
      */
     interface Sqlite {
-      object Android : LibDependencies("androidx.sqlite", "sqlite-framework", "2.2.0",
+      object Android : LibDependencies("androidx.sqlite", "sqlite-framework", "2.3.0",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("androidx.sqlite", "sqlite-ktx", "2.2.0",
+      object Core : LibDependencies("androidx.sqlite", "sqlite-ktx", "2.3.0",
           DependencyMethod.Implementation)
     }
 

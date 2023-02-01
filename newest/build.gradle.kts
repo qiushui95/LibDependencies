@@ -174,9 +174,6 @@ dependencies {
     implementation("androidx.room:room-ktx:latest.release")
     testImplementation("androidx.room:room-testing:latest.release")
 
-    implementation("com.amazonaws:aws-android-sdk-mobile-client:latest.release")
-    implementation("com.amazonaws:aws-android-sdk-s3:latest.release")
-
     implementation("androidx.sqlite:sqlite-framework:latest.release")
     implementation("androidx.sqlite:sqlite-ktx:latest.release")
 

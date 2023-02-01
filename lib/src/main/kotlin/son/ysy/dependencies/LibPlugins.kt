@@ -19,7 +19,7 @@ sealed class LibPlugins(
     object Reflect : LibPluginId("kotlin-reflect")
   }
 
-  object Maven : LibPlugins("com.vanniktech", "gradle-maven-publish-plugin", "0.23.1") {
+  object Maven : LibPlugins("com.vanniktech", "gradle-maven-publish-plugin", "0.24.0") {
     object Plugin : LibPluginId("com.vanniktech.maven.publish")
   }
 
@@ -32,7 +32,7 @@ sealed class LibPlugins(
     object Plugin : LibPluginId("com.rocketx")
   }
 
-  object VasDolly : LibPlugins("com.tencent.vasdolly", "plugin", "3.0.4") {
+  object VasDolly : LibPlugins("com.tencent.vasdolly", "plugin", "3.0.5") {
     object Plugin : LibPluginId("com.tencent.vasdolly")
   }
 }
