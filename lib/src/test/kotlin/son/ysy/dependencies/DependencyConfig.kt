@@ -76,7 +76,7 @@ sealed class DependencyConfig(
         object Appcompat : Single(
             group = "androidx.appcompat",
             name = "appcompat",
-            version = "1.5.1",
+            version = "1.6.0",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/appcompat",
             dependencyMethod = DependencyMethod.Implementation,
@@ -219,7 +219,7 @@ sealed class DependencyConfig(
         object Mmkv : Single(
             group = "com.tencent",
             name = "mmkv-static",
-            version = "1.2.14",
+            version = "1.2.15",
             remark = "持久KV数据存储",
             link = "https://github.com/Tencent/MMKV/blob/master/README_CN.md",
             dependencyMethod = DependencyMethod.Implementation,
@@ -351,7 +351,7 @@ sealed class DependencyConfig(
         object MavenPublish : Single(
             group = "com.vanniktech",
             name = "gradle-maven-publish-plugin",
-            version = "0.23.1",
+            version = "0.24.0",
             remark = "Maven上传",
             link = "https://github.com/vanniktech/gradle-maven-publish-plugin",
             dependencyMethod = DependencyMethod.Implementation,
@@ -377,7 +377,7 @@ sealed class DependencyConfig(
         object VasDolly : Single(
             group = "com.tencent.vasdolly",
             name = "helper",
-            version = "3.0.4",
+            version = "3.0.5",
             remark = "多渠道打包",
             link = "https://github.com/Tencent/VasDolly",
             dependencyMethod = DependencyMethod.Implementation,
@@ -390,7 +390,7 @@ sealed class DependencyConfig(
         object Zip4J : Single(
             group = "net.lingala.zip4j",
             name = "zip4j",
-            version = "2.11.2",
+            version = "2.11.3",
             remark = "zip压缩相关",
             link = "https://github.com/srikanth-lingala/zip4j",
             dependencyMethod = DependencyMethod.Implementation,
@@ -434,7 +434,7 @@ sealed class DependencyConfig(
         object BlurView : View(
             group = "com.github.Dimezis",
             name = "BlurView",
-            version = "version-2.0.0",
+            version = "version-2.0.3",
             remark = "高斯模糊",
             link = "https://github.com/Dimezis/BlurView",
             dependencyMethod = DependencyMethod.Implementation,
@@ -533,7 +533,7 @@ sealed class DependencyConfig(
         object Material : View(
             group = "com.google.android.material",
             name = "material",
-            version = "1.7.0",
+            version = "1.8.0",
             remark = "",
             link = "https://github.com/material-components/material-components-android",
             dependencyMethod = DependencyMethod.Implementation,
@@ -707,7 +707,7 @@ sealed class DependencyConfig(
         object Junit : Test(
             group = "org.junit.jupiter",
             name = "junit-jupiter",
-            version = "5.9.1",
+            version = "5.9.2",
             remark = "单元测试",
             link = "https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter",
             dependencyMethod = DependencyMethod.Test.Implementation,
@@ -806,7 +806,7 @@ sealed class DependencyConfig(
             object Animation : Official(
                 group = "androidx.compose.animation",
                 name = "animation",
-                version = "1.3.2",
+                version = "1.3.3",
             )
             //endregion
 
@@ -814,7 +814,7 @@ sealed class DependencyConfig(
             object Compiler : Official(
                 group = "androidx.compose.compiler",
                 name = "compiler",
-                version = "1.3.2",
+                version = "1.4.0",
             )
             //endregion
 
@@ -846,7 +846,7 @@ sealed class DependencyConfig(
             //endregion
 
             //region Ui
-            object Ui : Official(group = "androidx.compose.ui", name = "ui", version = "1.3.2")
+            object Ui : Official(group = "androidx.compose.ui", name = "ui", version = "1.3.3")
             //endregion
         }
 
@@ -905,7 +905,7 @@ sealed class DependencyConfig(
         sealed class CameraX(name: String) : Group(
             group = "androidx.camera",
             name = name,
-            version = "1.2.0",
+            version = "1.2.1",
             remark = "相机相关",
             link = "https://developer.android.com/jetpack/androidx/releases/camera",
             dependencyMethod = DependencyMethod.Implementation,
@@ -1339,7 +1339,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.room",
             name = name,
-            version = "2.4.3",
+            version = "2.5.0",
             remark = "Sqlite数据库",
             link = "https://developer.android.com/jetpack/androidx/releases/room",
             dependencyMethod = dependencyMethod,
@@ -1368,23 +1368,6 @@ sealed class DependencyConfig(
         }
 
         //endregion
-        //region S3(亚马逊云存储)
-        sealed class S3(
-            name: String,
-            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : Group(
-            group = "com.amazonaws",
-            name = name,
-            version = "2.59.1",
-            remark = "亚马逊云存储",
-            link = "https://github.com/aws-amplify/aws-sdk-android",
-            dependencyMethod = dependencyMethod,
-        ) {
-            object Core : S3("aws-android-sdk-s3")
-            object Client : S3("aws-android-sdk-mobile-client")
-        }
-
-        //endregion
         //region Sqlite
         sealed class Sqlite(
             name: String,
@@ -1392,7 +1375,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.sqlite",
             name = name,
-            version = "2.2.0",
+            version = "2.3.0",
             remark = "Sqlite",
             link = "https://developer.android.com/jetpack/androidx/releases/sqlite",
             dependencyMethod = dependencyMethod,
