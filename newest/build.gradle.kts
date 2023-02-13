@@ -113,6 +113,7 @@ dependencies {
     testImplementation("androidx.fragment:fragment-testing:latest.release")
 
     kapt("com.github.bumptech.glide:compiler:latest.release")
+    implementation("com.github.bumptech.glide:compose:latest.release")
     implementation("com.github.bumptech.glide:glide:latest.release")
     implementation("com.github.bumptech.glide:okhttp3-integration:latest.release")
 

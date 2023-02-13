@@ -768,6 +768,9 @@ sealed class LibDependencies(
       object Compiler : LibDependencies("com.github.bumptech.glide", "compiler", "4.14.2",
           DependencyMethod.Kapt)
 
+      object Compose : LibDependencies("com.github.bumptech.glide", "compose",
+          "1.0.0-alpha.1", DependencyMethod.Implementation)
+
       object Core : LibDependencies("com.github.bumptech.glide", "glide", "4.14.2",
           DependencyMethod.Implementation)
 

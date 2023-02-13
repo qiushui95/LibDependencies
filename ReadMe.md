@@ -316,6 +316,7 @@
   
 >[Glide](https://github.com/bumptech/glide)(图片加载)  
 >>kapt("com.github.bumptech.glide:compiler:4.14.2")  
+>>implementation("com.github.bumptech.glide:compose:1.0.0-alpha.1")  
 >>implementation("com.github.bumptech.glide:glide:4.14.2")  
 >>implementation("com.github.bumptech.glide:okhttp3-integration:4.14.2")  
   
