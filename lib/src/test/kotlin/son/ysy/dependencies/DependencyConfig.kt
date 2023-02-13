@@ -1210,7 +1210,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "org.jetbrains.kotlin",
             name = name,
-            version = "1.7.21",
+            version = "1.8.10",
             remark = "",
             link = "https://github.com/JetBrains/kotlin",
             dependencyMethod = dependencyMethod,
