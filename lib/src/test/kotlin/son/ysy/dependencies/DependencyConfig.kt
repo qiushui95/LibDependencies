@@ -832,6 +832,19 @@ sealed class DependencyConfig(
 
             //region Ui
             object Ui : Official(group = "androidx.compose.ui", name = "ui", version = "1.3.3")
+            object UiPreview : Official(
+                group = "androidx.compose.ui",
+                name = "ui-tooling-preview",
+                version = "1.3.3"
+            )
+
+            object UiTool : Official(
+                group = "androidx.compose.ui",
+                name = "ui-tooling",
+                version = "1.3.3",
+                dependencyMethod = DependencyMethod.Test.Implementation
+            )
+
             //endregion
         }
 
@@ -886,6 +899,18 @@ sealed class DependencyConfig(
             //region Ui
             object Ui :
                 OfficialAlpha(group = "androidx.compose.ui", name = "ui", version = "1.4.0-beta01")
+            object UiPreview : OfficialAlpha(
+                group = "androidx.compose.ui",
+                name = "ui-tooling-preview",
+                version = "1.4.0-beta01"
+            )
+
+            object UiTool : OfficialAlpha(
+                group = "androidx.compose.ui",
+                name = "ui-tooling",
+                version = "1.4.0-beta01",
+                dependencyMethod = DependencyMethod.Test.Implementation
+            )
             //endregion
         }
 
@@ -1121,7 +1146,7 @@ sealed class DependencyConfig(
         //region Glide(图片加载)
         sealed class Glide(
             name: String,
-            version:String= "4.14.2",
+            version: String = "4.14.2",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : Group(
             group = "com.github.bumptech.glide",
@@ -1133,8 +1158,8 @@ sealed class DependencyConfig(
         ) {
             object Core : Glide("glide")
             object OkHttp : Glide("okhttp3-integration")
-            object Compose : Glide("compose","1.0.0-alpha.1")
-            object Compiler : Glide("compiler", dependencyMethod=DependencyMethod.Kapt)
+            object Compose : Glide("compose", "1.0.0-alpha.1")
+            object Compiler : Glide("compiler", dependencyMethod = DependencyMethod.Kapt)
         }
 
         //endregion
