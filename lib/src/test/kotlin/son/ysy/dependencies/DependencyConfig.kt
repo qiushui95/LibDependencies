@@ -1121,18 +1121,20 @@ sealed class DependencyConfig(
         //region Glide(图片加载)
         sealed class Glide(
             name: String,
+            version:String= "4.14.2",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : Group(
             group = "com.github.bumptech.glide",
             name = name,
-            version = "4.14.2",
+            version = version,
             remark = "图片加载",
             link = "https://github.com/bumptech/glide",
             dependencyMethod = dependencyMethod,
         ) {
             object Core : Glide("glide")
             object OkHttp : Glide("okhttp3-integration")
-            object Compiler : Glide("compiler", DependencyMethod.Kapt)
+            object Compose : Glide("compose","1.0.0-alpha.1")
+            object Compiler : Glide("compiler", dependencyMethod=DependencyMethod.Kapt)
         }
 
         //endregion
