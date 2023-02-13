@@ -76,7 +76,7 @@ sealed class DependencyConfig(
         object Appcompat : Single(
             group = "androidx.appcompat",
             name = "appcompat",
-            version = "1.6.0",
+            version = "1.6.1",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/appcompat",
             dependencyMethod = DependencyMethod.Implementation,
@@ -131,7 +131,7 @@ sealed class DependencyConfig(
         object DateTimePicker : Single(
             group = "com.github.loperSeven",
             name = "DateTimePicker",
-            version = "0.6.1",
+            version = "0.6.2",
             remark = "时间选择器",
             link = "https://github.com/loperSeven/DateTimePicker",
             dependencyMethod = DependencyMethod.Implementation,
@@ -153,7 +153,7 @@ sealed class DependencyConfig(
         object Exif : Single(
             group = "androidx.exifinterface",
             name = "exifinterface",
-            version = "1.3.5",
+            version = "1.3.6",
             remark = "图片信息",
             link = "https://developer.android.com/jetpack/androidx/releases/exifinterface",
             dependencyMethod = DependencyMethod.Implementation,
@@ -377,7 +377,7 @@ sealed class DependencyConfig(
         object VasDolly : Single(
             group = "com.tencent.vasdolly",
             name = "helper",
-            version = "3.0.5",
+            version = "3.0.6",
             remark = "多渠道打包",
             link = "https://github.com/Tencent/VasDolly",
             dependencyMethod = DependencyMethod.Implementation,
@@ -390,7 +390,7 @@ sealed class DependencyConfig(
         object Zip4J : Single(
             group = "net.lingala.zip4j",
             name = "zip4j",
-            version = "2.11.3",
+            version = "2.11.4",
             remark = "zip压缩相关",
             link = "https://github.com/srikanth-lingala/zip4j",
             dependencyMethod = DependencyMethod.Implementation,
@@ -648,7 +648,7 @@ sealed class DependencyConfig(
         object ScrollContainer : View(
             group = "com.github.donkingliang",
             name = "ConsecutiveScroller",
-            version = "4.6.3",
+            version = "4.6.4",
             remark = "嵌套滑动组件",
             link = "https://github.com/donkingliang/ConsecutiveScroller",
             dependencyMethod = DependencyMethod.Implementation,
@@ -801,7 +801,6 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
 
-
             //region Animation
             object Animation : Official(
                 group = "androidx.compose.animation",
@@ -814,7 +813,7 @@ sealed class DependencyConfig(
             object Compiler : Official(
                 group = "androidx.compose.compiler",
                 name = "compiler",
-                version = "1.4.0",
+                version = "1.4.2",
             )
             //endregion
 
@@ -831,22 +830,62 @@ sealed class DependencyConfig(
                 Official(group = "androidx.compose.material", name = "material", version = "1.3.1")
             //endregion
 
-            //region Material
-            object Material3 : Official(
-                group = "androidx.compose.material3",
-                name = "material3",
-                version = "1.0.1"
-            )
+            //region Ui
+            object Ui : Official(group = "androidx.compose.ui", name = "ui", version = "1.3.3")
+            //endregion
+        }
 
-            object Material3Ext : Official(
-                group = "androidx.compose.material3",
-                name = "material3-window-size-class",
-                version = "1.0.1"
+        //endregion
+        //region Official Alpha
+        sealed class OfficialAlpha(
+            group: String,
+            name: String,
+            version: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : Compose(
+            group = group,
+            name = name,
+            version = version,
+            remark = "Compose Alpha官方",
+            link = "https://developer.android.com/jetpack/androidx/releases/compose",
+            dependencyMethod = dependencyMethod,
+        ) {
+
+            //region Animation
+            object Animation : OfficialAlpha(
+                group = "androidx.compose.animation",
+                name = "animation",
+                version = "1.4.0-beta01",
+            )
+            //endregion
+
+            //region Compiler
+            object Compiler : OfficialAlpha(
+                group = "androidx.compose.compiler",
+                name = "compiler",
+                version = "1.4.2",
+            )
+            //endregion
+
+            //region Foundation
+            object Foundation : OfficialAlpha(
+                group = "androidx.compose.foundation",
+                name = "foundation",
+                version = "1.4.0-beta01",
+            )
+            //endregion
+
+            //region Material
+            object Material : OfficialAlpha(
+                group = "androidx.compose.material",
+                name = "material",
+                version = "1.4.0-beta01"
             )
             //endregion
 
             //region Ui
-            object Ui : Official(group = "androidx.compose.ui", name = "ui", version = "1.3.3")
+            object Ui :
+                OfficialAlpha(group = "androidx.compose.ui", name = "ui", version = "1.4.0-beta01")
             //endregion
         }
 
@@ -1147,10 +1186,9 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             sealed class Version(val value: String) {
-                object Core : Version("3.3.2")
-                object Annotation : Version("1.1.0")
-                object Android : Version("3.3.2")
-                object Compose : Version("3.4.1")
+                object Core : Version("3.3.3")
+                object Android : Version("3.3.3")
+                object Compose : Version("3.4.2")
             }
 
             object Android : Koin("koin-android", Version.Android)
@@ -1162,9 +1200,6 @@ sealed class DependencyConfig(
                 "koin-test-junit5",
                 Version.Core, DependencyMethod.Test.Implementation
             )
-
-            object Annotations : Koin("koin-annotations", Version.Annotation)
-            object Compiler : Koin("koin-ksp-compiler", Version.Annotation)
         }
 
         //endregion
@@ -1237,6 +1272,28 @@ sealed class DependencyConfig(
         ) {
             object Core : MoShi("moshi")
             object Compiler : MoShi("moshi-kotlin-codegen", DependencyMethod.Kapt)
+        }
+
+        //endregion
+        //region MviOrbit(mvi架构库)
+        sealed class MviOrbit(
+            name: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : Group(
+            group = "org.orbit-mvi",
+            name = name,
+            version = "4.5.0",
+            remark = "mvi架构库",
+            link = "https://github.com/orbit-mvi/orbit-mvi",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Core : MviOrbit("orbit-core")
+            object ViewModel : MviOrbit("orbit-viewmodel")
+            object Compose : MviOrbit("orbit-compose")
+            object Test : MviOrbit(
+                "orbit-test",
+                dependencyMethod = DependencyMethod.Test.Implementation,
+            )
         }
 
         //endregion
@@ -1430,7 +1487,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.work",
             name = name,
-            version = "2.7.1",
+            version = "2.8.0",
             remark = "任务管理器",
             link = "https://developer.android.com/jetpack/androidx/releases/work",
             dependencyMethod = dependencyMethod,

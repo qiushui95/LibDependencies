@@ -7,7 +7,7 @@ sealed class PluginConfig(
     val key: String
 ) {
 
-    object Android : PluginConfig("com.android.tools.build", "gradle", "7.2.2", "androidPlugin")
+    object Android : PluginConfig("com.android.tools.build", "gradle", "7.4.1", "androidPlugin")
 
     object Kotlin : PluginConfig(
         DependencyConfig.Group.Kotlin.Stdlib.group,
@@ -56,15 +56,5 @@ sealed class PluginConfig(
         "vasDolly"
     ){
         object Plugin : LibPluginId("com.tencent.vasdolly")
-    }
-
-    sealed class Asm(name: String, key: String) : PluginConfig(
-        "org.ow2.asm",
-        name,
-        "9.2",
-        "asm.$key"
-    ) {
-        object Common : Asm("asm-commons", "common")
-        object Util : Asm("asm-util", "util")
     }
 }
