@@ -740,7 +740,7 @@ sealed class DependencyConfig(
         sealed class Accompanist(name: String) : Compose(
             group = "com.google.accompanist",
             name = name,
-            version = "0.28.0",
+            version = "0.29.1-alpha",
             remark = "",
             link = "https://github.com/google/accompanist",
             dependencyMethod = DependencyMethod.Implementation,
@@ -748,13 +748,9 @@ sealed class DependencyConfig(
             object SystemUiController : Accompanist("accompanist-systemuicontroller")
             object AppcompatTheme : Accompanist("accompanist-themeadapter-appcompat")
             object MaterialTheme : Accompanist("accompanist-themeadapter-material")
-            object Material3Theme : Accompanist("accompanist-themeadapter-material3")
-            object Pager : Accompanist("accompanist-pager")
             object PagerIndicators : Accompanist("accompanist-pager-indicators")
             object Permissions : Accompanist("accompanist-permissions")
             object PlaceHolder : Accompanist("accompanist-placeholder")
-            object PlaceHolderMaterial : Accompanist("accompanist-placeholder-material")
-            object FlowLayout : Accompanist("accompanist-flowlayout")
             object NavigationAnimation : Accompanist("accompanist-navigation-animation")
             object NavigationMaterial : Accompanist("accompanist-navigation-material")
             object DrawablePainter : Accompanist("accompanist-drawablepainter")
@@ -842,7 +838,7 @@ sealed class DependencyConfig(
                 group = "androidx.compose.ui",
                 name = "ui-tooling",
                 version = "1.3.3",
-                dependencyMethod = DependencyMethod.Test.Implementation
+                dependencyMethod = DependencyMethod.Debug.Implementation
             )
 
             //endregion
@@ -909,7 +905,7 @@ sealed class DependencyConfig(
                 group = "androidx.compose.ui",
                 name = "ui-tooling",
                 version = "1.4.0-beta01",
-                dependencyMethod = DependencyMethod.Test.Implementation
+                dependencyMethod = DependencyMethod.Debug.Implementation
             )
             //endregion
         }
