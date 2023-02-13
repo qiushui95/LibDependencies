@@ -42,7 +42,7 @@ sealed class LibDependencies(
     /**
      * https://developer.android.com/jetpack/androidx/releases/appcompat
      */
-    object Appcompat : LibDependencies("androidx.appcompat", "appcompat", "1.6.0",
+    object Appcompat : LibDependencies("androidx.appcompat", "appcompat", "1.6.1",
         DependencyMethod.Implementation)
 
     /**
@@ -78,7 +78,7 @@ sealed class LibDependencies(
      * https://github.com/loperSeven/DateTimePicker
      */
     object DateTimePicker : LibDependencies("com.github.loperSeven", "DateTimePicker",
-        "0.6.1", DependencyMethod.Implementation)
+        "0.6.2", DependencyMethod.Implementation)
 
     /**
      * 悬浮窗
@@ -91,7 +91,7 @@ sealed class LibDependencies(
      * 图片信息
      * https://developer.android.com/jetpack/androidx/releases/exifinterface
      */
-    object Exif : LibDependencies("androidx.exifinterface", "exifinterface", "1.3.5",
+    object Exif : LibDependencies("androidx.exifinterface", "exifinterface", "1.3.6",
         DependencyMethod.Implementation)
 
     /**
@@ -196,7 +196,7 @@ sealed class LibDependencies(
      * 多渠道打包
      * https://github.com/Tencent/VasDolly
      */
-    object VasDolly : LibDependencies("com.tencent.vasdolly", "helper", "3.0.5",
+    object VasDolly : LibDependencies("com.tencent.vasdolly", "helper", "3.0.6",
         DependencyMethod.Implementation)
 
     /**
@@ -231,7 +231,7 @@ sealed class LibDependencies(
      * zip压缩相关
      * https://github.com/srikanth-lingala/zip4j
      */
-    object Zip4J : LibDependencies("net.lingala.zip4j", "zip4j", "2.11.3",
+    object Zip4J : LibDependencies("net.lingala.zip4j", "zip4j", "2.11.4",
         DependencyMethod.Implementation)
   }
 
@@ -365,7 +365,7 @@ sealed class LibDependencies(
      * https://github.com/donkingliang/ConsecutiveScroller
      */
     object ScrollContainer : LibDependencies("com.github.donkingliang",
-        "ConsecutiveScroller", "4.6.3", DependencyMethod.Implementation)
+        "ConsecutiveScroller", "4.6.4", DependencyMethod.Implementation)
 
     /**
      * 下拉刷新控件
@@ -519,7 +519,7 @@ sealed class LibDependencies(
       object Animation : LibDependencies("androidx.compose.animation", "animation", "1.3.3",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.4.0",
+      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.4.2",
           DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
@@ -528,13 +528,28 @@ sealed class LibDependencies(
       object Material : LibDependencies("androidx.compose.material", "material", "1.3.1",
           DependencyMethod.Implementation)
 
-      object Material3 : LibDependencies("androidx.compose.material3", "material3", "1.0.1",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.3.3",
+          DependencyMethod.Implementation)
+    }
+
+    /**
+     * Compose Alpha官方
+     * https://developer.android.com/jetpack/androidx/releases/compose
+     */
+    interface OfficialAlpha {
+      object Animation : LibDependencies("androidx.compose.animation", "animation",
+          "1.4.0-beta01", DependencyMethod.Implementation)
+
+      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.4.2",
           DependencyMethod.Implementation)
 
-      object Material3Ext : LibDependencies("androidx.compose.material3",
-          "material3-window-size-class", "1.0.1", DependencyMethod.Implementation)
+      object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
+          "1.4.0-beta01", DependencyMethod.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.3.3",
+      object Material : LibDependencies("androidx.compose.material", "material",
+          "1.4.0-beta01", DependencyMethod.Implementation)
+
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.4.0-beta01",
           DependencyMethod.Implementation)
     }
 
@@ -795,29 +810,23 @@ sealed class LibDependencies(
      * https://github.com/InsertKoinIO/koin
      */
     interface Koin {
-      object Android : LibDependencies("io.insert-koin", "koin-android", "3.3.2",
+      object Android : LibDependencies("io.insert-koin", "koin-android", "3.3.3",
           DependencyMethod.Implementation)
 
-      object Annotations : LibDependencies("io.insert-koin", "koin-annotations", "1.1.0",
+      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose", "3.4.2",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler", "1.1.0",
-          DependencyMethod.Implementation)
-
-      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose", "3.4.1",
-          DependencyMethod.Implementation)
-
-      object Core : LibDependencies("io.insert-koin", "koin-core", "3.3.2",
+      object Core : LibDependencies("io.insert-koin", "koin-core", "3.3.3",
           DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("io.insert-koin", "koin-androidx-navigation",
-          "3.3.2", DependencyMethod.Implementation)
+          "3.3.3", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.3.2",
+      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.3.3",
           DependencyMethod.Test.Implementation)
 
       object WorkManager : LibDependencies("io.insert-koin", "koin-androidx-workmanager",
-          "3.3.2", DependencyMethod.Implementation)
+          "3.3.3", DependencyMethod.Implementation)
     }
 
     /**
@@ -881,6 +890,24 @@ sealed class LibDependencies(
           "1.14.0", DependencyMethod.Kapt)
 
       object Core : LibDependencies("com.squareup.moshi", "moshi", "1.14.0",
+          DependencyMethod.Implementation)
+    }
+
+    /**
+     * mvi架构库
+     * https://github.com/orbit-mvi/orbit-mvi
+     */
+    interface MviOrbit {
+      object Compose : LibDependencies("org.orbit-mvi", "orbit-compose", "4.5.0",
+          DependencyMethod.Implementation)
+
+      object Core : LibDependencies("org.orbit-mvi", "orbit-core", "4.5.0",
+          DependencyMethod.Implementation)
+
+      object Test : LibDependencies("org.orbit-mvi", "orbit-test", "4.5.0",
+          DependencyMethod.Test.Implementation)
+
+      object ViewModel : LibDependencies("org.orbit-mvi", "orbit-viewmodel", "4.5.0",
           DependencyMethod.Implementation)
     }
 
@@ -1045,10 +1072,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/work
      */
     interface WorkManager {
-      object Core : LibDependencies("androidx.work", "work-runtime-ktx", "2.7.1",
+      object Core : LibDependencies("androidx.work", "work-runtime-ktx", "2.8.0",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.work", "work-testing", "2.7.1",
+      object Test : LibDependencies("androidx.work", "work-testing", "2.8.0",
           DependencyMethod.Test.Implementation)
     }
   }

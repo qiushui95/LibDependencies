@@ -16,7 +16,7 @@
 >>implementation("androidx.annotation:annotation:1.5.0")  
   
 >[Appcompat](https://developer.android.com/jetpack/androidx/releases/appcompat)  
->>implementation("androidx.appcompat:appcompat:1.6.0")  
+>>implementation("androidx.appcompat:appcompat:1.6.1")  
   
 >[Background](https://github.com/JavaNoober/BackgroundLibrary)(背景生成工具库)  
 >>implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.5")  
@@ -31,13 +31,13 @@
 >>implementation("id.zelory:compressor:3.0.1")  
   
 >[DateTimePicker](https://github.com/loperSeven/DateTimePicker)(时间选择器)  
->>implementation("com.github.loperSeven:DateTimePicker:0.6.1")  
+>>implementation("com.github.loperSeven:DateTimePicker:0.6.2")  
   
 >[EasyFloat](https://github.com/princekin-f/EasyFloat)(悬浮窗)  
 >>implementation("com.github.princekin-f:EasyFloat:2.0.4")  
   
 >[Exif](https://developer.android.com/jetpack/androidx/releases/exifinterface)(图片信息)  
->>implementation("androidx.exifinterface:exifinterface:1.3.5")  
+>>implementation("androidx.exifinterface:exifinterface:1.3.6")  
   
 >[FlowExt](https://github.com/hoc081098/FlowExt)(Flow扩展)  
 >>implementation("io.github.hoc081098:FlowExt-jvm:0.5.0")  
@@ -82,7 +82,7 @@
 >>implementation("com.dropbox.mobile.store:store4:4.0.5")  
   
 >[VasDolly](https://github.com/Tencent/VasDolly)(多渠道打包)  
->>implementation("com.tencent.vasdolly:helper:3.0.5")  
+>>implementation("com.tencent.vasdolly:helper:3.0.6")  
   
 >[WeChat](https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Resource_Center_Homepage.html)(微信开发Sdk)  
 >>implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")  
@@ -97,7 +97,7 @@
 >>implementation("com.github.getActivity:XXPermissions:16.6")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
->>implementation("net.lingala.zip4j:zip4j:2.11.3")  
+>>implementation("net.lingala.zip4j:zip4j:2.11.4")  
   
 </details>  
   
@@ -159,7 +159,7 @@
 >>implementation("com.github.rubensousa:gravitysnaphelper:2.2.2")  
   
 >[ScrollContainer](https://github.com/donkingliang/ConsecutiveScroller)(嵌套滑动组件)  
->>implementation("com.github.donkingliang:ConsecutiveScroller:4.6.3")  
+>>implementation("com.github.donkingliang:ConsecutiveScroller:4.6.4")  
   
 >[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)(下拉刷新控件)  
 >>implementation("io.github.scwang90:refresh-footer-classics:2.0.5")  
@@ -226,12 +226,17 @@
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
 >>implementation("androidx.compose.animation:animation:1.3.3")  
->>implementation("androidx.compose.compiler:compiler:1.4.0")  
+>>implementation("androidx.compose.compiler:compiler:1.4.2")  
 >>implementation("androidx.compose.foundation:foundation:1.3.1")  
 >>implementation("androidx.compose.material:material:1.3.1")  
->>implementation("androidx.compose.material3:material3:1.0.1")  
->>implementation("androidx.compose.material3:material3-window-size-class:1.0.1")  
 >>implementation("androidx.compose.ui:ui:1.3.3")  
+  
+>[OfficialAlpha](https://developer.android.com/jetpack/androidx/releases/compose)(Compose Alpha官方)  
+>>implementation("androidx.compose.animation:animation:1.4.0-beta01")  
+>>implementation("androidx.compose.compiler:compiler:1.4.2")  
+>>implementation("androidx.compose.foundation:foundation:1.4.0-beta01")  
+>>implementation("androidx.compose.material:material:1.4.0-beta01")  
+>>implementation("androidx.compose.ui:ui:1.4.0-beta01")  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")  
@@ -325,14 +330,12 @@
 >>implementation("com.geyifeng.immersionbar:immersionbar-ktx:3.2.2")  
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  
->>implementation("io.insert-koin:koin-android:3.3.2")  
->>implementation("io.insert-koin:koin-annotations:1.1.0")  
->>implementation("io.insert-koin:koin-ksp-compiler:1.1.0")  
->>implementation("io.insert-koin:koin-androidx-compose:3.4.1")  
->>implementation("io.insert-koin:koin-core:3.3.2")  
->>implementation("io.insert-koin:koin-androidx-navigation:3.3.2")  
->>testImplementation("io.insert-koin:koin-test-junit5:3.3.2")  
->>implementation("io.insert-koin:koin-androidx-workmanager:3.3.2")  
+>>implementation("io.insert-koin:koin-android:3.3.3")  
+>>implementation("io.insert-koin:koin-androidx-compose:3.4.2")  
+>>implementation("io.insert-koin:koin-core:3.3.3")  
+>>implementation("io.insert-koin:koin-androidx-navigation:3.3.3")  
+>>testImplementation("io.insert-koin:koin-test-junit5:3.3.3")  
+>>implementation("io.insert-koin:koin-androidx-workmanager:3.3.3")  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
 >>implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.21")  
@@ -355,6 +358,12 @@
 >[MoShi](https://github.com/square/moshi)(json解析库)  
 >>kapt("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")  
 >>implementation("com.squareup.moshi:moshi:1.14.0")  
+  
+>[MviOrbit](https://github.com/orbit-mvi/orbit-mvi)(mvi架构库)  
+>>implementation("org.orbit-mvi:orbit-compose:4.5.0")  
+>>implementation("org.orbit-mvi:orbit-core:4.5.0")  
+>>testImplementation("org.orbit-mvi:orbit-test:4.5.0")  
+>>implementation("org.orbit-mvi:orbit-viewmodel:4.5.0")  
   
 >[Navigation](https://developer.android.com/jetpack/androidx/releases/navigation)(导航库)  
 >>implementation("androidx.navigation:navigation-compose:2.5.3")  
@@ -410,8 +419,8 @@
 >>implementation("net.gotev:uploadservice-okhttp:4.7.0")  
   
 >[WorkManager](https://developer.android.com/jetpack/androidx/releases/work)(任务管理器)  
->>implementation("androidx.work:work-runtime-ktx:2.7.1")  
->>testImplementation("androidx.work:work-testing:2.7.1")  
+>>implementation("androidx.work:work-runtime-ktx:2.8.0")  
+>>testImplementation("androidx.work:work-testing:2.8.0")  
   
 </details>  
   

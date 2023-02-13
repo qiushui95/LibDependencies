@@ -42,12 +42,16 @@ dependencies {
     implementation("com.github.fornewid:material-motion-compose:0.8.1")
 
     implementation("androidx.compose.animation:animation:1.3.3")
-    implementation("androidx.compose.compiler:compiler:1.4.0")
+    implementation("androidx.compose.compiler:compiler:1.4.2")
     implementation("androidx.compose.foundation:foundation:1.3.1")
     implementation("androidx.compose.material:material:1.3.1")
-    implementation("androidx.compose.material3:material3:1.0.1")
-    implementation("androidx.compose.material3:material3-window-size-class:1.0.1")
     implementation("androidx.compose.ui:ui:1.3.3")
+
+    implementation("androidx.compose.animation:animation:1.4.0-beta01")
+    implementation("androidx.compose.compiler:compiler:1.4.2")
+    implementation("androidx.compose.foundation:foundation:1.4.0-beta01")
+    implementation("androidx.compose.material:material:1.4.0-beta01")
+    implementation("androidx.compose.ui:ui:1.4.0-beta01")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
 
 
@@ -120,14 +124,12 @@ dependencies {
     implementation("com.geyifeng.immersionbar:immersionbar:3.2.2")
     implementation("com.geyifeng.immersionbar:immersionbar-ktx:3.2.2")
 
-    implementation("io.insert-koin:koin-android:3.3.2")
-    implementation("io.insert-koin:koin-annotations:1.1.0")
-    implementation("io.insert-koin:koin-ksp-compiler:1.1.0")
-    implementation("io.insert-koin:koin-androidx-compose:3.4.1")
-    implementation("io.insert-koin:koin-core:3.3.2")
-    implementation("io.insert-koin:koin-androidx-navigation:3.3.2")
-    testImplementation("io.insert-koin:koin-test-junit5:3.3.2")
-    implementation("io.insert-koin:koin-androidx-workmanager:3.3.2")
+    implementation("io.insert-koin:koin-android:3.3.3")
+    implementation("io.insert-koin:koin-androidx-compose:3.4.2")
+    implementation("io.insert-koin:koin-core:3.3.3")
+    implementation("io.insert-koin:koin-androidx-navigation:3.3.3")
+    testImplementation("io.insert-koin:koin-test-junit5:3.3.3")
+    implementation("io.insert-koin:koin-androidx-workmanager:3.3.3")
 
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.21")
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.21")
@@ -146,6 +148,11 @@ dependencies {
 
     kapt("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")
     implementation("com.squareup.moshi:moshi:1.14.0")
+
+    implementation("org.orbit-mvi:orbit-compose:4.5.0")
+    implementation("org.orbit-mvi:orbit-core:4.5.0")
+    testImplementation("org.orbit-mvi:orbit-test:4.5.0")
+    implementation("org.orbit-mvi:orbit-viewmodel:4.5.0")
 
     implementation("androidx.navigation:navigation-compose:2.5.3")
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
@@ -190,8 +197,8 @@ dependencies {
     implementation("net.gotev:uploadservice-ftp:4.7.0")
     implementation("net.gotev:uploadservice-okhttp:4.7.0")
 
-    implementation("androidx.work:work-runtime-ktx:2.7.1")
-    testImplementation("androidx.work:work-testing:2.7.1")
+    implementation("androidx.work:work-runtime-ktx:2.8.0")
+    testImplementation("androidx.work:work-testing:2.8.0")
 
 
 
@@ -199,14 +206,14 @@ dependencies {
     implementation("com.aliyun.ams:alicloud-android-push:3.8.0")
     implementation("com.blankj:utilcodex:1.31.1")
     implementation("androidx.annotation:annotation:1.5.0")
-    implementation("androidx.appcompat:appcompat:1.6.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.5")
     implementation("io.github.razerdp:BasePopup:3.2.1")
     implementation("me.jorgecastillo:androidcolorx:0.2.0")
     implementation("id.zelory:compressor:3.0.1")
-    implementation("com.github.loperSeven:DateTimePicker:0.6.1")
+    implementation("com.github.loperSeven:DateTimePicker:0.6.2")
     implementation("com.github.princekin-f:EasyFloat:2.0.4")
-    implementation("androidx.exifinterface:exifinterface:1.3.5")
+    implementation("androidx.exifinterface:exifinterface:1.3.6")
     implementation("io.github.hoc081098:FlowExt-jvm:0.5.0")
     implementation("com.github.seancfoley:ipaddress:5.4.0")
     implementation("joda-time:joda-time:2.12.2")
@@ -221,12 +228,12 @@ dependencies {
     implementation("com.github.liangjingkanji:soft-input-event:1.0.9")
     implementation("com.github.qiushui95:AndroidInitializer:1.0.9")
     implementation("com.dropbox.mobile.store:store4:4.0.5")
-    implementation("com.tencent.vasdolly:helper:3.0.5")
+    implementation("com.tencent.vasdolly:helper:3.0.6")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
     implementation("com.github.li-xiaojun:XPopup:2.9.19")
     implementation("com.github.getActivity:XXPermissions:16.6")
-    implementation("net.lingala.zip4j:zip4j:2.11.3")
+    implementation("net.lingala.zip4j:zip4j:2.11.4")
 
 
 
@@ -254,7 +261,7 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.3.0-rc01")
     implementation("com.github.fondesa:recycler-view-divider:3.6.0")
     implementation("com.github.rubensousa:gravitysnaphelper:2.2.2")
-    implementation("com.github.donkingliang:ConsecutiveScroller:4.6.3")
+    implementation("com.github.donkingliang:ConsecutiveScroller:4.6.4")
 
     implementation("io.github.scwang90:refresh-footer-classics:2.0.5")
     implementation("io.github.scwang90:refresh-header-classics:2.0.5")

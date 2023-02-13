@@ -45,8 +45,12 @@ dependencies {
     implementation("androidx.compose.compiler:compiler:latest.release")
     implementation("androidx.compose.foundation:foundation:latest.release")
     implementation("androidx.compose.material:material:latest.release")
-    implementation("androidx.compose.material3:material3:latest.release")
-    implementation("androidx.compose.material3:material3-window-size-class:latest.release")
+    implementation("androidx.compose.ui:ui:latest.release")
+
+    implementation("androidx.compose.animation:animation:latest.release")
+    implementation("androidx.compose.compiler:compiler:latest.release")
+    implementation("androidx.compose.foundation:foundation:latest.release")
+    implementation("androidx.compose.material:material:latest.release")
     implementation("androidx.compose.ui:ui:latest.release")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:latest.release")
 
@@ -121,8 +125,6 @@ dependencies {
     implementation("com.geyifeng.immersionbar:immersionbar-ktx:latest.release")
 
     implementation("io.insert-koin:koin-android:latest.release")
-    implementation("io.insert-koin:koin-annotations:latest.release")
-    implementation("io.insert-koin:koin-ksp-compiler:latest.release")
     implementation("io.insert-koin:koin-androidx-compose:latest.release")
     implementation("io.insert-koin:koin-core:latest.release")
     implementation("io.insert-koin:koin-androidx-navigation:latest.release")
@@ -146,6 +148,11 @@ dependencies {
 
     kapt("com.squareup.moshi:moshi-kotlin-codegen:latest.release")
     implementation("com.squareup.moshi:moshi:latest.release")
+
+    implementation("org.orbit-mvi:orbit-compose:latest.release")
+    implementation("org.orbit-mvi:orbit-core:latest.release")
+    testImplementation("org.orbit-mvi:orbit-test:latest.release")
+    implementation("org.orbit-mvi:orbit-viewmodel:latest.release")
 
     implementation("androidx.navigation:navigation-compose:latest.release")
     implementation("androidx.navigation:navigation-fragment-ktx:latest.release")
