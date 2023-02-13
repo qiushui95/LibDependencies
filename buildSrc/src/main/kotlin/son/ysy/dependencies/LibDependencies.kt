@@ -457,6 +457,9 @@ sealed class LibDependencies(
       object DrawablePainter : LibDependencies("com.google.accompanist",
           "accompanist-drawablepainter", "0.29.1-alpha", DependencyMethod.Implementation)
 
+      object Material3Theme : LibDependencies("com.google.accompanist",
+          "accompanist-themeadapter-material3", "0.29.1-alpha", DependencyMethod.Implementation)
+
       object MaterialTheme : LibDependencies("com.google.accompanist",
           "accompanist-themeadapter-material", "0.29.1-alpha", DependencyMethod.Implementation)
 
@@ -474,6 +477,9 @@ sealed class LibDependencies(
 
       object PlaceHolder : LibDependencies("com.google.accompanist",
           "accompanist-placeholder", "0.29.1-alpha", DependencyMethod.Implementation)
+
+      object PlaceHolderMaterial : LibDependencies("com.google.accompanist",
+          "accompanist-placeholder-material", "0.29.1-alpha", DependencyMethod.Implementation)
 
       object SystemUiController : LibDependencies("com.google.accompanist",
           "accompanist-systemuicontroller", "0.29.1-alpha", DependencyMethod.Implementation)
