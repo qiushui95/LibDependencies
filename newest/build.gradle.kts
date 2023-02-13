@@ -46,12 +46,16 @@ dependencies {
     implementation("androidx.compose.foundation:foundation:latest.release")
     implementation("androidx.compose.material:material:latest.release")
     implementation("androidx.compose.ui:ui:latest.release")
+    implementation("androidx.compose.ui:ui-tooling-preview:latest.release")
+    testImplementation("androidx.compose.ui:ui-tooling:latest.release")
 
     implementation("androidx.compose.animation:animation:latest.release")
     implementation("androidx.compose.compiler:compiler:latest.release")
     implementation("androidx.compose.foundation:foundation:latest.release")
     implementation("androidx.compose.material:material:latest.release")
     implementation("androidx.compose.ui:ui:latest.release")
+    implementation("androidx.compose.ui:ui-tooling-preview:latest.release")
+    testImplementation("androidx.compose.ui:ui-tooling:latest.release")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:latest.release")
 
 

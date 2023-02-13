@@ -230,6 +230,8 @@
 >>implementation("androidx.compose.foundation:foundation:1.3.1")  
 >>implementation("androidx.compose.material:material:1.3.1")  
 >>implementation("androidx.compose.ui:ui:1.3.3")  
+>>implementation("androidx.compose.ui:ui-tooling-preview:1.3.3")  
+>>testImplementation("androidx.compose.ui:ui-tooling:1.3.3")  
   
 >[OfficialAlpha](https://developer.android.com/jetpack/androidx/releases/compose)(Compose Alpha官方)  
 >>implementation("androidx.compose.animation:animation:1.4.0-beta01")  
@@ -237,6 +239,8 @@
 >>implementation("androidx.compose.foundation:foundation:1.4.0-beta01")  
 >>implementation("androidx.compose.material:material:1.4.0-beta01")  
 >>implementation("androidx.compose.ui:ui:1.4.0-beta01")  
+>>implementation("androidx.compose.ui:ui-tooling-preview:1.4.0-beta01")  
+>>testImplementation("androidx.compose.ui:ui-tooling:1.4.0-beta01")  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")  

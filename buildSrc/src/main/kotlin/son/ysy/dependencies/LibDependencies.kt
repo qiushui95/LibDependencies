@@ -530,6 +530,12 @@ sealed class LibDependencies(
 
       object Ui : LibDependencies("androidx.compose.ui", "ui", "1.3.3",
           DependencyMethod.Implementation)
+
+      object UiPreview : LibDependencies("androidx.compose.ui", "ui-tooling-preview",
+          "1.3.3", DependencyMethod.Implementation)
+
+      object UiTool : LibDependencies("androidx.compose.ui", "ui-tooling", "1.3.3",
+          DependencyMethod.Test.Implementation)
     }
 
     /**
@@ -551,6 +557,12 @@ sealed class LibDependencies(
 
       object Ui : LibDependencies("androidx.compose.ui", "ui", "1.4.0-beta01",
           DependencyMethod.Implementation)
+
+      object UiPreview : LibDependencies("androidx.compose.ui", "ui-tooling-preview",
+          "1.4.0-beta01", DependencyMethod.Implementation)
+
+      object UiTool : LibDependencies("androidx.compose.ui", "ui-tooling", "1.4.0-beta01",
+          DependencyMethod.Test.Implementation)
     }
 
     /**
