@@ -449,52 +449,40 @@ sealed class LibDependencies(
      */
     interface Accompanist {
       object Adaptive : LibDependencies("com.google.accompanist", "accompanist-adaptive",
-          "0.28.0", DependencyMethod.Implementation)
+          "0.29.1-alpha", DependencyMethod.Implementation)
 
       object AppcompatTheme : LibDependencies("com.google.accompanist",
-          "accompanist-themeadapter-appcompat", "0.28.0", DependencyMethod.Implementation)
+          "accompanist-themeadapter-appcompat", "0.29.1-alpha", DependencyMethod.Implementation)
 
       object DrawablePainter : LibDependencies("com.google.accompanist",
-          "accompanist-drawablepainter", "0.28.0", DependencyMethod.Implementation)
-
-      object FlowLayout : LibDependencies("com.google.accompanist", "accompanist-flowlayout",
-          "0.28.0", DependencyMethod.Implementation)
-
-      object Material3Theme : LibDependencies("com.google.accompanist",
-          "accompanist-themeadapter-material3", "0.28.0", DependencyMethod.Implementation)
+          "accompanist-drawablepainter", "0.29.1-alpha", DependencyMethod.Implementation)
 
       object MaterialTheme : LibDependencies("com.google.accompanist",
-          "accompanist-themeadapter-material", "0.28.0", DependencyMethod.Implementation)
+          "accompanist-themeadapter-material", "0.29.1-alpha", DependencyMethod.Implementation)
 
       object NavigationAnimation : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-animation", "0.28.0", DependencyMethod.Implementation)
+          "accompanist-navigation-animation", "0.29.1-alpha", DependencyMethod.Implementation)
 
       object NavigationMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-material", "0.28.0", DependencyMethod.Implementation)
-
-      object Pager : LibDependencies("com.google.accompanist", "accompanist-pager", "0.28.0",
-          DependencyMethod.Implementation)
+          "accompanist-navigation-material", "0.29.1-alpha", DependencyMethod.Implementation)
 
       object PagerIndicators : LibDependencies("com.google.accompanist",
-          "accompanist-pager-indicators", "0.28.0", DependencyMethod.Implementation)
+          "accompanist-pager-indicators", "0.29.1-alpha", DependencyMethod.Implementation)
 
       object Permissions : LibDependencies("com.google.accompanist",
-          "accompanist-permissions", "0.28.0", DependencyMethod.Implementation)
+          "accompanist-permissions", "0.29.1-alpha", DependencyMethod.Implementation)
 
       object PlaceHolder : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder", "0.28.0", DependencyMethod.Implementation)
-
-      object PlaceHolderMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder-material", "0.28.0", DependencyMethod.Implementation)
+          "accompanist-placeholder", "0.29.1-alpha", DependencyMethod.Implementation)
 
       object SystemUiController : LibDependencies("com.google.accompanist",
-          "accompanist-systemuicontroller", "0.28.0", DependencyMethod.Implementation)
+          "accompanist-systemuicontroller", "0.29.1-alpha", DependencyMethod.Implementation)
 
       object TestHarness : LibDependencies("com.google.accompanist",
-          "accompanist-testharness", "0.28.0", DependencyMethod.Implementation)
+          "accompanist-testharness", "0.29.1-alpha", DependencyMethod.Implementation)
 
-      object Web : LibDependencies("com.google.accompanist", "accompanist-webview", "0.28.0",
-          DependencyMethod.Implementation)
+      object Web : LibDependencies("com.google.accompanist", "accompanist-webview",
+          "0.29.1-alpha", DependencyMethod.Implementation)
     }
 
     /**
@@ -535,7 +523,7 @@ sealed class LibDependencies(
           "1.3.3", DependencyMethod.Implementation)
 
       object UiTool : LibDependencies("androidx.compose.ui", "ui-tooling", "1.3.3",
-          DependencyMethod.Test.Implementation)
+          DependencyMethod.Debug.Implementation)
     }
 
     /**
@@ -562,7 +550,7 @@ sealed class LibDependencies(
           "1.4.0-beta01", DependencyMethod.Implementation)
 
       object UiTool : LibDependencies("androidx.compose.ui", "ui-tooling", "1.4.0-beta01",
-          DependencyMethod.Test.Implementation)
+          DependencyMethod.Debug.Implementation)
     }
 
     /**
