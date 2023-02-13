@@ -131,8 +131,8 @@ dependencies {
     testImplementation("io.insert-koin:koin-test-junit5:3.3.3")
     implementation("io.insert-koin:koin-androidx-workmanager:3.3.3")
 
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.21")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.21")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.10")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.10")
 
     implementation("androidx.lifecycle:lifecycle-common:2.5.1")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")

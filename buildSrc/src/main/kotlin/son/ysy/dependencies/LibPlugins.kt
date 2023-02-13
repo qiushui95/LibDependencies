@@ -11,7 +11,7 @@ sealed class LibPlugins(
 ) {
   object Android : LibPlugins("com.android.tools.build", "gradle", "7.4.1")
 
-  object Kotlin : LibPlugins("org.jetbrains.kotlin", "kotlin-gradle-plugin", "1.7.21") {
+  object Kotlin : LibPlugins("org.jetbrains.kotlin", "kotlin-gradle-plugin", "1.8.10") {
     object Android : LibPluginId("kotlin-android")
 
     object Kapt : LibPluginId("kotlin-kapt")

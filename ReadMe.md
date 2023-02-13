@@ -338,8 +338,8 @@
 >>implementation("io.insert-koin:koin-androidx-workmanager:3.3.3")  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
->>implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.21")  
->>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.21")  
+>>implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.10")  
+>>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.10")  
   
 >[Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation("androidx.lifecycle:lifecycle-common:2.5.1")  

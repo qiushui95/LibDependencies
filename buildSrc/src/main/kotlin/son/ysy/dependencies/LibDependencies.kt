@@ -833,10 +833,10 @@ sealed class LibDependencies(
      * https://github.com/JetBrains/kotlin
      */
     interface Kotlin {
-      object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.7.21",
+      object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.8.10",
           DependencyMethod.Implementation)
 
-      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.7.21",
+      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.8.10",
           DependencyMethod.Implementation)
     }
 
