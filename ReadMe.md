@@ -13,7 +13,7 @@
 >>implementation("com.blankj:utilcodex:1.31.1")  
   
 >[Annotation](https://developer.android.com/jetpack/androidx/releases/annotation)(Annotation)  
->>implementation("androidx.annotation:annotation:1.5.0")  
+>>implementation("androidx.annotation:annotation:1.6.0")  
   
 >[Appcompat](https://developer.android.com/jetpack/androidx/releases/appcompat)  
 >>implementation("androidx.appcompat:appcompat:1.6.1")  
@@ -97,7 +97,7 @@
 >>implementation("com.github.getActivity:XXPermissions:16.6")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
->>implementation("net.lingala.zip4j:zip4j:2.11.4")  
+>>implementation("net.lingala.zip4j:zip4j:2.11.5")  
   
 </details>  
   
@@ -135,7 +135,8 @@
 >>implementation("com.github.dkzwm:fet-core:0.2.1")  
   
 >[LottieView](https://github.com/airbnb/lottie-android)(动画框架)  
->>implementation("com.airbnb.android:lottie:5.2.0")  
+>>implementation("com.airbnb.android:lottie-compose:6.0.0")  
+>>implementation("com.airbnb.android:lottie:6.0.0")  
   
 >[Material](https://github.com/material-components/material-components-android)  
 >>implementation("com.google.android.material:material:1.8.0")  
@@ -224,7 +225,7 @@
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
 >>implementation("androidx.compose.animation:animation:1.3.3")  
->>implementation("androidx.compose.compiler:compiler:1.4.2")  
+>>implementation("androidx.compose.compiler:compiler:1.4.3")  
 >>implementation("androidx.compose.foundation:foundation:1.3.1")  
 >>implementation("androidx.compose.material:material:1.3.1")  
 >>implementation("androidx.compose.ui:ui:1.3.3")  
@@ -232,13 +233,12 @@
 >>debugImplementation("androidx.compose.ui:ui-tooling:1.3.3")  
   
 >[OfficialAlpha](https://developer.android.com/jetpack/androidx/releases/compose)(Compose Alpha官方)  
->>implementation("androidx.compose.animation:animation:1.4.0-beta01")  
->>implementation("androidx.compose.compiler:compiler:1.4.2")  
->>implementation("androidx.compose.foundation:foundation:1.4.0-beta01")  
->>implementation("androidx.compose.material:material:1.4.0-beta01")  
->>implementation("androidx.compose.ui:ui:1.4.0-beta01")  
->>implementation("androidx.compose.ui:ui-tooling-preview:1.4.0-beta01")  
->>debugImplementation("androidx.compose.ui:ui-tooling:1.4.0-beta01")  
+>>implementation("androidx.compose.animation:animation:1.4.0-beta02")  
+>>implementation("androidx.compose.foundation:foundation:1.4.0-beta02")  
+>>implementation("androidx.compose.material:material:1.4.0-beta02")  
+>>implementation("androidx.compose.ui:ui:1.4.0-beta02")  
+>>implementation("androidx.compose.ui:ui-tooling-preview:1.4.0-beta02")  
+>>debugImplementation("androidx.compose.ui:ui-tooling:1.4.0-beta02")  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")  
@@ -363,10 +363,10 @@
 >>implementation("com.squareup.moshi:moshi:1.14.0")  
   
 >[MviOrbit](https://github.com/orbit-mvi/orbit-mvi)(mvi架构库)  
->>implementation("org.orbit-mvi:orbit-compose:4.5.0")  
->>implementation("org.orbit-mvi:orbit-core:4.5.0")  
->>testImplementation("org.orbit-mvi:orbit-test:4.5.0")  
->>implementation("org.orbit-mvi:orbit-viewmodel:4.5.0")  
+>>implementation("org.orbit-mvi:orbit-compose:4.6.1")  
+>>implementation("org.orbit-mvi:orbit-core:4.6.1")  
+>>testImplementation("org.orbit-mvi:orbit-test:4.6.1")  
+>>implementation("org.orbit-mvi:orbit-viewmodel:4.6.1")  
   
 >[Navigation](https://developer.android.com/jetpack/androidx/releases/navigation)(导航库)  
 >>implementation("androidx.navigation:navigation-compose:2.5.3")  

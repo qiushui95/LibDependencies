@@ -36,7 +36,7 @@ sealed class LibDependencies(
      * Annotation
      * https://developer.android.com/jetpack/androidx/releases/annotation
      */
-    object Annotation : LibDependencies("androidx.annotation", "annotation", "1.5.0",
+    object Annotation : LibDependencies("androidx.annotation", "annotation", "1.6.0",
         DependencyMethod.Implementation)
 
     /**
@@ -231,7 +231,7 @@ sealed class LibDependencies(
      * zip压缩相关
      * https://github.com/srikanth-lingala/zip4j
      */
-    object Zip4J : LibDependencies("net.lingala.zip4j", "zip4j", "2.11.4",
+    object Zip4J : LibDependencies("net.lingala.zip4j", "zip4j", "2.11.5",
         DependencyMethod.Implementation)
   }
 
@@ -310,8 +310,13 @@ sealed class LibDependencies(
      * 动画框架
      * https://github.com/airbnb/lottie-android
      */
-    object LottieView : LibDependencies("com.airbnb.android", "lottie", "5.2.0",
-        DependencyMethod.Implementation)
+    interface LottieView {
+      object Compose : LibDependencies("com.airbnb.android", "lottie-compose", "6.0.0",
+          DependencyMethod.Implementation)
+
+      object View : LibDependencies("com.airbnb.android", "lottie", "6.0.0",
+          DependencyMethod.Implementation)
+    }
 
     /**
      * https://github.com/material-components/material-components-android
@@ -513,7 +518,7 @@ sealed class LibDependencies(
       object Animation : LibDependencies("androidx.compose.animation", "animation", "1.3.3",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.4.2",
+      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.4.3",
           DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
@@ -538,24 +543,21 @@ sealed class LibDependencies(
      */
     interface OfficialAlpha {
       object Animation : LibDependencies("androidx.compose.animation", "animation",
-          "1.4.0-beta01", DependencyMethod.Implementation)
-
-      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.4.2",
-          DependencyMethod.Implementation)
+          "1.4.0-beta02", DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.4.0-beta01", DependencyMethod.Implementation)
+          "1.4.0-beta02", DependencyMethod.Implementation)
 
       object Material : LibDependencies("androidx.compose.material", "material",
-          "1.4.0-beta01", DependencyMethod.Implementation)
+          "1.4.0-beta02", DependencyMethod.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.4.0-beta01",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.4.0-beta02",
           DependencyMethod.Implementation)
 
       object UiPreview : LibDependencies("androidx.compose.ui", "ui-tooling-preview",
-          "1.4.0-beta01", DependencyMethod.Implementation)
+          "1.4.0-beta02", DependencyMethod.Implementation)
 
-      object UiTool : LibDependencies("androidx.compose.ui", "ui-tooling", "1.4.0-beta01",
+      object UiTool : LibDependencies("androidx.compose.ui", "ui-tooling", "1.4.0-beta02",
           DependencyMethod.Debug.Implementation)
     }
 
@@ -907,16 +909,16 @@ sealed class LibDependencies(
      * https://github.com/orbit-mvi/orbit-mvi
      */
     interface MviOrbit {
-      object Compose : LibDependencies("org.orbit-mvi", "orbit-compose", "4.5.0",
+      object Compose : LibDependencies("org.orbit-mvi", "orbit-compose", "4.6.1",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("org.orbit-mvi", "orbit-core", "4.5.0",
+      object Core : LibDependencies("org.orbit-mvi", "orbit-core", "4.6.1",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("org.orbit-mvi", "orbit-test", "4.5.0",
+      object Test : LibDependencies("org.orbit-mvi", "orbit-test", "4.6.1",
           DependencyMethod.Test.Implementation)
 
-      object ViewModel : LibDependencies("org.orbit-mvi", "orbit-viewmodel", "4.5.0",
+      object ViewModel : LibDependencies("org.orbit-mvi", "orbit-viewmodel", "4.6.1",
           DependencyMethod.Implementation)
     }
 

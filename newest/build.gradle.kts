@@ -48,7 +48,6 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling:latest.release")
 
     implementation("androidx.compose.animation:animation:latest.release")
-    implementation("androidx.compose.compiler:compiler:latest.release")
     implementation("androidx.compose.foundation:foundation:latest.release")
     implementation("androidx.compose.material:material:latest.release")
     implementation("androidx.compose.ui:ui:latest.release")
@@ -256,6 +255,8 @@ dependencies {
     implementation("com.tbuonomo:dotsindicator:latest.release")
     implementation("com.google.android.flexbox:flexbox:latest.release")
     implementation("com.github.dkzwm:fet-core:latest.release")
+
+    implementation("com.airbnb.android:lottie-compose:latest.release")
     implementation("com.airbnb.android:lottie:latest.release")
     implementation("com.google.android.material:material:latest.release")
     implementation("com.github.mhiew:android-pdf-viewer:latest.release")

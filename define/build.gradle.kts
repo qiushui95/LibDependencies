@@ -40,20 +40,19 @@ dependencies {
     implementation("com.github.fornewid:material-motion-compose:0.8.1")
 
     implementation("androidx.compose.animation:animation:1.3.3")
-    implementation("androidx.compose.compiler:compiler:1.4.2")
+    implementation("androidx.compose.compiler:compiler:1.4.3")
     implementation("androidx.compose.foundation:foundation:1.3.1")
     implementation("androidx.compose.material:material:1.3.1")
     implementation("androidx.compose.ui:ui:1.3.3")
     implementation("androidx.compose.ui:ui-tooling-preview:1.3.3")
     debugImplementation("androidx.compose.ui:ui-tooling:1.3.3")
 
-    implementation("androidx.compose.animation:animation:1.4.0-beta01")
-    implementation("androidx.compose.compiler:compiler:1.4.2")
-    implementation("androidx.compose.foundation:foundation:1.4.0-beta01")
-    implementation("androidx.compose.material:material:1.4.0-beta01")
-    implementation("androidx.compose.ui:ui:1.4.0-beta01")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.4.0-beta01")
-    debugImplementation("androidx.compose.ui:ui-tooling:1.4.0-beta01")
+    implementation("androidx.compose.animation:animation:1.4.0-beta02")
+    implementation("androidx.compose.foundation:foundation:1.4.0-beta02")
+    implementation("androidx.compose.material:material:1.4.0-beta02")
+    implementation("androidx.compose.ui:ui:1.4.0-beta02")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.4.0-beta02")
+    debugImplementation("androidx.compose.ui:ui-tooling:1.4.0-beta02")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
 
 
@@ -152,10 +151,10 @@ dependencies {
     kapt("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")
     implementation("com.squareup.moshi:moshi:1.14.0")
 
-    implementation("org.orbit-mvi:orbit-compose:4.5.0")
-    implementation("org.orbit-mvi:orbit-core:4.5.0")
-    testImplementation("org.orbit-mvi:orbit-test:4.5.0")
-    implementation("org.orbit-mvi:orbit-viewmodel:4.5.0")
+    implementation("org.orbit-mvi:orbit-compose:4.6.1")
+    implementation("org.orbit-mvi:orbit-core:4.6.1")
+    testImplementation("org.orbit-mvi:orbit-test:4.6.1")
+    implementation("org.orbit-mvi:orbit-viewmodel:4.6.1")
 
     implementation("androidx.navigation:navigation-compose:2.5.3")
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
@@ -208,7 +207,7 @@ dependencies {
     implementation("com.aliyun.dpa:oss-android-sdk:2.9.13")
     implementation("com.aliyun.ams:alicloud-android-push:3.8.0")
     implementation("com.blankj:utilcodex:1.31.1")
-    implementation("androidx.annotation:annotation:1.5.0")
+    implementation("androidx.annotation:annotation:1.6.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.5")
     implementation("io.github.razerdp:BasePopup:3.2.1")
@@ -236,7 +235,7 @@ dependencies {
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
     implementation("com.github.li-xiaojun:XPopup:2.9.19")
     implementation("com.github.getActivity:XXPermissions:16.6")
-    implementation("net.lingala.zip4j:zip4j:2.11.4")
+    implementation("net.lingala.zip4j:zip4j:2.11.5")
 
 
 
@@ -256,7 +255,9 @@ dependencies {
     implementation("com.tbuonomo:dotsindicator:4.3")
     implementation("com.google.android.flexbox:flexbox:3.0.0")
     implementation("com.github.dkzwm:fet-core:0.2.1")
-    implementation("com.airbnb.android:lottie:5.2.0")
+
+    implementation("com.airbnb.android:lottie-compose:6.0.0")
+    implementation("com.airbnb.android:lottie:6.0.0")
     implementation("com.google.android.material:material:1.8.0")
     implementation("com.github.mhiew:android-pdf-viewer:3.2.0-beta.3")
     implementation("com.github.chrisbanes:PhotoView:2.3.0")
