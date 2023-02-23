@@ -65,7 +65,7 @@ sealed class DependencyConfig(
         object Annotation : Single(
             group = "androidx.annotation",
             name = "annotation",
-            version = "1.5.0",
+            version = "1.6.0",
             remark = "Annotation",
             link = "https://developer.android.com/jetpack/androidx/releases/annotation",
             dependencyMethod = DependencyMethod.Implementation,
@@ -390,7 +390,7 @@ sealed class DependencyConfig(
         object Zip4J : Single(
             group = "net.lingala.zip4j",
             name = "zip4j",
-            version = "2.11.4",
+            version = "2.11.5",
             remark = "zip压缩相关",
             link = "https://github.com/srikanth-lingala/zip4j",
             dependencyMethod = DependencyMethod.Implementation,
@@ -519,14 +519,17 @@ sealed class DependencyConfig(
 
         //endregion
         //region LottieView(动画框架)
-        object LottieView : View(
+        sealed class LottieView(name: String) : View(
             group = "com.airbnb.android",
-            name = "lottie",
-            version = "5.2.0",
+            name = name,
+            version = "6.0.0",
             remark = "动画框架",
             link = "https://github.com/airbnb/lottie-android",
             dependencyMethod = DependencyMethod.Implementation,
-        )
+        ) {
+            object View : LottieView("lottie")
+            object Compose : LottieView("lottie-compose")
+        }
 
         //endregion
         //region Material
@@ -811,7 +814,7 @@ sealed class DependencyConfig(
             object Compiler : Official(
                 group = "androidx.compose.compiler",
                 name = "compiler",
-                version = "1.4.2",
+                version = "1.4.3",
             )
             //endregion
 
@@ -851,7 +854,7 @@ sealed class DependencyConfig(
         sealed class OfficialAlpha(
             group: String,
             name: String,
-            version: String,
+            version: String = "1.4.0-beta02",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : Compose(
             group = group,
@@ -866,15 +869,6 @@ sealed class DependencyConfig(
             object Animation : OfficialAlpha(
                 group = "androidx.compose.animation",
                 name = "animation",
-                version = "1.4.0-beta01",
-            )
-            //endregion
-
-            //region Compiler
-            object Compiler : OfficialAlpha(
-                group = "androidx.compose.compiler",
-                name = "compiler",
-                version = "1.4.2",
             )
             //endregion
 
@@ -882,31 +876,23 @@ sealed class DependencyConfig(
             object Foundation : OfficialAlpha(
                 group = "androidx.compose.foundation",
                 name = "foundation",
-                version = "1.4.0-beta01",
             )
             //endregion
 
             //region Material
-            object Material : OfficialAlpha(
-                group = "androidx.compose.material",
-                name = "material",
-                version = "1.4.0-beta01"
-            )
+            object Material : OfficialAlpha(group = "androidx.compose.material", name = "material")
             //endregion
 
             //region Ui
-            object Ui :
-                OfficialAlpha(group = "androidx.compose.ui", name = "ui", version = "1.4.0-beta01")
+            object Ui : OfficialAlpha(group = "androidx.compose.ui", name = "ui")
             object UiPreview : OfficialAlpha(
                 group = "androidx.compose.ui",
                 name = "ui-tooling-preview",
-                version = "1.4.0-beta01"
             )
 
             object UiTool : OfficialAlpha(
                 group = "androidx.compose.ui",
                 name = "ui-tooling",
-                version = "1.4.0-beta01",
                 dependencyMethod = DependencyMethod.Debug.Implementation
             )
             //endregion
@@ -1307,7 +1293,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "org.orbit-mvi",
             name = name,
-            version = "4.5.0",
+            version = "4.6.1",
             remark = "mvi架构库",
             link = "https://github.com/orbit-mvi/orbit-mvi",
             dependencyMethod = dependencyMethod,
