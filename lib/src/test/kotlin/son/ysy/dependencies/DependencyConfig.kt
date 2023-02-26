@@ -364,7 +364,7 @@ sealed class DependencyConfig(
         object Serialization : Single(
             group = "org.jetbrains.kotlinx",
             name = "kotlinx-serialization-json",
-            version = "1.4.1",
+            version = "1.5.0",
             remark = "Json序列化",
             link = "https://github.com/Kotlin/kotlinx.serialization",
             dependencyMethod = DependencyMethod.Implementation,
@@ -1130,7 +1130,7 @@ sealed class DependencyConfig(
         //region Glide(图片加载)
         sealed class Glide(
             name: String,
-            version: String = "4.14.2",
+            version: String = "4.15.0",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : Group(
             group = "com.github.bumptech.glide",
@@ -1142,7 +1142,7 @@ sealed class DependencyConfig(
         ) {
             object Core : Glide("glide")
             object OkHttp : Glide("okhttp3-integration")
-            object Compose : Glide("compose", "1.0.0-alpha.1")
+            object Compose : Glide("compose", "1.0.0-alpha.2")
             object Compiler : Glide("compiler", dependencyMethod = DependencyMethod.Kapt)
         }
 
