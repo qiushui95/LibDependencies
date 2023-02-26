@@ -169,7 +169,7 @@ sealed class LibDependencies(
      * https://github.com/Kotlin/kotlinx.serialization
      */
     object Serialization : LibDependencies("org.jetbrains.kotlinx",
-        "kotlinx-serialization-json", "1.4.1", DependencyMethod.Implementation)
+        "kotlinx-serialization-json", "1.5.0", DependencyMethod.Implementation)
 
     /**
      * 软键盘事件
@@ -773,17 +773,17 @@ sealed class LibDependencies(
      * https://github.com/bumptech/glide
      */
     interface Glide {
-      object Compiler : LibDependencies("com.github.bumptech.glide", "compiler", "4.14.2",
+      object Compiler : LibDependencies("com.github.bumptech.glide", "compiler", "4.15.0",
           DependencyMethod.Kapt)
 
       object Compose : LibDependencies("com.github.bumptech.glide", "compose",
-          "1.0.0-alpha.1", DependencyMethod.Implementation)
+          "1.0.0-alpha.2", DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.github.bumptech.glide", "glide", "4.14.2",
+      object Core : LibDependencies("com.github.bumptech.glide", "glide", "4.15.0",
           DependencyMethod.Implementation)
 
       object OkHttp : LibDependencies("com.github.bumptech.glide", "okhttp3-integration",
-          "4.14.2", DependencyMethod.Implementation)
+          "4.15.0", DependencyMethod.Implementation)
     }
 
     /**

@@ -113,10 +113,10 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.5.5")
     testImplementation("androidx.fragment:fragment-testing:1.5.5")
 
-    kapt("com.github.bumptech.glide:compiler:4.14.2")
-    implementation("com.github.bumptech.glide:compose:1.0.0-alpha.1")
-    implementation("com.github.bumptech.glide:glide:4.14.2")
-    implementation("com.github.bumptech.glide:okhttp3-integration:4.14.2")
+    kapt("com.github.bumptech.glide:compiler:4.15.0")
+    implementation("com.github.bumptech.glide:compose:1.0.0-alpha.2")
+    implementation("com.github.bumptech.glide:glide:4.15.0")
+    implementation("com.github.bumptech.glide:okhttp3-integration:4.15.0")
 
     implementation("io.github.lucksiege:camerax:v3.10.7")
     implementation("io.github.lucksiege:compress:v3.10.7")
@@ -226,7 +226,7 @@ dependencies {
     implementation("com.github.DSAppTeam:PanelSwitchHelper:v1.5.2")
     implementation("com.localebro:okhttpprofiler:1.0.8")
     implementation("com.github.jenly1314:zxing-lite:2.3.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
     implementation("com.github.liangjingkanji:soft-input-event:1.0.9")
     implementation("com.github.qiushui95:AndroidInitializer:1.0.9")
     implementation("com.dropbox.mobile.store:store4:4.0.5")

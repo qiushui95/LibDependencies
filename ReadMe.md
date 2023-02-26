@@ -70,7 +70,7 @@
 >>implementation("com.github.jenly1314:zxing-lite:2.3.0")  
   
 >[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
->>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")  
+>>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")  
   
 >[SoftEvent](https://github.com/liangjingkanji/soft-input-event)(软键盘事件)  
 >>implementation("com.github.liangjingkanji:soft-input-event:1.0.9")  
@@ -317,10 +317,10 @@
 >>testImplementation("androidx.fragment:fragment-testing:1.5.5")  
   
 >[Glide](https://github.com/bumptech/glide)(图片加载)  
->>kapt("com.github.bumptech.glide:compiler:4.14.2")  
->>implementation("com.github.bumptech.glide:compose:1.0.0-alpha.1")  
->>implementation("com.github.bumptech.glide:glide:4.14.2")  
->>implementation("com.github.bumptech.glide:okhttp3-integration:4.14.2")  
+>>kapt("com.github.bumptech.glide:compiler:4.15.0")  
+>>implementation("com.github.bumptech.glide:compose:1.0.0-alpha.2")  
+>>implementation("com.github.bumptech.glide:glide:4.15.0")  
+>>implementation("com.github.bumptech.glide:okhttp3-integration:4.15.0")  
   
 >[ImagePicker](https://github.com/LuckSiege/PictureSelector)(图片选择库)  
 >>implementation("io.github.lucksiege:camerax:v3.10.7")  
