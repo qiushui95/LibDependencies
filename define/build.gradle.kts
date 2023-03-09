@@ -228,7 +228,7 @@ dependencies {
     implementation("com.github.jenly1314:zxing-lite:2.3.1")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
     implementation("com.github.liangjingkanji:soft-input-event:1.0.9")
-    implementation("com.github.qiushui95:AndroidInitializer:1.0.10")
+    implementation("com.github.qiushui95:AndroidInitializer:1.0.11")
     implementation("com.dropbox.mobile.store:store4:4.0.5")
     implementation("com.tencent.vasdolly:helper:3.0.6")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
