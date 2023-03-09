@@ -67,7 +67,7 @@
 >>implementation("com.localebro:okhttpprofiler:1.0.8")  
   
 >[QrScanner](https://github.com/jenly1314/ZXingLite)(二维码扫描)  
->>implementation("com.github.jenly1314:zxing-lite:2.3.0")  
+>>implementation("com.github.jenly1314:zxing-lite:2.3.1")  
   
 >[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
 >>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")  
@@ -76,7 +76,7 @@
 >>implementation("com.github.liangjingkanji:soft-input-event:1.0.9")  
   
 >[Startup](https://github.com/qiushui95/AndroidInitializer)(app启动初始化)  
->>implementation("com.github.qiushui95:AndroidInitializer:1.0.9")  
+>>implementation("com.github.qiushui95:AndroidInitializer:1.0.10")  
   
 >[Store](https://github.com/dropbox/Store)(多数据源)  
 >>implementation("com.dropbox.mobile.store:store4:4.0.5")  
@@ -94,7 +94,7 @@
 >>implementation("com.github.li-xiaojun:XPopup:2.9.19")  
   
 >[XXPermissions](https://github.com/getActivity/XXPermissions)(权限请求)  
->>implementation("com.github.getActivity:XXPermissions:16.6")  
+>>implementation("com.github.getActivity:XXPermissions:16.8")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
 >>implementation("net.lingala.zip4j:zip4j:2.11.5")  
@@ -151,7 +151,7 @@
 >>implementation("io.github.chaosleung:pinview:1.4.4")  
   
 >[RecyclerView](https://developer.android.com/jetpack/androidx/releases/recyclerview)  
->>implementation("androidx.recyclerview:recyclerview:1.3.0-rc01")  
+>>implementation("androidx.recyclerview:recyclerview:1.3.0")  
   
 >[RecyclerViewDivider](https://github.com/fondesa/recycler-view-divider)(RecyclerView分割线)  
 >>implementation("com.github.fondesa:recycler-view-divider:3.6.0")  
@@ -233,15 +233,15 @@
 >>debugImplementation("androidx.compose.ui:ui-tooling:1.3.3")  
   
 >[OfficialAlpha](https://developer.android.com/jetpack/androidx/releases/compose)(Compose Alpha官方)  
->>implementation("androidx.compose.animation:animation:1.4.0-beta02")  
->>implementation("androidx.compose.foundation:foundation:1.4.0-beta02")  
->>implementation("androidx.compose.material:material:1.4.0-beta02")  
->>implementation("androidx.compose.ui:ui:1.4.0-beta02")  
->>implementation("androidx.compose.ui:ui-tooling-preview:1.4.0-beta02")  
->>debugImplementation("androidx.compose.ui:ui-tooling:1.4.0-beta02")  
+>>implementation("androidx.compose.animation:animation:1.4.0-rc01")  
+>>implementation("androidx.compose.foundation:foundation:1.4.0-rc01")  
+>>implementation("androidx.compose.material:material:1.4.0-rc01")  
+>>implementation("androidx.compose.ui:ui:1.4.0-rc01")  
+>>implementation("androidx.compose.ui:ui-tooling-preview:1.4.0-rc01")  
+>>debugImplementation("androidx.compose.ui:ui-tooling:1.4.0-rc01")  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0")  
   
 </details>  
   
@@ -345,13 +345,13 @@
 >>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.10")  
   
 >[Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation("androidx.lifecycle:lifecycle-common:2.5.1")  
->>implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")  
->>implementation("androidx.lifecycle:lifecycle-process:2.5.1")  
->>implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")  
->>implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1")  
->>implementation("androidx.lifecycle:lifecycle-service:2.5.1")  
->>implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")  
+>>implementation("androidx.lifecycle:lifecycle-common:2.6.0")  
+>>implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.0")  
+>>implementation("androidx.lifecycle:lifecycle-process:2.6.0")  
+>>implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.0")  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.0")  
+>>implementation("androidx.lifecycle:lifecycle-service:2.6.0")  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0")  
   
 >[Mavericks](https://github.com/airbnb/mavericks)(Mavericks架构)  
 >>implementation("com.airbnb.android:mavericks-compose:3.0.1")  
