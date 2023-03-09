@@ -230,7 +230,7 @@ sealed class DependencyConfig(
         object XXPermissions : Single(
             group = "com.github.getActivity",
             name = "XXPermissions",
-            version = "16.6",
+            version = "16.8",
             remark = "权限请求",
             link = "https://github.com/getActivity/XXPermissions",
             dependencyMethod = DependencyMethod.Implementation,
@@ -263,7 +263,7 @@ sealed class DependencyConfig(
         object QrScanner : Single(
             group = "com.github.jenly1314",
             name = "zxing-lite",
-            version = "2.3.0",
+            version = "2.3.1",
             remark = "二维码扫描",
             link = "https://github.com/jenly1314/ZXingLite",
             dependencyMethod = DependencyMethod.Implementation,
@@ -274,7 +274,7 @@ sealed class DependencyConfig(
         object Startup : Single(
             group = "com.github.qiushui95",
             name = "AndroidInitializer",
-            version = "1.0.9",
+            version = "1.0.10",
             remark = "app启动初始化",
             link = "https://github.com/qiushui95/AndroidInitializer",
             dependencyMethod = DependencyMethod.Implementation,
@@ -580,7 +580,7 @@ sealed class DependencyConfig(
         object RecyclerView : View(
             group = "androidx.recyclerview",
             name = "recyclerview",
-            version = "1.3.0-rc01",
+            version = "1.3.0",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/recyclerview",
             dependencyMethod = DependencyMethod.Implementation,
@@ -854,7 +854,7 @@ sealed class DependencyConfig(
         sealed class OfficialAlpha(
             group: String,
             name: String,
-            version: String = "1.4.0-beta02",
+            version: String = "1.4.0-rc01",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : Compose(
             group = group,
@@ -1239,7 +1239,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.lifecycle",
             name = name,
-            version = "2.5.1",
+            version = "2.6.0",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/lifecycle",
             dependencyMethod = dependencyMethod,
