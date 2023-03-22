@@ -231,7 +231,7 @@ dependencies {
     implementation("com.github.qiushui95:AndroidInitializer:latest.release")
     implementation("com.dropbox.mobile.store:store4:latest.release")
     implementation("com.tencent.vasdolly:helper:latest.release")
-    implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:latest.release")
+    implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:latest.release")
     implementation("com.github.li-xiaojun:XPopup:latest.release")
     implementation("com.github.getActivity:XXPermissions:latest.release")
