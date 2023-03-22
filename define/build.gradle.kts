@@ -120,7 +120,7 @@ dependencies {
 
     implementation("io.github.lucksiege:camerax:v3.10.7")
     implementation("io.github.lucksiege:compress:v3.10.7")
-    implementation("io.github.lucksiege:pictureselector:v3.10.7")
+    implementation("io.github.lucksiege:pictureselector:v3.10.8")
     implementation("io.github.lucksiege:ucrop:v3.10.7")
 
     implementation("com.geyifeng.immersionbar:immersionbar:3.2.2")
