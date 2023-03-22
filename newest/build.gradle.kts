@@ -210,7 +210,7 @@ dependencies {
     implementation("androidx.annotation:annotation:latest.release")
     implementation("androidx.appcompat:appcompat:latest.release")
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:latest.release")
-    implementation("io.github.razerdp:BasePopup:latest.release")
+    implementation("io.github.razerdp:BasePopup:3.2.1")
     implementation("me.jorgecastillo:androidcolorx:latest.release")
     implementation("id.zelory:compressor:latest.release")
     implementation("com.github.loperSeven:DateTimePicker:latest.release")
