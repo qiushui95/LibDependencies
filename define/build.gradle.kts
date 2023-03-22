@@ -25,7 +25,7 @@ dependencies {
     implementation("com.google.accompanist:accompanist-adaptive:0.29.1-alpha")
     implementation("com.google.accompanist:accompanist-themeadapter-appcompat:0.29.1-alpha")
     implementation("com.google.accompanist:accompanist-drawablepainter:0.29.1-alpha")
-    implementation("com.google.accompanist:accompanist-themeadapter-material3:0.29.1-alpha")
+    implementation("com.google.accompanist:accompanist-themeadapter-material3:0.29.2-rc")
     implementation("com.google.accompanist:accompanist-themeadapter-material:0.29.1-alpha")
     implementation("com.google.accompanist:accompanist-navigation-animation:0.29.1-alpha")
     implementation("com.google.accompanist:accompanist-navigation-material:0.29.1-alpha")
