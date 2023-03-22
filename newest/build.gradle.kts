@@ -129,7 +129,7 @@ dependencies {
     implementation("io.insert-koin:koin-android:latest.release")
     implementation("io.insert-koin:koin-androidx-compose:latest.release")
     implementation("io.insert-koin:koin-core:latest.release")
-    implementation("io.insert-koin:koin-androidx-navigation:latest.release")
+    implementation("io.insert-koin:koin-androidx-navigation:3.3.3")
     testImplementation("io.insert-koin:koin-test-junit5:latest.release")
     implementation("io.insert-koin:koin-androidx-workmanager:latest.release")
 
