@@ -74,7 +74,7 @@ dependencies {
     releaseImplementation("com.github.chuckerteam.chucker:library-no-op:latest.release")
 
     implementation("androidx.core:core-ktx:latest.release")
-    implementation("androidx.core:core-splashscreen:latest.release")
+    implementation("androidx.core:core-splashscreen:1.0.0")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:latest.release")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:latest.release")
