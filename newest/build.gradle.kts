@@ -171,7 +171,7 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:latest.release")
     androidTestImplementation("com.squareup.okhttp3:mockwebserver:latest.release")
 
-    kapt("com.airbnb.android:paris-processor:latest.release")
+    kapt("com.airbnb.android:paris-processor:2.0.1")
     implementation("com.airbnb.android:paris:latest.release")
 
     implementation("com.squareup.retrofit2:retrofit:latest.release")
