@@ -35,7 +35,7 @@ dependencies {
     implementation("com.google.accompanist:accompanist-placeholder-material:0.29.1-alpha")
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.29.1-alpha")
     implementation("com.google.accompanist:accompanist-testharness:0.29.1-alpha")
-    implementation("com.google.accompanist:accompanist-webview:0.29.1-alpha")
+    implementation("com.google.accompanist:accompanist-webview:0.31.0-alpha")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation("com.github.fornewid:material-motion-compose:0.8.1")
 
