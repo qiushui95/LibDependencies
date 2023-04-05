@@ -87,7 +87,7 @@ sealed class DependencyConfig(
         object Background : Single(
             group = "com.github.JavaNoober.BackgroundLibrary",
             name = "libraryx",
-            version = "1.7.5",
+            version = "1.7.6",
             remark = "背景生成工具库",
             link = "https://github.com/JavaNoober/BackgroundLibrary",
             dependencyMethod = DependencyMethod.Implementation,
@@ -164,7 +164,7 @@ sealed class DependencyConfig(
         object FlowExt : Single(
             group = "io.github.hoc081098",
             name = "FlowExt-jvm",
-            version = "0.5.0",
+            version = "0.6.0",
             remark = "Flow扩展",
             link = "https://github.com/hoc081098/FlowExt",
             dependencyMethod = DependencyMethod.Implementation,
@@ -197,7 +197,7 @@ sealed class DependencyConfig(
         object JodaTime : Single(
             group = "joda-time",
             name = "joda-time",
-            version = "2.12.2",
+            version = "2.12.5",
             remark = "时间处理库",
             link = "https://github.com/JodaOrg/joda-time",
             dependencyMethod = DependencyMethod.Implementation,
@@ -274,7 +274,7 @@ sealed class DependencyConfig(
         object Startup : Single(
             group = "com.github.qiushui95",
             name = "AndroidInitializer",
-            version = "1.0.11",
+            version = "1.0.13",
             remark = "app启动初始化",
             link = "https://github.com/qiushui95/AndroidInitializer",
             dependencyMethod = DependencyMethod.Implementation,
@@ -351,7 +351,7 @@ sealed class DependencyConfig(
         object MavenPublish : Single(
             group = "com.vanniktech",
             name = "gradle-maven-publish-plugin",
-            version = "0.24.0",
+            version = "0.25.1",
             remark = "Maven上传",
             link = "https://github.com/vanniktech/gradle-maven-publish-plugin",
             dependencyMethod = DependencyMethod.Implementation,
@@ -743,7 +743,7 @@ sealed class DependencyConfig(
         sealed class Accompanist(name: String) : Compose(
             group = "com.google.accompanist",
             name = name,
-            version = "0.29.1-alpha",
+            version = "0.30.1",
             remark = "",
             link = "https://github.com/google/accompanist",
             dependencyMethod = DependencyMethod.Implementation,
@@ -806,7 +806,7 @@ sealed class DependencyConfig(
             object Animation : Official(
                 group = "androidx.compose.animation",
                 name = "animation",
-                version = "1.3.3",
+                version = "1.4.0",
             )
             //endregion
 
@@ -814,7 +814,7 @@ sealed class DependencyConfig(
             object Compiler : Official(
                 group = "androidx.compose.compiler",
                 name = "compiler",
-                version = "1.4.3",
+                version = "1.4.4",
             )
             //endregion
 
@@ -822,79 +822,30 @@ sealed class DependencyConfig(
             object Foundation : Official(
                 group = "androidx.compose.foundation",
                 name = "foundation",
-                version = "1.3.1",
+                version = "1.4.0",
             )
             //endregion
 
             //region Material
             object Material :
-                Official(group = "androidx.compose.material", name = "material", version = "1.3.1")
+                Official(group = "androidx.compose.material", name = "material", version = "1.4.0")
             //endregion
 
             //region Ui
-            object Ui : Official(group = "androidx.compose.ui", name = "ui", version = "1.3.3")
+            object Ui : Official(group = "androidx.compose.ui", name = "ui", version = "1.4.0")
             object UiPreview : Official(
                 group = "androidx.compose.ui",
                 name = "ui-tooling-preview",
-                version = "1.3.3"
+                version = "1.4.0"
             )
 
             object UiTool : Official(
                 group = "androidx.compose.ui",
                 name = "ui-tooling",
-                version = "1.3.3",
+                version = "1.4.0",
                 dependencyMethod = DependencyMethod.Debug.Implementation
             )
 
-            //endregion
-        }
-
-        //endregion
-        //region Official Alpha
-        sealed class OfficialAlpha(
-            group: String,
-            name: String,
-            version: String = "1.4.0-rc01",
-            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : Compose(
-            group = group,
-            name = name,
-            version = version,
-            remark = "Compose Alpha官方",
-            link = "https://developer.android.com/jetpack/androidx/releases/compose",
-            dependencyMethod = dependencyMethod,
-        ) {
-
-            //region Animation
-            object Animation : OfficialAlpha(
-                group = "androidx.compose.animation",
-                name = "animation",
-            )
-            //endregion
-
-            //region Foundation
-            object Foundation : OfficialAlpha(
-                group = "androidx.compose.foundation",
-                name = "foundation",
-            )
-            //endregion
-
-            //region Material
-            object Material : OfficialAlpha(group = "androidx.compose.material", name = "material")
-            //endregion
-
-            //region Ui
-            object Ui : OfficialAlpha(group = "androidx.compose.ui", name = "ui")
-            object UiPreview : OfficialAlpha(
-                group = "androidx.compose.ui",
-                name = "ui-tooling-preview",
-            )
-
-            object UiTool : OfficialAlpha(
-                group = "androidx.compose.ui",
-                name = "ui-tooling",
-                dependencyMethod = DependencyMethod.Debug.Implementation
-            )
             //endregion
         }
 
@@ -925,7 +876,7 @@ sealed class DependencyConfig(
         sealed class Activity(name: String) : Group(
             group = "androidx.activity",
             name = name,
-            version = "1.6.1",
+            version = "1.7.0",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/activity",
             dependencyMethod = DependencyMethod.Implementation,
@@ -953,7 +904,7 @@ sealed class DependencyConfig(
         sealed class CameraX(name: String) : Group(
             group = "androidx.camera",
             name = name,
-            version = "1.2.1",
+            version = "1.2.2",
             remark = "相机相关",
             link = "https://developer.android.com/jetpack/androidx/releases/camera",
             dependencyMethod = DependencyMethod.Implementation,
@@ -1052,7 +1003,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.airbnb.android",
             name = name,
-            version = "5.1.1",
+            version = "5.1.2",
             remark = "",
             link = "https://github.com/airbnb/epoxy",
             dependencyMethod = dependencyMethod,
@@ -1099,7 +1050,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.fragment",
             name = name,
-            version = "1.5.5",
+            version = "1.5.6",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/fragment",
             dependencyMethod = dependencyMethod,
@@ -1130,7 +1081,7 @@ sealed class DependencyConfig(
         //region Glide(图片加载)
         sealed class Glide(
             name: String,
-            version: String = "4.15.0",
+            version: String = "4.15.1",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : Group(
             group = "com.github.bumptech.glide",
@@ -1171,7 +1122,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "io.github.lucksiege",
             name = name,
-            version = "v3.10.7",
+            version = "v3.10.9",
             remark = "图片选择库",
             link = "https://github.com/LuckSiege/PictureSelector",
             dependencyMethod = dependencyMethod,
@@ -1197,9 +1148,9 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             sealed class Version(val value: String) {
-                object Core : Version("3.3.3")
-                object Android : Version("3.3.3")
-                object Compose : Version("3.4.2")
+                object Core : Version("3.4.0")
+                object Android : Version("3.4.0")
+                object Compose : Version("3.4.3")
             }
 
             object Android : Koin("koin-android", Version.Android)
@@ -1221,7 +1172,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "org.jetbrains.kotlin",
             name = name,
-            version = "1.8.10",
+            version = "1.8.20",
             remark = "",
             link = "https://github.com/JetBrains/kotlin",
             dependencyMethod = dependencyMethod,
@@ -1239,7 +1190,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.lifecycle",
             name = name,
-            version = "2.6.0",
+            version = "2.6.1",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/lifecycle",
             dependencyMethod = dependencyMethod,
@@ -1258,7 +1209,7 @@ sealed class DependencyConfig(
         sealed class Mavericks(name: String) : Group(
             group = "com.airbnb.android",
             name = name,
-            version = "3.0.1",
+            version = "3.0.2",
             remark = "Mavericks架构",
             link = "https://github.com/airbnb/mavericks",
             dependencyMethod = DependencyMethod.Implementation,
@@ -1372,7 +1323,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.airbnb.android",
             name = name,
-            version = "2.0.1",
+            version = "2.0.2",
             remark = "",
             link = "https://github.com/airbnb/paris",
             dependencyMethod = dependencyMethod,
@@ -1407,7 +1358,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.room",
             name = name,
-            version = "2.5.0",
+            version = "2.5.1",
             remark = "Sqlite数据库",
             link = "https://developer.android.com/jetpack/androidx/releases/room",
             dependencyMethod = dependencyMethod,
@@ -1443,7 +1394,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.sqlite",
             name = name,
-            version = "2.3.0",
+            version = "2.3.1",
             remark = "Sqlite",
             link = "https://developer.android.com/jetpack/androidx/releases/sqlite",
             dependencyMethod = dependencyMethod,
@@ -1498,7 +1449,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.work",
             name = name,
-            version = "2.8.0",
+            version = "2.8.1",
             remark = "任务管理器",
             link = "https://developer.android.com/jetpack/androidx/releases/work",
             dependencyMethod = dependencyMethod,
