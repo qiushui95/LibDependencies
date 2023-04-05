@@ -53,7 +53,7 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.7.0")
     implementation("androidx.activity:activity-ktx:1.7.0")
 
-    implementation("com.tencent.bugly:crashreport:4.1.9")
+    implementation("com.tencent.bugly:crashreport:4.1.9.1")
     implementation("com.tencent.bugly:crashreport_upgrade:1.6.1")
 
     implementation("androidx.camera:camera-camera2:1.2.2")
