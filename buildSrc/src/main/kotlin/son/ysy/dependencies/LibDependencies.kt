@@ -50,7 +50,7 @@ sealed class LibDependencies(
      * https://github.com/JavaNoober/BackgroundLibrary
      */
     object Background : LibDependencies("com.github.JavaNoober.BackgroundLibrary",
-        "libraryx", "1.7.5", DependencyMethod.Implementation)
+        "libraryx", "1.7.6", DependencyMethod.Implementation)
 
     /**
      * 弹窗
@@ -98,7 +98,7 @@ sealed class LibDependencies(
      * Flow扩展
      * https://github.com/hoc081098/FlowExt
      */
-    object FlowExt : LibDependencies("io.github.hoc081098", "FlowExt-jvm", "0.5.0",
+    object FlowExt : LibDependencies("io.github.hoc081098", "FlowExt-jvm", "0.6.0",
         DependencyMethod.Implementation)
 
     /**
@@ -112,7 +112,7 @@ sealed class LibDependencies(
      * 时间处理库
      * https://github.com/JodaOrg/joda-time
      */
-    object JodaTime : LibDependencies("joda-time", "joda-time", "2.12.2",
+    object JodaTime : LibDependencies("joda-time", "joda-time", "2.12.5",
         DependencyMethod.Implementation)
 
     /**
@@ -127,7 +127,7 @@ sealed class LibDependencies(
      * https://github.com/vanniktech/gradle-maven-publish-plugin
      */
     object MavenPublish : LibDependencies("com.vanniktech", "gradle-maven-publish-plugin",
-        "0.24.0", DependencyMethod.Implementation)
+        "0.25.1", DependencyMethod.Implementation)
 
     /**
      * 持久KV数据存储
@@ -182,7 +182,7 @@ sealed class LibDependencies(
      * app启动初始化
      * https://github.com/qiushui95/AndroidInitializer
      */
-    object Startup : LibDependencies("com.github.qiushui95", "AndroidInitializer", "1.0.11",
+    object Startup : LibDependencies("com.github.qiushui95", "AndroidInitializer", "1.0.13",
         DependencyMethod.Implementation)
 
     /**
@@ -454,46 +454,46 @@ sealed class LibDependencies(
      */
     interface Accompanist {
       object Adaptive : LibDependencies("com.google.accompanist", "accompanist-adaptive",
-          "0.29.1-alpha", DependencyMethod.Implementation)
+          "0.30.1", DependencyMethod.Implementation)
 
       object AppcompatTheme : LibDependencies("com.google.accompanist",
-          "accompanist-themeadapter-appcompat", "0.29.1-alpha", DependencyMethod.Implementation)
+          "accompanist-themeadapter-appcompat", "0.30.1", DependencyMethod.Implementation)
 
       object DrawablePainter : LibDependencies("com.google.accompanist",
-          "accompanist-drawablepainter", "0.29.1-alpha", DependencyMethod.Implementation)
+          "accompanist-drawablepainter", "0.30.1", DependencyMethod.Implementation)
 
       object Material3Theme : LibDependencies("com.google.accompanist",
-          "accompanist-themeadapter-material3", "0.29.1-alpha", DependencyMethod.Implementation)
+          "accompanist-themeadapter-material3", "0.30.1", DependencyMethod.Implementation)
 
       object MaterialTheme : LibDependencies("com.google.accompanist",
-          "accompanist-themeadapter-material", "0.29.1-alpha", DependencyMethod.Implementation)
+          "accompanist-themeadapter-material", "0.30.1", DependencyMethod.Implementation)
 
       object NavigationAnimation : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-animation", "0.29.1-alpha", DependencyMethod.Implementation)
+          "accompanist-navigation-animation", "0.30.1", DependencyMethod.Implementation)
 
       object NavigationMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-material", "0.29.1-alpha", DependencyMethod.Implementation)
+          "accompanist-navigation-material", "0.30.1", DependencyMethod.Implementation)
 
       object PagerIndicators : LibDependencies("com.google.accompanist",
-          "accompanist-pager-indicators", "0.29.1-alpha", DependencyMethod.Implementation)
+          "accompanist-pager-indicators", "0.30.1", DependencyMethod.Implementation)
 
       object Permissions : LibDependencies("com.google.accompanist",
-          "accompanist-permissions", "0.29.1-alpha", DependencyMethod.Implementation)
+          "accompanist-permissions", "0.30.1", DependencyMethod.Implementation)
 
       object PlaceHolder : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder", "0.29.1-alpha", DependencyMethod.Implementation)
+          "accompanist-placeholder", "0.30.1", DependencyMethod.Implementation)
 
       object PlaceHolderMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder-material", "0.29.1-alpha", DependencyMethod.Implementation)
+          "accompanist-placeholder-material", "0.30.1", DependencyMethod.Implementation)
 
       object SystemUiController : LibDependencies("com.google.accompanist",
-          "accompanist-systemuicontroller", "0.29.1-alpha", DependencyMethod.Implementation)
+          "accompanist-systemuicontroller", "0.30.1", DependencyMethod.Implementation)
 
       object TestHarness : LibDependencies("com.google.accompanist",
-          "accompanist-testharness", "0.29.1-alpha", DependencyMethod.Implementation)
+          "accompanist-testharness", "0.30.1", DependencyMethod.Implementation)
 
-      object Web : LibDependencies("com.google.accompanist", "accompanist-webview",
-          "0.29.1-alpha", DependencyMethod.Implementation)
+      object Web : LibDependencies("com.google.accompanist", "accompanist-webview", "0.30.1",
+          DependencyMethod.Implementation)
     }
 
     /**
@@ -515,49 +515,25 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/compose
      */
     interface Official {
-      object Animation : LibDependencies("androidx.compose.animation", "animation", "1.3.3",
+      object Animation : LibDependencies("androidx.compose.animation", "animation", "1.4.0",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.4.3",
+      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.4.4",
           DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.3.1", DependencyMethod.Implementation)
+          "1.4.0", DependencyMethod.Implementation)
 
-      object Material : LibDependencies("androidx.compose.material", "material", "1.3.1",
+      object Material : LibDependencies("androidx.compose.material", "material", "1.4.0",
           DependencyMethod.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.3.3",
-          DependencyMethod.Implementation)
-
-      object UiPreview : LibDependencies("androidx.compose.ui", "ui-tooling-preview",
-          "1.3.3", DependencyMethod.Implementation)
-
-      object UiTool : LibDependencies("androidx.compose.ui", "ui-tooling", "1.3.3",
-          DependencyMethod.Debug.Implementation)
-    }
-
-    /**
-     * Compose Alpha官方
-     * https://developer.android.com/jetpack/androidx/releases/compose
-     */
-    interface OfficialAlpha {
-      object Animation : LibDependencies("androidx.compose.animation", "animation",
-          "1.4.0-rc01", DependencyMethod.Implementation)
-
-      object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.4.0-rc01", DependencyMethod.Implementation)
-
-      object Material : LibDependencies("androidx.compose.material", "material",
-          "1.4.0-rc01", DependencyMethod.Implementation)
-
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.4.0-rc01",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.4.0",
           DependencyMethod.Implementation)
 
       object UiPreview : LibDependencies("androidx.compose.ui", "ui-tooling-preview",
-          "1.4.0-rc01", DependencyMethod.Implementation)
+          "1.4.0", DependencyMethod.Implementation)
 
-      object UiTool : LibDependencies("androidx.compose.ui", "ui-tooling", "1.4.0-rc01",
+      object UiTool : LibDependencies("androidx.compose.ui", "ui-tooling", "1.4.0",
           DependencyMethod.Debug.Implementation)
     }
 
@@ -565,7 +541,7 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
      */
     object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-compose",
-        "2.6.0", DependencyMethod.Implementation)
+        "2.6.1", DependencyMethod.Implementation)
   }
 
   interface Group {
@@ -573,10 +549,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/activity
      */
     interface Activity {
-      object Compose : LibDependencies("androidx.activity", "activity-compose", "1.6.1",
+      object Compose : LibDependencies("androidx.activity", "activity-compose", "1.7.0",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("androidx.activity", "activity-ktx", "1.6.1",
+      object Core : LibDependencies("androidx.activity", "activity-ktx", "1.7.0",
           DependencyMethod.Implementation)
     }
 
@@ -596,22 +572,22 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/camera
      */
     interface CameraX {
-      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.2.1",
+      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.2.2",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("androidx.camera", "camera-core", "1.2.1",
+      object Core : LibDependencies("androidx.camera", "camera-core", "1.2.2",
           DependencyMethod.Implementation)
 
-      object Extensions : LibDependencies("androidx.camera", "camera-extensions", "1.2.1",
+      object Extensions : LibDependencies("androidx.camera", "camera-extensions", "1.2.2",
           DependencyMethod.Implementation)
 
-      object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle", "1.2.1",
+      object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle", "1.2.2",
           DependencyMethod.Implementation)
 
-      object Video : LibDependencies("androidx.camera", "camera-video", "1.2.1",
+      object Video : LibDependencies("androidx.camera", "camera-video", "1.2.2",
           DependencyMethod.Implementation)
 
-      object View : LibDependencies("androidx.camera", "camera-view", "1.2.1",
+      object View : LibDependencies("androidx.camera", "camera-view", "1.2.2",
           DependencyMethod.Implementation)
     }
 
@@ -687,16 +663,16 @@ sealed class LibDependencies(
      * https://github.com/airbnb/epoxy
      */
     interface Epoxy {
-      object Compiler : LibDependencies("com.airbnb.android", "epoxy-processor", "5.1.1",
+      object Compiler : LibDependencies("com.airbnb.android", "epoxy-processor", "5.1.2",
           DependencyMethod.Kapt)
 
-      object Compose : LibDependencies("com.airbnb.android", "epoxy-compose", "5.1.1",
+      object Compose : LibDependencies("com.airbnb.android", "epoxy-compose", "5.1.2",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.airbnb.android", "epoxy", "5.1.1",
+      object Core : LibDependencies("com.airbnb.android", "epoxy", "5.1.2",
           DependencyMethod.Implementation)
 
-      object Glide : LibDependencies("com.airbnb.android", "epoxy-glide-preloading", "5.1.1",
+      object Glide : LibDependencies("com.airbnb.android", "epoxy-glide-preloading", "5.1.2",
           DependencyMethod.Implementation)
     }
 
@@ -761,10 +737,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/fragment
      */
     interface Fragment {
-      object Core : LibDependencies("androidx.fragment", "fragment-ktx", "1.5.5",
+      object Core : LibDependencies("androidx.fragment", "fragment-ktx", "1.5.6",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.fragment", "fragment-testing", "1.5.5",
+      object Test : LibDependencies("androidx.fragment", "fragment-testing", "1.5.6",
           DependencyMethod.Test.Implementation)
     }
 
@@ -773,17 +749,17 @@ sealed class LibDependencies(
      * https://github.com/bumptech/glide
      */
     interface Glide {
-      object Compiler : LibDependencies("com.github.bumptech.glide", "compiler", "4.15.0",
+      object Compiler : LibDependencies("com.github.bumptech.glide", "compiler", "4.15.1",
           DependencyMethod.Kapt)
 
       object Compose : LibDependencies("com.github.bumptech.glide", "compose",
           "1.0.0-alpha.2", DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.github.bumptech.glide", "glide", "4.15.0",
+      object Core : LibDependencies("com.github.bumptech.glide", "glide", "4.15.1",
           DependencyMethod.Implementation)
 
       object OkHttp : LibDependencies("com.github.bumptech.glide", "okhttp3-integration",
-          "4.15.0", DependencyMethod.Implementation)
+          "4.15.1", DependencyMethod.Implementation)
     }
 
     /**
@@ -791,16 +767,16 @@ sealed class LibDependencies(
      * https://github.com/LuckSiege/PictureSelector
      */
     interface ImagePicker {
-      object CameraX : LibDependencies("io.github.lucksiege", "camerax", "v3.10.7",
+      object CameraX : LibDependencies("io.github.lucksiege", "camerax", "v3.10.9",
           DependencyMethod.Implementation)
 
-      object Compress : LibDependencies("io.github.lucksiege", "compress", "v3.10.7",
+      object Compress : LibDependencies("io.github.lucksiege", "compress", "v3.10.9",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("io.github.lucksiege", "pictureselector", "v3.10.7",
+      object Core : LibDependencies("io.github.lucksiege", "pictureselector", "v3.10.9",
           DependencyMethod.Implementation)
 
-      object Crop : LibDependencies("io.github.lucksiege", "ucrop", "v3.10.7",
+      object Crop : LibDependencies("io.github.lucksiege", "ucrop", "v3.10.9",
           DependencyMethod.Implementation)
     }
 
@@ -821,33 +797,33 @@ sealed class LibDependencies(
      * https://github.com/InsertKoinIO/koin
      */
     interface Koin {
-      object Android : LibDependencies("io.insert-koin", "koin-android", "3.3.3",
+      object Android : LibDependencies("io.insert-koin", "koin-android", "3.4.0",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose", "3.4.2",
+      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose", "3.4.3",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("io.insert-koin", "koin-core", "3.3.3",
+      object Core : LibDependencies("io.insert-koin", "koin-core", "3.4.0",
           DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("io.insert-koin", "koin-androidx-navigation",
-          "3.3.3", DependencyMethod.Implementation)
+          "3.4.0", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.3.3",
+      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.4.0",
           DependencyMethod.Test.Implementation)
 
       object WorkManager : LibDependencies("io.insert-koin", "koin-androidx-workmanager",
-          "3.3.3", DependencyMethod.Implementation)
+          "3.4.0", DependencyMethod.Implementation)
     }
 
     /**
      * https://github.com/JetBrains/kotlin
      */
     interface Kotlin {
-      object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.8.10",
+      object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.8.20",
           DependencyMethod.Implementation)
 
-      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.8.10",
+      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.8.20",
           DependencyMethod.Implementation)
     }
 
@@ -855,26 +831,26 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
      */
     interface Lifecycle {
-      object Common : LibDependencies("androidx.lifecycle", "lifecycle-common", "2.6.0",
+      object Common : LibDependencies("androidx.lifecycle", "lifecycle-common", "2.6.1",
           DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.lifecycle", "lifecycle-livedata-ktx",
-          "2.6.0", DependencyMethod.Implementation)
+          "2.6.1", DependencyMethod.Implementation)
 
-      object Process : LibDependencies("androidx.lifecycle", "lifecycle-process", "2.6.0",
+      object Process : LibDependencies("androidx.lifecycle", "lifecycle-process", "2.6.1",
           DependencyMethod.Implementation)
 
       object Runtime : LibDependencies("androidx.lifecycle", "lifecycle-runtime-ktx",
-          "2.6.0", DependencyMethod.Implementation)
+          "2.6.1", DependencyMethod.Implementation)
 
       object SavedState : LibDependencies("androidx.lifecycle",
-          "lifecycle-viewmodel-savedstate", "2.6.0", DependencyMethod.Implementation)
+          "lifecycle-viewmodel-savedstate", "2.6.1", DependencyMethod.Implementation)
 
-      object Service : LibDependencies("androidx.lifecycle", "lifecycle-service", "2.6.0",
+      object Service : LibDependencies("androidx.lifecycle", "lifecycle-service", "2.6.1",
           DependencyMethod.Implementation)
 
       object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-ktx",
-          "2.6.0", DependencyMethod.Implementation)
+          "2.6.1", DependencyMethod.Implementation)
     }
 
     /**
@@ -882,14 +858,14 @@ sealed class LibDependencies(
      * https://github.com/airbnb/mavericks
      */
     interface Mavericks {
-      object Compose : LibDependencies("com.airbnb.android", "mavericks-compose", "3.0.1",
+      object Compose : LibDependencies("com.airbnb.android", "mavericks-compose", "3.0.2",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.airbnb.android", "mavericks", "3.0.1",
+      object Core : LibDependencies("com.airbnb.android", "mavericks", "3.0.2",
           DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("com.airbnb.android", "mavericks-navigation",
-          "3.0.1", DependencyMethod.Implementation)
+          "3.0.2", DependencyMethod.Implementation)
     }
 
     /**
@@ -978,10 +954,10 @@ sealed class LibDependencies(
      * https://github.com/airbnb/paris
      */
     interface Paris {
-      object Compiler : LibDependencies("com.airbnb.android", "paris-processor", "2.0.1",
+      object Compiler : LibDependencies("com.airbnb.android", "paris-processor", "2.0.2",
           DependencyMethod.Kapt)
 
-      object Core : LibDependencies("com.airbnb.android", "paris", "2.0.1",
+      object Core : LibDependencies("com.airbnb.android", "paris", "2.0.2",
           DependencyMethod.Implementation)
     }
 
@@ -1005,16 +981,16 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/room
      */
     interface Room {
-      object Compiler : LibDependencies("androidx.room", "room-compiler", "2.5.0",
+      object Compiler : LibDependencies("androidx.room", "room-compiler", "2.5.1",
           DependencyMethod.Kapt)
 
-      object Core : LibDependencies("androidx.room", "room-runtime", "2.5.0",
+      object Core : LibDependencies("androidx.room", "room-runtime", "2.5.1",
           DependencyMethod.Implementation)
 
-      object Ktx : LibDependencies("androidx.room", "room-ktx", "2.5.0",
+      object Ktx : LibDependencies("androidx.room", "room-ktx", "2.5.1",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.room", "room-testing", "2.5.0",
+      object Test : LibDependencies("androidx.room", "room-testing", "2.5.1",
           DependencyMethod.Test.Implementation)
     }
 
@@ -1023,10 +999,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/sqlite
      */
     interface Sqlite {
-      object Android : LibDependencies("androidx.sqlite", "sqlite-framework", "2.3.0",
+      object Android : LibDependencies("androidx.sqlite", "sqlite-framework", "2.3.1",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("androidx.sqlite", "sqlite-ktx", "2.3.0",
+      object Core : LibDependencies("androidx.sqlite", "sqlite-ktx", "2.3.1",
           DependencyMethod.Implementation)
     }
 
@@ -1083,10 +1059,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/work
      */
     interface WorkManager {
-      object Core : LibDependencies("androidx.work", "work-runtime-ktx", "2.8.0",
+      object Core : LibDependencies("androidx.work", "work-runtime-ktx", "2.8.1",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.work", "work-testing", "2.8.0",
+      object Test : LibDependencies("androidx.work", "work-testing", "2.8.1",
           DependencyMethod.Test.Implementation)
     }
   }

@@ -9,9 +9,9 @@ sealed class LibPlugins(
   val name: String,
   val version: String
 ) {
-  object Android : LibPlugins("com.android.tools.build", "gradle", "7.4.1")
+  object Android : LibPlugins("com.android.tools.build", "gradle", "7.4.2")
 
-  object Kotlin : LibPlugins("org.jetbrains.kotlin", "kotlin-gradle-plugin", "1.8.10") {
+  object Kotlin : LibPlugins("org.jetbrains.kotlin", "kotlin-gradle-plugin", "1.8.20") {
     object Android : LibPluginId("kotlin-android")
 
     object Kapt : LibPluginId("kotlin-kapt")
@@ -19,7 +19,7 @@ sealed class LibPlugins(
     object Reflect : LibPluginId("kotlin-reflect")
   }
 
-  object Maven : LibPlugins("com.vanniktech", "gradle-maven-publish-plugin", "0.24.0") {
+  object Maven : LibPlugins("com.vanniktech", "gradle-maven-publish-plugin", "0.25.1") {
     object Plugin : LibPluginId("com.vanniktech.maven.publish")
   }
 

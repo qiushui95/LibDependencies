@@ -19,7 +19,7 @@
 >>implementation("androidx.appcompat:appcompat:1.6.1")  
   
 >[Background](https://github.com/JavaNoober/BackgroundLibrary)(背景生成工具库)  
->>implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.5")  
+>>implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.6")  
   
 >[BasePopup](https://github.com/razerdp/BasePopup)(弹窗)  
 >>implementation("io.github.razerdp:BasePopup:3.2.1")  
@@ -40,19 +40,19 @@
 >>implementation("androidx.exifinterface:exifinterface:1.3.6")  
   
 >[FlowExt](https://github.com/hoc081098/FlowExt)(Flow扩展)  
->>implementation("io.github.hoc081098:FlowExt-jvm:0.5.0")  
+>>implementation("io.github.hoc081098:FlowExt-jvm:0.6.0")  
   
 >[IpUtils](https://github.com/seancfoley/IPAddress)(IP帮助类)  
 >>implementation("com.github.seancfoley:ipaddress:5.4.0")  
   
 >[JodaTime](https://github.com/JodaOrg/joda-time)(时间处理库)  
->>implementation("joda-time:joda-time:2.12.2")  
+>>implementation("joda-time:joda-time:2.12.5")  
   
 >[LeakCanary](https://square.github.io/leakcanary/getting_started/)(内存泄露监控)  
 >>implementation("com.squareup.leakcanary:leakcanary-android:2.10")  
   
 >[MavenPublish](https://github.com/vanniktech/gradle-maven-publish-plugin)(Maven上传)  
->>implementation("com.vanniktech:gradle-maven-publish-plugin:0.24.0")  
+>>implementation("com.vanniktech:gradle-maven-publish-plugin:0.25.1")  
   
 >[Mmkv](https://github.com/Tencent/MMKV/blob/master/README_CN.md)(持久KV数据存储)  
 >>implementation("com.tencent:mmkv-static:1.2.15")  
@@ -76,7 +76,7 @@
 >>implementation("com.github.liangjingkanji:soft-input-event:1.0.9")  
   
 >[Startup](https://github.com/qiushui95/AndroidInitializer)(app启动初始化)  
->>implementation("com.github.qiushui95:AndroidInitializer:1.0.11")  
+>>implementation("com.github.qiushui95:AndroidInitializer:1.0.13")  
   
 >[Store](https://github.com/dropbox/Store)(多数据源)  
 >>implementation("com.dropbox.mobile.store:store4:4.0.5")  
@@ -202,20 +202,20 @@
 <summary>Compose</summary>  
   
 >[Accompanist](https://github.com/google/accompanist)  
->>implementation("com.google.accompanist:accompanist-adaptive:0.29.1-alpha")  
->>implementation("com.google.accompanist:accompanist-themeadapter-appcompat:0.29.1-alpha")  
->>implementation("com.google.accompanist:accompanist-drawablepainter:0.29.1-alpha")  
->>implementation("com.google.accompanist:accompanist-themeadapter-material3:0.29.1-alpha")  
->>implementation("com.google.accompanist:accompanist-themeadapter-material:0.29.1-alpha")  
->>implementation("com.google.accompanist:accompanist-navigation-animation:0.29.1-alpha")  
->>implementation("com.google.accompanist:accompanist-navigation-material:0.29.1-alpha")  
->>implementation("com.google.accompanist:accompanist-pager-indicators:0.29.1-alpha")  
->>implementation("com.google.accompanist:accompanist-permissions:0.29.1-alpha")  
->>implementation("com.google.accompanist:accompanist-placeholder:0.29.1-alpha")  
->>implementation("com.google.accompanist:accompanist-placeholder-material:0.29.1-alpha")  
->>implementation("com.google.accompanist:accompanist-systemuicontroller:0.29.1-alpha")  
->>implementation("com.google.accompanist:accompanist-testharness:0.29.1-alpha")  
->>implementation("com.google.accompanist:accompanist-webview:0.29.1-alpha")  
+>>implementation("com.google.accompanist:accompanist-adaptive:0.30.1")  
+>>implementation("com.google.accompanist:accompanist-themeadapter-appcompat:0.30.1")  
+>>implementation("com.google.accompanist:accompanist-drawablepainter:0.30.1")  
+>>implementation("com.google.accompanist:accompanist-themeadapter-material3:0.30.1")  
+>>implementation("com.google.accompanist:accompanist-themeadapter-material:0.30.1")  
+>>implementation("com.google.accompanist:accompanist-navigation-animation:0.30.1")  
+>>implementation("com.google.accompanist:accompanist-navigation-material:0.30.1")  
+>>implementation("com.google.accompanist:accompanist-pager-indicators:0.30.1")  
+>>implementation("com.google.accompanist:accompanist-permissions:0.30.1")  
+>>implementation("com.google.accompanist:accompanist-placeholder:0.30.1")  
+>>implementation("com.google.accompanist:accompanist-placeholder-material:0.30.1")  
+>>implementation("com.google.accompanist:accompanist-systemuicontroller:0.30.1")  
+>>implementation("com.google.accompanist:accompanist-testharness:0.30.1")  
+>>implementation("com.google.accompanist:accompanist-webview:0.30.1")  
   
 >[ConstraintLayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)(Compose约束布局)  
 >>implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")  
@@ -224,24 +224,16 @@
 >>implementation("com.github.fornewid:material-motion-compose:0.8.1")  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation("androidx.compose.animation:animation:1.3.3")  
->>implementation("androidx.compose.compiler:compiler:1.4.3")  
->>implementation("androidx.compose.foundation:foundation:1.3.1")  
->>implementation("androidx.compose.material:material:1.3.1")  
->>implementation("androidx.compose.ui:ui:1.3.3")  
->>implementation("androidx.compose.ui:ui-tooling-preview:1.3.3")  
->>debugImplementation("androidx.compose.ui:ui-tooling:1.3.3")  
-  
->[OfficialAlpha](https://developer.android.com/jetpack/androidx/releases/compose)(Compose Alpha官方)  
->>implementation("androidx.compose.animation:animation:1.4.0-rc01")  
->>implementation("androidx.compose.foundation:foundation:1.4.0-rc01")  
->>implementation("androidx.compose.material:material:1.4.0-rc01")  
->>implementation("androidx.compose.ui:ui:1.4.0-rc01")  
->>implementation("androidx.compose.ui:ui-tooling-preview:1.4.0-rc01")  
->>debugImplementation("androidx.compose.ui:ui-tooling:1.4.0-rc01")  
+>>implementation("androidx.compose.animation:animation:1.4.0")  
+>>implementation("androidx.compose.compiler:compiler:1.4.4")  
+>>implementation("androidx.compose.foundation:foundation:1.4.0")  
+>>implementation("androidx.compose.material:material:1.4.0")  
+>>implementation("androidx.compose.ui:ui:1.4.0")  
+>>implementation("androidx.compose.ui:ui-tooling-preview:1.4.0")  
+>>debugImplementation("androidx.compose.ui:ui-tooling:1.4.0")  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0")  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")  
   
 </details>  
   
@@ -249,20 +241,20 @@
 <summary>Group</summary>  
   
 >[Activity](https://developer.android.com/jetpack/androidx/releases/activity)  
->>implementation("androidx.activity:activity-compose:1.6.1")  
->>implementation("androidx.activity:activity-ktx:1.6.1")  
+>>implementation("androidx.activity:activity-compose:1.7.0")  
+>>implementation("androidx.activity:activity-ktx:1.7.0")  
   
 >[Bugly](https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=1.0.0)  
 >>implementation("com.tencent.bugly:crashreport:4.1.9")  
 >>implementation("com.tencent.bugly:crashreport_upgrade:1.6.1")  
   
 >[CameraX](https://developer.android.com/jetpack/androidx/releases/camera)(相机相关)  
->>implementation("androidx.camera:camera-camera2:1.2.1")  
->>implementation("androidx.camera:camera-core:1.2.1")  
->>implementation("androidx.camera:camera-extensions:1.2.1")  
->>implementation("androidx.camera:camera-lifecycle:1.2.1")  
->>implementation("androidx.camera:camera-video:1.2.1")  
->>implementation("androidx.camera:camera-view:1.2.1")  
+>>implementation("androidx.camera:camera-camera2:1.2.2")  
+>>implementation("androidx.camera:camera-core:1.2.2")  
+>>implementation("androidx.camera:camera-extensions:1.2.2")  
+>>implementation("androidx.camera:camera-lifecycle:1.2.2")  
+>>implementation("androidx.camera:camera-video:1.2.2")  
+>>implementation("androidx.camera:camera-view:1.2.2")  
   
 >[Chucker](https://github.com/ChuckerTeam/chucker)(网络请求监控)  
 >>debugImplementation("com.github.chuckerteam.chucker:library:3.5.2")  
@@ -288,10 +280,10 @@
 >>implementation("me.laoyuyu.aria:sftp:3.8.16")  
   
 >[Epoxy](https://github.com/airbnb/epoxy)  
->>kapt("com.airbnb.android:epoxy-processor:5.1.1")  
->>implementation("com.airbnb.android:epoxy-compose:5.1.1")  
->>implementation("com.airbnb.android:epoxy:5.1.1")  
->>implementation("com.airbnb.android:epoxy-glide-preloading:5.1.1")  
+>>kapt("com.airbnb.android:epoxy-processor:5.1.2")  
+>>implementation("com.airbnb.android:epoxy-compose:5.1.2")  
+>>implementation("com.airbnb.android:epoxy:5.1.2")  
+>>implementation("com.airbnb.android:epoxy-glide-preloading:5.1.2")  
   
 >[Fetch](https://github.com/tonyofrancis/Fetch)(下载框架)  
 >>implementation("androidx.tonyodev.fetch2:xfetch2:3.1.6")  
@@ -313,50 +305,50 @@
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager2:1.2.0")  
   
 >[Fragment](https://developer.android.com/jetpack/androidx/releases/fragment)  
->>implementation("androidx.fragment:fragment-ktx:1.5.5")  
->>testImplementation("androidx.fragment:fragment-testing:1.5.5")  
+>>implementation("androidx.fragment:fragment-ktx:1.5.6")  
+>>testImplementation("androidx.fragment:fragment-testing:1.5.6")  
   
 >[Glide](https://github.com/bumptech/glide)(图片加载)  
->>kapt("com.github.bumptech.glide:compiler:4.15.0")  
+>>kapt("com.github.bumptech.glide:compiler:4.15.1")  
 >>implementation("com.github.bumptech.glide:compose:1.0.0-alpha.2")  
->>implementation("com.github.bumptech.glide:glide:4.15.0")  
->>implementation("com.github.bumptech.glide:okhttp3-integration:4.15.0")  
+>>implementation("com.github.bumptech.glide:glide:4.15.1")  
+>>implementation("com.github.bumptech.glide:okhttp3-integration:4.15.1")  
   
 >[ImagePicker](https://github.com/LuckSiege/PictureSelector)(图片选择库)  
->>implementation("io.github.lucksiege:camerax:v3.10.7")  
->>implementation("io.github.lucksiege:compress:v3.10.7")  
->>implementation("io.github.lucksiege:pictureselector:v3.10.7")  
->>implementation("io.github.lucksiege:ucrop:v3.10.7")  
+>>implementation("io.github.lucksiege:camerax:v3.10.9")  
+>>implementation("io.github.lucksiege:compress:v3.10.9")  
+>>implementation("io.github.lucksiege:pictureselector:v3.10.9")  
+>>implementation("io.github.lucksiege:ucrop:v3.10.9")  
   
 >[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)(状态栏)  
 >>implementation("com.geyifeng.immersionbar:immersionbar:3.2.2")  
 >>implementation("com.geyifeng.immersionbar:immersionbar-ktx:3.2.2")  
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  
->>implementation("io.insert-koin:koin-android:3.3.3")  
->>implementation("io.insert-koin:koin-androidx-compose:3.4.2")  
->>implementation("io.insert-koin:koin-core:3.3.3")  
->>implementation("io.insert-koin:koin-androidx-navigation:3.3.3")  
->>testImplementation("io.insert-koin:koin-test-junit5:3.3.3")  
->>implementation("io.insert-koin:koin-androidx-workmanager:3.3.3")  
+>>implementation("io.insert-koin:koin-android:3.4.0")  
+>>implementation("io.insert-koin:koin-androidx-compose:3.4.3")  
+>>implementation("io.insert-koin:koin-core:3.4.0")  
+>>implementation("io.insert-koin:koin-androidx-navigation:3.4.0")  
+>>testImplementation("io.insert-koin:koin-test-junit5:3.4.0")  
+>>implementation("io.insert-koin:koin-androidx-workmanager:3.4.0")  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
->>implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.10")  
->>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.10")  
+>>implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.20")  
+>>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.20")  
   
 >[Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation("androidx.lifecycle:lifecycle-common:2.6.0")  
->>implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.0")  
->>implementation("androidx.lifecycle:lifecycle-process:2.6.0")  
->>implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.0")  
->>implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.0")  
->>implementation("androidx.lifecycle:lifecycle-service:2.6.0")  
->>implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0")  
+>>implementation("androidx.lifecycle:lifecycle-common:2.6.1")  
+>>implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")  
+>>implementation("androidx.lifecycle:lifecycle-process:2.6.1")  
+>>implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1")  
+>>implementation("androidx.lifecycle:lifecycle-service:2.6.1")  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")  
   
 >[Mavericks](https://github.com/airbnb/mavericks)(Mavericks架构)  
->>implementation("com.airbnb.android:mavericks-compose:3.0.1")  
->>implementation("com.airbnb.android:mavericks:3.0.1")  
->>implementation("com.airbnb.android:mavericks-navigation:3.0.1")  
+>>implementation("com.airbnb.android:mavericks-compose:3.0.2")  
+>>implementation("com.airbnb.android:mavericks:3.0.2")  
+>>implementation("com.airbnb.android:mavericks-navigation:3.0.2")  
   
 >[MoShi](https://github.com/square/moshi)(json解析库)  
 >>kapt("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")  
@@ -387,8 +379,8 @@
 >>androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.10.0")  
   
 >[Paris](https://github.com/airbnb/paris)  
->>kapt("com.airbnb.android:paris-processor:2.0.1")  
->>implementation("com.airbnb.android:paris:2.0.1")  
+>>kapt("com.airbnb.android:paris-processor:2.0.2")  
+>>implementation("com.airbnb.android:paris:2.0.2")  
   
 >[Retrofit](https://github.com/square/retrofit)(网络请求)  
 >>implementation("com.squareup.retrofit2:retrofit:2.9.0")  
@@ -396,14 +388,14 @@
 >>implementation("com.squareup.retrofit2:converter-scalars:2.9.0")  
   
 >[Room](https://developer.android.com/jetpack/androidx/releases/room)(Sqlite数据库)  
->>kapt("androidx.room:room-compiler:2.5.0")  
->>implementation("androidx.room:room-runtime:2.5.0")  
->>implementation("androidx.room:room-ktx:2.5.0")  
->>testImplementation("androidx.room:room-testing:2.5.0")  
+>>kapt("androidx.room:room-compiler:2.5.1")  
+>>implementation("androidx.room:room-runtime:2.5.1")  
+>>implementation("androidx.room:room-ktx:2.5.1")  
+>>testImplementation("androidx.room:room-testing:2.5.1")  
   
 >[Sqlite](https://developer.android.com/jetpack/androidx/releases/sqlite)(Sqlite)  
->>implementation("androidx.sqlite:sqlite-framework:2.3.0")  
->>implementation("androidx.sqlite:sqlite-ktx:2.3.0")  
+>>implementation("androidx.sqlite:sqlite-framework:2.3.1")  
+>>implementation("androidx.sqlite:sqlite-ktx:2.3.1")  
   
 >[Stetho](https://github.com/facebook/stetho)(调试工具)  
 >>implementation("com.facebook.stetho:stetho:1.6.0")  
@@ -422,8 +414,8 @@
 >>implementation("net.gotev:uploadservice-okhttp:4.7.0")  
   
 >[WorkManager](https://developer.android.com/jetpack/androidx/releases/work)(任务管理器)  
->>implementation("androidx.work:work-runtime-ktx:2.8.0")  
->>testImplementation("androidx.work:work-testing:2.8.0")  
+>>implementation("androidx.work:work-runtime-ktx:2.8.1")  
+>>testImplementation("androidx.work:work-testing:2.8.1")  
   
 </details>  
   
