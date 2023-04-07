@@ -76,7 +76,7 @@
 >>implementation("com.github.liangjingkanji:soft-input-event:1.0.9")  
   
 >[Startup](https://github.com/qiushui95/AndroidInitializer)(app启动初始化)  
->>implementation("com.github.qiushui95:AndroidInitializer:1.0.14")  
+>>implementation("com.github.qiushui95:AndroidInitializer:1.0.16")  
   
 >[Store](https://github.com/dropbox/Store)(多数据源)  
 >>implementation("com.dropbox.mobile.store:store4:4.0.5")  
